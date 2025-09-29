@@ -12,8 +12,9 @@
             margin: 0 auto; 
             padding: 20px; 
             line-height: 1.6; 
-            background: #505C6D; 
-            color: #e0e0e0;
+            background: #ffffff; 
+            color: #333333;
+            min-height: 100vh;
         }
         .header { 
             text-align: center; 
@@ -30,31 +31,32 @@
         .nav-tabs { 
             display: flex; 
             margin-bottom: 0; 
-            background: #3a4149;
+            background: #f8f9fa;
             border-radius: 8px 8px 0 0;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 1px solid #dee2e6;
         }
         .nav-tab { 
             padding: 15px 25px; 
             cursor: pointer; 
             border: none; 
-            background: #3a4149; 
+            background: #f8f9fa; 
             font-size: 16px; 
             font-weight: 600; 
-            color: #b0b7c3; 
+            color: #495057; 
             transition: all 0.3s ease; 
             flex: 1;
             text-align: center;
             position: relative;
         }
         .nav-tab:hover { 
-            color: #ffffff; 
-            background-color: #4a5159; 
+            color: #212529; 
+            background-color: #e9ecef; 
         }
         .nav-tab.active { 
             color: #ffffff; 
-            background: #505C6D;
+            background: #2d3139;
         }
         .nav-tab.active::after {
             content: '';
@@ -76,13 +78,14 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         
         .changelog-content { 
-            background: #505C6D; 
+            background: #2d3139; 
             padding: 30px; 
             border-radius: 0 0 8px 8px; 
             box-shadow: 0 4px 20px rgba(0,0,0,0.3); 
             border: 1px solid #3a4149;
             border-top: none;
             min-height: 400px;
+            color: #e0e0e0;
         }
         
         .badge { 
@@ -178,14 +181,14 @@
             text-align: center; 
             margin-top: 40px; 
             padding: 20px; 
-            color: #b0b7c3; 
+            color: #6c757d; 
             font-size: 14px;
-            border-top: 1px solid #3a4149;
+            border-top: 1px solid #dee2e6;
         }
         
         /* Scrollbar styling */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #3a4149; }
+        ::-webkit-scrollbar-track { background: #f1f3f4; }
         ::-webkit-scrollbar-thumb { background: #667eea; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #5a6fd8; }
     </style>
@@ -1467,7 +1470,7 @@
     </div>
     
     <div class="footer">
-        <p>Generated on 2025-09-29 19:35:26 | 🤖 AI-Enhanced Changelog System</p>
+        <p>Generated on 2025-09-29 19:51:05 | 🤖 AI-Enhanced Changelog System</p>
     </div>
     
     <script>
