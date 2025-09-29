@@ -1,45 +1,26 @@
 # 📊 Business Central Technical Documentation
 
-Welcome to the technical documentation repository for Business Central extensions and changelogs.
+🔗 **Live Changelog**: https://interpolimeri.github.io/BusinessCentralTechnicalDocs/
 
-## 🚀 What's Here
+## 🚀 About
 
-- **[📋 Live Changelog](https://interpolimeri.github.io/BusinessCentralTechnicalDocs/)** - Automatically updated release notes
-- **📈 Version History** - Detailed version-by-version changes
-- **🔄 Automated Updates** - Synchronized with private development repository
+This repository hosts the public changelog and technical documentation for Business Central extensions. 
 
-## 🏗️ Architecture
-
-This repository is automatically updated from our private development environment:
-
-- **Source**: Private BusinessCentral repository
-- **Automation**: PowerShell scripts with GitHub API integration
-- **Publishing**: GitHub Pages with Jekyll
-- **Frequency**: Daily automated updates
+- **Automatically updated** from private development repository
+- **Public access** to release notes and version history
+- **Professional formatting** with emoji indicators and developer attribution
 
 ## 📋 Changelog Features
 
-Our changelog system provides:
+- ✨ **Features** - New functionality and enhancements
+- 🪲 **Bug Fixes** - Issue resolutions and improvements  
+- 🔧 **Other Changes** - Build updates and maintenance
+- 👥 **Developer Attribution** - Credits for each contribution
 
-- ✨ **Feature Tracking** - New functionality and enhancements
-- 🪲 **Bug Fixes** - Issue resolutions and improvements
-- 👥 **Attribution** - Developer credits for each change
-- 🏷️ **Version Management** - Clear versioning with AL-Go integration
-- 📅 **Timeline** - Chronological development history
+## 🔄 Updates
 
-## 🛠️ Technical Stack
-
-- **AL Language** - Business Central extensions
-- **AL-Go for GitHub** - CI/CD pipeline
-- **GitHub API** - Automated artifact discovery
-- **PowerShell** - Changelog generation scripts
-- **Jekyll** - Static site generation
-- **GitHub Pages** - Public hosting
-
-## 📞 Contact
-
-For technical questions or collaboration opportunities, please contact our development team.
+The changelog is automatically synchronized from our private development environment and updated as new versions are released.
 
 ---
 
-*This repository is maintained automatically. Last updated: 2025-09-29 15:09:28*
+*Generated automatically from private BusinessCentral repository*
