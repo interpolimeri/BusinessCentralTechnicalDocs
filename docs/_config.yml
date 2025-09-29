@@ -5,8 +5,9 @@ description: >-
   Technical documentation and automatically generated changelogs 
   for Business Central extensions and customizations.
 
-baseurl: "/BusinessCentralTechnicalDocs"
+# GitHub Pages settings
 url: "https://interpolimeri.github.io"
+baseurl: "/BusinessCentralTechnicalDocs"
 
 # Build settings
 markdown: kramdown
@@ -16,23 +17,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Collections
-collections:
-  versions:
-    output: true
-    permalink: /:collection/:name/
-
 # SEO and social
 author: Interpolimeri SpA
-twitter:
-  username: interpolimeri
-logo: /assets/logo.png
+
+# Timezone
+timezone: Europe/Rome
 
 # Exclude from processing
 exclude:
   - .github/
   - README.md
-  - setup_public_repo.ps1
-
-# Timezone
-timezone: Europe/Rome
