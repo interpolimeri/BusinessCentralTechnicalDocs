@@ -257,30 +257,6 @@
 </ul>
 <p>---</p>
 <br>
-<h2>Release 26.0.309.0 (PR #440) - 18/09/2025</h2>
-<h3>✨ Features</h3>
-<ul>
-    <li>Add fields for Add. Tax Standard Text Code and Add. Tax Country Filter in IPL Packaging Taxes page <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Refactor IPL Commission Mgt. to use temporary Reason Code records for compliance checks <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Enhance IPL Sales Order Serv. Info to filter linked purchase orders <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Enhance IPL Transporeon API with security vault integration and update token handling <span class="author">[<em>mpisana</em>]</span></li>
-    <li>Set Purch. Order No. field as non-editable in IPL Sales Order extension <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Add IPL Order Receipt Confirmation field to Blanket Sales Order Email page <span class="author">[<em>mpisana</em>]</span></li>
-    <li>Add Data Security dependency and filter for approved EOS DS status in Role Center <span class="author">[<em>mpisana</em>]</span></li>
-    <li>Add event subscriber to set manual price as default for sales lines fix: remove redundant OnAfterValidate trigger for unit price in sales line extension <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Add IPL Reason Code filter and related fields to commission calculations <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Add validation for IPL Scrap Quantity on Assembly Header <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Add IPL Inventory Reason Code functionality <span class="author">[<em>mpisana</em>]</span></li>
-    <li>Integrate subject retrieval from word templates in email management <span class="author">[<em>mpisana</em>]</span></li>
-</ul>
-<h3>🪲 Bug Fixes</h3>
-<ul>
-    <li>Correct reference from WarehouseReceiptHeader to WarehouseShipmentHeader in IPL Packaging Management <span class="author">[<em>mpisana</em>]</span></li>
-    <li>Validate IPL Shipment Information on Purchase Header <span class="author">[<em>mpisana</em>]</span></li>
-    <li>Update tracking logic for linked purchase orders in Sales Order pages <span class="author">[<em>mpisana</em>]</span></li>
-</ul>
-<p>---</p>
-<br>
 <h2>Release 26.0.308.0 (PR #434) - 12/09/2025</h2>
 <h3>✨ Features</h3>
 <ul>
@@ -330,32 +306,416 @@
 </ul>
 <p>---</p>
 <br>
-<h2>Release 26.0.305.0 (PR #422) - 05/09/2025</h2>
+<h2>Release 25.4.302.0 (PR #457) - 28/09/2025</h2>
 <h3>✨ Features</h3>
 <ul>
-    <li>Remove report permission for "IPL Update Item Desc. on Ord." <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add CRM Annotation table and related logic for handling comments in Sales Orders <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add calculation of shipping no. series during SalesOrder creation from SalesBlanket <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Remove Payment Method Code field from IPL Acc. General Journal page customization <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Salesperson and Responsibility Center fields to CRM Account and Order tables, and update related logic in API management <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update Packaging Type Code field in various subforms with tooltip and application area <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Implement scheduled import functionality in IPL Expenses management <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Added SEPA Ditrect Debit Mandates report <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Payment Method Code field to IPL Profile General Journal page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add customization for "Order No." visibility in Posted Purchase Receipt Lines page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add action to view item availability by event in IPL Import Req. Worksheet page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update address columns in IPL Warehouse Shipment report to use AddressDict for Ship-to code and address number <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Enhance address handling in warehouse shipment report by adding Ship-to code and updating address fields <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add report for updating item descriptions on open orders <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Payment Method Code field to IPL Acc. General Journal with non-editable property <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update email subject assignment to use GetSubjectFromWordTemplate method <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Update IPL Vessel Status enum values and captions for clarity <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update report ID for IPL Expenses Receipts Images <span class="author">[<em>albertodone</em>]</span></li>
 </ul>
 <p>---</p>
 <br>
-<h2>Release 26.0.304.0 (PR #421) - 05/09/2025</h2>
+<h2>Release 25.4.301.0 (PR #415) - 04/09/2025</h2>
 <h3>✨ Features</h3>
 <ul>
-    <li>Update ID ranges in app.json files across multiple modules to extend the range to 55999 <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Add IPL Dyn365 as a dependency in app.json <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Update shipment method code assignment logic in transport management <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Remove IPL Update Item Description on Orders report <span class="author">[<em>albertodone</em>]</span></li>
-    <li>Add permissions for Return Receipt Header and Return Receipt Line <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Expand permissions for IPL Transporeon API and Tracking Management <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.298.0 (PR #407) - 29/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Update IPL Purch. Doc. Summary Buffer and related codeunit for Sales Order linking and pricing <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add IPL Calc. Availability Management codeunit with event subscribers for item availability filtering <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Enable delayed insert for IPL Cust. Alternative Payments page and enforce NotBlank for Item Category Code <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Exclude Shipment Method Code assignment in SSO Purchase Header <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update calculation method for Sales Detail unit cost <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Correct spelling in app name for IPL Credit Mixer Interface <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Correct spelling in procedure names for Sales Header VAT category updates <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.297.0 (PR #402) - 26/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add IPL Base dependency to app.json <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.294.0 (PR #395) - 24/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Update DependenciesGraphALL.gv to refine relationships and add new nodes <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add Shipment Method Code field to IPL Sales Open Price Closing page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Moved shipping section after sales lines <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.293.0 (PR #393) - 18/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Updated DE translations <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add IPL Acc. Customer List customization and include in IPL_ACCOUNTING profile <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.292.0 (PR #391) - 08/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add Message Center on Posted Return Shipment and Posted Return Shipments <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add functionality to download selected documents as a single PDF across various document types <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add IPL Amount per Ton (LCY) field and update calculations in commission entries <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add event subscriber to update payment reference on vendor invoice number change <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Enhance user task actions to support bulk marking as read/unread with confirmation prompts <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add action to force update purchase order with Transporeon data in IPL Transporeon Purch. Order page. Propagation of SuspendStatusCheck on Line Disc. % validation <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Review commission calculations <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update report caption to include 'IPL' for clarity <span class="author">[<em>albertodone</em>]</span></li>
 </ul>
 <h3>🔧 Other Changes</h3>
 <ul>
-    <li>New Version number 26.0 <span class="author">[<em>albertodone</em>]</span></li>
-    <li>[adone/testalgo@556404d] Update AL-Go System Files from microsoft/AL-Go-PTE@main - 920b9e1 <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Move PropagateSuspendStatusCheck event subscriber to the end of the procedure for better organization <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.291.0 (PR #387) - 05/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add functionality to disable purchase and sales defaults from posting groups <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add navigation action and posting date field to IPL Email with Missing CoA pages <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Enhance posting actions with new preview functionality in IPL Financial Journal <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Replaced actions for posting and added action for preview posting in IPL Financial Journal extension <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update DependencyGraph with new relationships and remove obsolete ones <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add "Item By Event" action to IPL Role Center and Sales Role Center pages <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.290.0 (PR #382) - 04/08/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add reports for Financial Ledger and General Ledger to IPLBaseDE permissionset <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add default assignment for VAT and Gen. Business Posting Groups in Purchase Header <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Reorganize VAT Info group and fields in Purchase Return Order page extension <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Implement General Ledger report <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Unit Price field to IPL PUR Sales Lines page customization <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add OnRun trigger to schedule Costing Period calculation <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Enhance user task management with "Task to Read" functionality <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add IPL Handling Unit Type Code field to IPL Packaging Types page <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Rename task count procedures and fields for consistency <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update VATDateCaption to DateCaption in report layout <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Remove redundant GLSetup record declaration in GetCurrencyCode procedure <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Remove redundant variable declaration in GetCurrencyCode procedure <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Correct parameter usage in OnSetUpNewLineOnBeforeIncrDocNoHandler procedure <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add integration setup retrieval in order creation process <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Ensure correct language setting when applying saved views in cue management <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update report extension ID for IPL Suggest Worksheet Lines <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.289.0 (PR #375) - 29/07/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Refactor authentication logic in IPL DocuFlow ArxNext Mgt. codeunit <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.287.0 (PR #370) - 28/07/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add Start Date field and enhance Azure Key Vault secret handling <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Remove unused namespaces in Base.DE <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Remove unused IPLSecurityVaultDataScopeType enum file <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.281.0 (PR #354) - 21/07/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Simplify condition for EOS Type check in IPL Sales Document report <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Set Subject field as non-editable <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Ensure "Word Template Code" field is not blank <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add "Your Reference" field to IPL Profile Purch. Ret. Order page extension <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.280.0 (PR #351) - 21/07/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Correct page reference from "IPL Expr. Solver Tester" to "IPL Expr. Solver Editor" <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.277.0 (PR #344) - 17/07/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add ES report translations <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add new app IPL Document Report ES <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add IPL Payment Terms Additional Description to invoice report and update DE translations <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update IPL Sales and Shipment documents to improve item number formatting and handling of charge items + update DE Translations <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update IPL.Email Mgmt permissionset to include Email Subject Entry and related pages <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Implement IPL Email Management features including Word Template handling and subject entries <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add IPL expression solver functionality and related pages <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.276.0 (PR #338) - 14/07/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Update field ID for IPL Reason Code Type in table extension <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.273.0 (PR #330) - 04/07/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add Ship-to Mail Address functionality and related pages/extensions <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Refactor: update visibility for EU 3rd Party Trade <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: reorder IPL Source Name field for better layout consistency <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Added source type and source no fields <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: SK > fixed pageExt to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: W1 > fixed pageExt to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: HU > fixed pageExt to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: ES > fixed pageExt to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: DE > fixed pageExt to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: BE > fixed pageExt to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: HU > corrected certain fields to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: SK > corrected certain fields to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: ES > corrected certain fields to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: DE > corrected certain fields to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: BE > corrected certain fields to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Refactor: W1 > corrected certain fields to address IT localization requirements <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.272.0 (PR #327) - 03/07/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Correct report ID for IPL Vendor Statement <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.270.0 (PR #321) - 02/07/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Update field order and remove unused field in IPL Profile BPO Subform <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.265.0 (PR #307) - 26/06/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Add IPL Vendor - Balance to Date report with configurable options <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.263.0 (PR #304) - 26/06/2025</h2>
+<h3>🔧 Other Changes</h3>
+<ul>
+    <li>[main@138d8b9] Update AL-Go System Files from microsoft/AL-Go-PTE@main - e247881 <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.260.0 (PR #299) - 19/06/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Extend permission set for IPL Email Management to include Address Book entries <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.257.0 (PR #457) - 28/09/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add CRM Annotation table and related logic for handling comments in Sales Orders <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add calculation of shipping no. series during SalesOrder creation from SalesBlanket <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Remove Payment Method Code field from IPL Acc. General Journal page customization <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Salesperson and Responsibility Center fields to CRM Account and Order tables, and update related logic in API management <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update Packaging Type Code field in various subforms with tooltip and application area <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Implement scheduled import functionality in IPL Expenses management <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Added SEPA Ditrect Debit Mandates report <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Payment Method Code field to IPL Profile General Journal page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add customization for "Order No." visibility in Posted Purchase Receipt Lines page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add action to view item availability by event in IPL Import Req. Worksheet page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update address columns in IPL Warehouse Shipment report to use AddressDict for Ship-to code and address number <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Enhance address handling in warehouse shipment report by adding Ship-to code and updating address fields <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add report for updating item descriptions on open orders <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add Payment Method Code field to IPL Acc. General Journal with non-editable property <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update email subject assignment to use GetSubjectFromWordTemplate method <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Update IPL Vessel Status enum values and captions for clarity <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update report ID for IPL Expenses Receipts Images <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.256.0 (PR #290) - 15/06/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Define permissions for IPL.UserMgt.Admin permission set <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.251.0 (PR #279) - 10/06/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Refine competence date logic in Sales Detail management <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add permissions for Surplus Output management in IPL.TransformOrder <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.249.0 (PR #272) - 06/06/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>DE add new document template <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Created IPL.Profile DE <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add patching functionality for DocuFlow entries and enhance UI with new fields <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Added 'Skipped' status to IPL Expenses. Updated related logic in tables, pages, and reports. Updated "open expense" on header <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add event subscriber to delete all warehouse shipment lines before updating receipt line <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Enhance category validation logic in ApplyOrderHeaderCategories procedure <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add case handling for Sales Shipment Header in OnPreReport trigger <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add GetTransferShipmentHeader procedure and update logic for Transfer Shipment Header <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Handle customer retrieval in GetCustomer procedure <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Update current page on file upload triggers <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Rename 'Payment Method Code' field to 'IPL Payment Method Code' <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.248.0 (PR #267) - 29/05/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Rename 'Verificator' to 'Verifier' in user task fields and filters for consistency <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.244.0 (PR #262) - 23/05/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Move IPL Acc. Financial Journal into Profile.BE <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.4.240.0 (PR #255) - 21/05/2025</h2>
+<h3>🔧 Other Changes</h3>
+<ul>
+    <li>Incremented Version number by +0.1 <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.236.0 (PR #251) - 16/05/2025</h2>
+<h3>🔧 Other Changes</h3>
+<ul>
+    <li>[main@158f974] Update AL-Go System Files from microsoft/AL-Go-PTE@main - 14c066b <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.233.0 (PR #247) - 15/05/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add Gross Weight field to IPL Update Sales Shpt Lines page and create IPL Utility User Settings extension for customer, vendor, and item management <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Update IPL Navigate Exxon API page to manage promoted actions and clean up code <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add "IPL Acc. Reminder List" customization to IPL_ACCOUNTING profile <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add customization for IPL Acc. Issued Reminder List and include in IPL_ACCOUNTING profile <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Add validation for Customer Price Group based on Price List Header settings <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.231.0 (PR #244) - 14/05/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add Vendor Order No. field to IPL PUR Blanket Purch. Orders page <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add OnLookup trigger for Posting No. Series in sales and purchase order extensions <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.229.0 (PR #240) - 14/05/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add extension for IPL File SEPA Payments with file name as filename <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Add event subscribers for direct shipment and receipt handling in IPL Warehouse Management <span class="author">[<em>albertodone</em>]</span></li>
+    <li>New BE.Base App. feat: Journal Management in Extended Combine Shipment <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Add IPL Comb. Shipment Extension codeunit with event subscriber for Location, Categories and Posting No. Series copy from order <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.227.0 (PR #237) - 12/05/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>Add IPL Update Lot Info Item Entries functionality <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Correct caption for IPL Update Lot Info Item Entry page <span class="author">[<em>albertodone</em>]</span></li>
+    <li>Remove IPL Update Lot Info on Item Entry page <span class="author">[<em>albertodone</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.223.0 (PR #231) - 09/05/2025</h2>
+<h3>✨ Features</h3>
+<ul>
+    <li>BE Add EU 3-Party Trade Purchase dependency and enhance visibility in Purchase Invoice page extension <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add customizations for IPL_CSR_PURCH <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add enterprise no. to IPL Profile Sales Ret.Order BE <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Remove EU 3-Party Trade Purchase dependency and related visibility settings in Purchase Invoice customization <span class="author">[<em>mpisana</em>]</span></li>
+    <li>HU Add EU 3-Party Trade Purchase dependency and enhance visibility in Purchase Invoice customization <span class="author">[<em>mpisana</em>]</span></li>
+    <li>SK Add EU 3-Party Trade Purchase customization and update profile extensions <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Remove "Pay-to Vendor No." field from IPL PUR Purchase Order customization (added in pageExt) <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Comment out "Bill-to Name" modification and related fields in IPL CSR Sales Return Order page customization <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Enhance layout and visibility for IC and Invoice details in multiple pages <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Reorder User Tasks Activities and add actions for Sales group in Purch. Role Center <span class="author">[<em>mpisana</em>]</span></li>
+    <li>Add background color <span class="author">[<em>mpisana</em>]</span></li>
+</ul>
+<p>---</p>
+<br>
+<h2>Release 25.3.221.0 (PR #228) - 08/05/2025</h2>
+<h3>🪲 Bug Fixes</h3>
+<ul>
+    <li>Add ApplicationArea to Show Qty. (Calculated) and Show Serial/Lot Number fields in IPL Phys. Inventory List report <span class="author">[<em>albertodone</em>]</span></li>
 </ul>
 <p>---</p>
 <br>
         </div>
         <div class="footer">
-            Last updated: settembre 29, 2025 • 20:59 CET
+            Last updated: settembre 30, 2025 • 00:19 CET
         </div>
     </div>
 </body>
