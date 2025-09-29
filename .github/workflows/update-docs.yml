@@ -1,0 +1,25 @@
+name: 📊 Update Documentation
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # Daily at 7 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 🔄 Trigger changelog update
+        run: |
+          echo "Documentation repository ready for updates"
+          echo "Changelog will be updated from private repository automation"
+          
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          cname: businesscentral-docs.interpolimeri.com  # Optional custom domain
