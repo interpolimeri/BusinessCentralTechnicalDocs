@@ -8,25 +8,21 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292e; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f8f9fa; }
         .container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         h1 { color: #0366d6; border-bottom: 2px solid #e1e4e8; padding-bottom: 10px; }
-        h2 { color: #0366d6; margin-top: 2em; border-left: 4px solid #0366d6; padding-left: 1rem; }
-        h3 { color: #586069; margin-top: 1.5em; }
+        .header { text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; }
         .last-updated { color: #586069; font-style: italic; text-align: center; margin-bottom: 2rem; background: #f1f8ff; padding: 1rem; border-radius: 6px; }
-        pre { background-color: #f6f8fa; padding: 16px; border-radius: 6px; overflow: auto; white-space: pre-wrap; }
+        pre { background-color: #f6f8fa; padding: 16px; border-radius: 6px; overflow: auto; white-space: pre-wrap; font-size: 14px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="last-updated">
-            🕒 Last updated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | 🔄 Auto-generated from private repository
+        <div class="header">
+            <h1>📊 Business Central Changelog</h1>
+            <p>Automatically generated from private repository</p>
         </div>
-        <pre>last_updated: 2025-09-29 15:11:23
-generator: Automated from private BusinessCentral repository
-
-# 📊 Business Central Changelog
-
-*Automatically generated from private repository. Last updated: 2025-09-29 15:11:23*
-
-
+        <div class="last-updated">
+            🕒 Last updated: 2025-09-29 15:19:27 | 🔄 Auto-generated
+        </div>
+        <pre>
 ## Release 26.0.313.0 (PR #457) - 28/09/2025
 ### ✨ Features
   * Add CRM Annotation table and related logic for handling comments in Sales Orders [*albertodone*]
@@ -47,6 +43,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 26.0.312.0 (PR #451) - 25/09/2025
 ### ✨ Features
@@ -68,6 +65,7 @@ generator: Automated from private BusinessCentral repository
   * Update SubPageLink to use 'Blanket Order' for consistency [*mpisana*]
   * Updated 'Requested Delivery Date' [*mpisana*]
   * Update obsolete reason for Client ID field in IPL Dyn365 Integration Setup table [*albertodone*]
+---
 
 ## Release 26.0.311.0 (PR #446) - 22/09/2025
 ### ✨ Features
@@ -88,10 +86,12 @@ generator: Automated from private BusinessCentral repository
   * Correct indexing in Evaluate calls for ExpenseLineKey [*mpisana*]
   * Correct parameter for GetLinkedPurchOrderFilter in IPL Sales Order Serv. Info page extension [*albertodone*]
   * Correct authorization header handling in Transporeon API requests [*mpisana*]
+---
 
 ## Release 26.0.310.0 (PR #441) - 18/09/2025
 ### ✨ Features
   * Add IPL Security Vault dependency in Transporeon API [*albertodone*]
+---
 
 ## Release 26.0.309.0 (PR #440) - 18/09/2025
 ### ✨ Features
@@ -111,6 +111,7 @@ generator: Automated from private BusinessCentral repository
   * Correct reference from WarehouseReceiptHeader to WarehouseShipmentHeader in IPL Packaging Management [*mpisana*]
   * Validate IPL Shipment Information on Purchase Header [*mpisana*]
   * Update tracking logic for linked purchase orders in Sales Order pages [*mpisana*]
+---
 
 ## Release 26.0.308.0 (PR #434) - 12/09/2025
 ### ✨ Features
@@ -129,6 +130,7 @@ generator: Automated from private BusinessCentral repository
   * Filter obsolete fields in IPL DB Correction Management [*albertodone*]
 ### 🪲 Bug Fixes
   * Updates IPL Sales Document ES and  IPL Purchase Document ES [*mpisana*]
+---
 
 ## Release 26.0.307.0 (PR #430) - 08/09/2025
 ### ✨ Features
@@ -136,6 +138,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Add deletion of PullId in ProcessTransporeonOrderLog procedure [*mpisana*]
   * Update version to 26.0.0.0 and extend id range to 55999 [*mpisana*]
+---
 
 ## Release 26.0.306.0 (PR #424) - 06/09/2025
 ### ✨ Features
@@ -145,10 +148,12 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Updated Sales Order Confirmation ENU template (ES) [*mpisana*]
   * Correct grammatical error in Sales Order Confirmation DEU template [*mpisana*]
+---
 
 ## Release 26.0.305.0 (PR #422) - 05/09/2025
 ### ✨ Features
   * Remove report permission for "IPL Update Item Desc. on Ord." [*albertodone*]
+---
 
 ## Release 26.0.304.0 (PR #421) - 05/09/2025
 ### ✨ Features
@@ -160,6 +165,7 @@ generator: Automated from private BusinessCentral repository
 ### 🔧 Other Changes
   * New Version number 26.0 [*albertodone*]
   * [adone/testalgo@556404d] Update AL-Go System Files from microsoft/AL-Go-PTE@main - 920b9e1 [*albertodone*]
+---
 
 ## Release 25.4.302.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -181,10 +187,12 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.4.301.0 (PR #415) - 04/09/2025
 ### ✨ Features
   * Expand permissions for IPL Transporeon API and Tracking Management [*albertodone*]
+---
 
 ## Release 25.4.298.0 (PR #407) - 29/08/2025
 ### ✨ Features
@@ -196,21 +204,25 @@ generator: Automated from private BusinessCentral repository
   * Update calculation method for Sales Detail unit cost [*albertodone*]
   * Correct spelling in app name for IPL Credit Mixer Interface [*albertodone*]
   * Correct spelling in procedure names for Sales Header VAT category updates [*albertodone*]
+---
 
 ## Release 25.4.297.0 (PR #402) - 26/08/2025
 ### ✨ Features
   * Add IPL Base dependency to app.json [*albertodone*]
+---
 
 ## Release 25.4.294.0 (PR #395) - 24/08/2025
 ### ✨ Features
   * Update DependenciesGraphALL.gv to refine relationships and add new nodes [*mpisana*]
   * Add Shipment Method Code field to IPL Sales Open Price Closing page [*mpisana*]
   * Moved shipping section after sales lines [*mpisana*]
+---
 
 ## Release 25.4.293.0 (PR #393) - 18/08/2025
 ### ✨ Features
   * Updated DE translations [*mpisana*]
   * Add IPL Acc. Customer List customization and include in IPL_ACCOUNTING profile [*mpisana*]
+---
 
 ## Release 25.4.292.0 (PR #391) - 08/08/2025
 ### ✨ Features
@@ -225,6 +237,7 @@ generator: Automated from private BusinessCentral repository
   * Update report caption to include 'IPL' for clarity [*albertodone*]
 ### 🔧 Other Changes
   * Move PropagateSuspendStatusCheck event subscriber to the end of the procedure for better organization [*albertodone*]
+---
 
 ## Release 25.4.291.0 (PR #387) - 05/08/2025
 ### ✨ Features
@@ -234,6 +247,7 @@ generator: Automated from private BusinessCentral repository
   * Replaced actions for posting and added action for preview posting in IPL Financial Journal extension [*albertodone*]
   * Update DependencyGraph with new relationships and remove obsolete ones [*mpisana*]
   * Add "Item By Event" action to IPL Role Center and Sales Role Center pages [*mpisana*]
+---
 
 ## Release 25.4.290.0 (PR #382) - 04/08/2025
 ### ✨ Features
@@ -254,10 +268,12 @@ generator: Automated from private BusinessCentral repository
   * Add integration setup retrieval in order creation process [*albertodone*]
   * Ensure correct language setting when applying saved views in cue management [*mpisana*]
   * Update report extension ID for IPL Suggest Worksheet Lines [*albertodone*]
+---
 
 ## Release 25.4.289.0 (PR #375) - 29/07/2025
 ### ✨ Features
   * Refactor authentication logic in IPL DocuFlow ArxNext Mgt. codeunit [*albertodone*]
+---
 
 ## Release 25.4.287.0 (PR #370) - 28/07/2025
 ### ✨ Features
@@ -265,6 +281,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Remove unused namespaces in Base.DE [*albertodone*]
   * Remove unused IPLSecurityVaultDataScopeType enum file [*albertodone*]
+---
 
 ## Release 25.4.281.0 (PR #354) - 21/07/2025
 ### 🪲 Bug Fixes
@@ -272,10 +289,12 @@ generator: Automated from private BusinessCentral repository
   * Set Subject field as non-editable [*mpisana*]
   * Ensure "Word Template Code" field is not blank [*mpisana*]
   * Add "Your Reference" field to IPL Profile Purch. Ret. Order page extension [*mpisana*]
+---
 
 ## Release 25.4.280.0 (PR #351) - 21/07/2025
 ### 🪲 Bug Fixes
   * Correct page reference from "IPL Expr. Solver Tester" to "IPL Expr. Solver Editor" [*albertodone*]
+---
 
 ## Release 25.4.277.0 (PR #344) - 17/07/2025
 ### ✨ Features
@@ -286,10 +305,12 @@ generator: Automated from private BusinessCentral repository
   * Update IPL.Email Mgmt permissionset to include Email Subject Entry and related pages [*mpisana*]
   * Implement IPL Email Management features including Word Template handling and subject entries [*mpisana*]
   * Add IPL expression solver functionality and related pages [*mpisana*]
+---
 
 ## Release 25.4.276.0 (PR #338) - 14/07/2025
 ### 🪲 Bug Fixes
   * Update field ID for IPL Reason Code Type in table extension [*albertodone*]
+---
 
 ## Release 25.4.273.0 (PR #330) - 04/07/2025
 ### ✨ Features
@@ -297,38 +318,44 @@ generator: Automated from private BusinessCentral repository
   * Refactor: update visibility for EU 3rd Party Trade [*mpisana*]
   * Refactor: reorder IPL Source Name field for better layout consistency [*mpisana*]
   * Added source type and source no fields [*mpisana*]
-  * Refactor: SK > fixed pageExt to address IT localization requirements [*mpisana*]
-  * Refactor: W1 > fixed pageExt to address IT localization requirements [*mpisana*]
-  * Refactor: HU > fixed pageExt to address IT localization requirements [*mpisana*]
-  * Refactor: ES > fixed pageExt to address IT localization requirements [*mpisana*]
-  * Refactor: DE > fixed pageExt to address IT localization requirements [*mpisana*]
-  * Refactor: BE > fixed pageExt to address IT localization requirements [*mpisana*]
-  * Refactor: HU > corrected certain fields to address IT localization requirements [*mpisana*]
-  * Refactor: SK > corrected certain fields to address IT localization requirements [*mpisana*]
-  * Refactor: ES > corrected certain fields to address IT localization requirements [*mpisana*]
-  * Refactor: DE > corrected certain fields to address IT localization requirements [*mpisana*]
-  * Refactor: BE > corrected certain fields to address IT localization requirements [*mpisana*]
-  * Refactor: W1 > corrected certain fields to address IT localization requirements [*mpisana*]
+  * Refactor: SK &gt; fixed pageExt to address IT localization requirements [*mpisana*]
+  * Refactor: W1 &gt; fixed pageExt to address IT localization requirements [*mpisana*]
+  * Refactor: HU &gt; fixed pageExt to address IT localization requirements [*mpisana*]
+  * Refactor: ES &gt; fixed pageExt to address IT localization requirements [*mpisana*]
+  * Refactor: DE &gt; fixed pageExt to address IT localization requirements [*mpisana*]
+  * Refactor: BE &gt; fixed pageExt to address IT localization requirements [*mpisana*]
+  * Refactor: HU &gt; corrected certain fields to address IT localization requirements [*mpisana*]
+  * Refactor: SK &gt; corrected certain fields to address IT localization requirements [*mpisana*]
+  * Refactor: ES &gt; corrected certain fields to address IT localization requirements [*mpisana*]
+  * Refactor: DE &gt; corrected certain fields to address IT localization requirements [*mpisana*]
+  * Refactor: BE &gt; corrected certain fields to address IT localization requirements [*mpisana*]
+  * Refactor: W1 &gt; corrected certain fields to address IT localization requirements [*mpisana*]
+---
 
 ## Release 25.4.272.0 (PR #327) - 03/07/2025
 ### 🪲 Bug Fixes
   * Correct report ID for IPL Vendor Statement [*mpisana*]
+---
 
 ## Release 25.4.270.0 (PR #321) - 02/07/2025
 ### 🪲 Bug Fixes
   * Update field order and remove unused field in IPL Profile BPO Subform [*albertodone*]
+---
 
 ## Release 25.4.265.0 (PR #307) - 26/06/2025
 ### 🪲 Bug Fixes
   * Add IPL Vendor - Balance to Date report with configurable options [*albertodone*]
+---
 
 ## Release 25.4.263.0 (PR #304) - 26/06/2025
 ### 🔧 Other Changes
   * [main@138d8b9] Update AL-Go System Files from microsoft/AL-Go-PTE@main - e247881 [*albertodone*]
+---
 
 ## Release 25.4.260.0 (PR #299) - 19/06/2025
 ### 🪲 Bug Fixes
   * Extend permission set for IPL Email Management to include Address Book entries [*albertodone*]
+---
 
 ## Release 25.4.257.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -350,15 +377,18 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.4.256.0 (PR #290) - 15/06/2025
 ### 🪲 Bug Fixes
   * Define permissions for IPL.UserMgt.Admin permission set [*albertodone*]
+---
 
 ## Release 25.4.251.0 (PR #279) - 10/06/2025
 ### 🪲 Bug Fixes
   * Refine competence date logic in Sales Detail management [*albertodone*]
   * Add permissions for Surplus Output management in IPL.TransformOrder [*albertodone*]
+---
 
 ## Release 25.4.249.0 (PR #272) - 06/06/2025
 ### ✨ Features
@@ -374,22 +404,27 @@ generator: Automated from private BusinessCentral repository
   * Handle customer retrieval in GetCustomer procedure [*albertodone*]
   * Update current page on file upload triggers [*albertodone*]
   * Rename 'Payment Method Code' field to 'IPL Payment Method Code' [*albertodone*]
+---
 
 ## Release 25.4.248.0 (PR #267) - 29/05/2025
 ### 🪲 Bug Fixes
   * Rename 'Verificator' to 'Verifier' in user task fields and filters for consistency [*albertodone*]
+---
 
 ## Release 25.4.244.0 (PR #262) - 23/05/2025
 ### 🪲 Bug Fixes
   * Move IPL Acc. Financial Journal into Profile.BE [*albertodone*]
+---
 
 ## Release 25.4.240.0 (PR #255) - 21/05/2025
 ### 🔧 Other Changes
   * Incremented Version number by +0.1 [*albertodone*]
+---
 
 ## Release 25.3.236.0 (PR #251) - 16/05/2025
 ### 🔧 Other Changes
   * [main@158f974] Update AL-Go System Files from microsoft/AL-Go-PTE@main - 14c066b [*albertodone*]
+---
 
 ## Release 25.3.233.0 (PR #247) - 15/05/2025
 ### ✨ Features
@@ -399,11 +434,13 @@ generator: Automated from private BusinessCentral repository
   * Add customization for IPL Acc. Issued Reminder List and include in IPL_ACCOUNTING profile [*mpisana*]
 ### 🪲 Bug Fixes
   * Add validation for Customer Price Group based on Price List Header settings [*mpisana*]
+---
 
 ## Release 25.3.231.0 (PR #244) - 14/05/2025
 ### ✨ Features
   * Add Vendor Order No. field to IPL PUR Blanket Purch. Orders page [*mpisana*]
   * Add OnLookup trigger for Posting No. Series in sales and purchase order extensions [*mpisana*]
+---
 
 ## Release 25.3.229.0 (PR #240) - 14/05/2025
 ### ✨ Features
@@ -412,6 +449,7 @@ generator: Automated from private BusinessCentral repository
   * New BE.Base App. feat: Journal Management in Extended Combine Shipment [*albertodone*]
 ### 🪲 Bug Fixes
   * Add IPL Comb. Shipment Extension codeunit with event subscriber for Location, Categories and Posting No. Series copy from order [*albertodone*]
+---
 
 ## Release 25.3.227.0 (PR #237) - 12/05/2025
 ### ✨ Features
@@ -419,6 +457,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Correct caption for IPL Update Lot Info Item Entry page [*albertodone*]
   * Remove IPL Update Lot Info on Item Entry page [*albertodone*]
+---
 
 ## Release 25.3.223.0 (PR #231) - 09/05/2025
 ### ✨ Features
@@ -434,10 +473,12 @@ generator: Automated from private BusinessCentral repository
   * Enhance layout and visibility for IC and Invoice details in multiple pages [*mpisana*]
   * Reorder User Tasks Activities and add actions for Sales group in Purch. Role Center [*mpisana*]
   * Add background color [*mpisana*]
+---
 
 ## Release 25.3.221.0 (PR #228) - 08/05/2025
 ### 🪲 Bug Fixes
   * Add ApplicationArea to Show Qty. (Calculated) and Show Serial/Lot Number fields in IPL Phys. Inventory List report [*albertodone*]
+---
 
 ## Release 25.3.218.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -459,14 +500,17 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.3.217.0 (PR #222) - 06/05/2025
 ### ✨ Features
   * Remove IPL DocuFlow dependency and related functionality from User Task Card extension [*albertodone*]
+---
 
 ## Release 25.3.211.0 (PR #216) - 29/04/2025
 ### ✨ Features
   * Update ID range in IPL Resource Employee app.json to extend the upper limit [*albertodone*]
+---
 
 ## Release 25.3.207.0 (PR #212) - 15/04/2025
 ### ✨ Features
@@ -476,19 +520,23 @@ generator: Automated from private BusinessCentral repository
   * Add Vend. Ledg. Description field to IPL Vat Entries Fin page extension and table extension [*albertodone*]
   * Update app.json to include Intrastat Core dependency and extend ID range [*albertodone*]
   * Add page extension for IPL SK Intrastat Report Subform with update action for CZ tariff numbers [*albertodone*]
+---
 
 ## Release 25.3.206.0 (PR #211) - 09/04/2025
 ### 🔧 Other Changes
   * Rename deployment configurations from HUB to W1 for consistency [*albertodone*]
   * Variuous updates [*albertodone*]
+---
 
 ## Release 25.3.189.0 (PR #198) - 07/04/2025
 ### ✨ Features
   * Add support for Blanket Order status in EDS Management and setup extensions [*albertodone*]
+---
 
 ## Release 25.3.188.0 (PR #197) - 03/04/2025
 ### ✨ Features
   * Update app.json to remove description and adjust ID range for categories management [*albertodone*]
+---
 
 ## Release 25.3.185.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -510,18 +558,22 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.172.0 (PR #181) - 19/03/2025
 ### ✨ Features
   * Add filter for Worksheet Template Name in IPL ATP Management codeunit to enhance item request line processing [*albertodone*]
+---
 
 ## Release 25.2.167.0 (PR #174) - 18/03/2025
 ### ✨ Features
   * Add IPL Record Reference functionality to User Task; implement event subscribers and UI updates for improved task management [*albertodone*]
+---
 
 ## Release 25.2.166.0 (PR #172) - 18/03/2025
 ### 🔧 Other Changes
   * [main@c4edf8c] Update AL-Go System Files from microsoft/AL-Go-PTE@main - 6472dd4 [*albertodone*]
+---
 
 ## Release 25.2.164.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -543,10 +595,12 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.162.0 (PR #171) - 18/03/2025
 ### ✨ Features
   * Add Starting Balance field to IPL Chart of Accounts extension; implement logic for calculating and filtering G/L entries based on date and dimensions [*albertodone*]
+---
 
 ## Release 25.2.161.0 (PR #170) - 18/03/2025
 ### ✨ Features
@@ -554,6 +608,7 @@ generator: Automated from private BusinessCentral repository
   * Refactor document type filtering for sales and purchase headers to include return orders, enhancing data retrieval accuracy [*albertodone*]
 ### 🪲 Bug Fixes
   * Fix formatting issue in IPL Lot No. Inform. Card extension for improved code clarity [*albertodone*]
+---
 
 ## Release 25.2.159.0 (PR #168) - 17/03/2025
 ### ✨ Features
@@ -563,6 +618,7 @@ generator: Automated from private BusinessCentral repository
   * Update settings.json [*albertodone*]
   * Update settings.json [*albertodone*]
   * Update settings.json [*albertodone*]
+---
 
 ## Release 25.2.157.0 (PR #165) - 12/03/2025
 ### ✨ Features
@@ -581,10 +637,12 @@ generator: Automated from private BusinessCentral repository
   * Refactor RefreshDocuFlowEntriesFromRecRef to include CallFilter parameter for improved filtering [*albertodone*]
   * Add 'Hide in Diagram' functionality to IPL EDS Diagram and Table Status [*albertodone*]
   * Add extensions for IPL Intercompany and Open Prices in various pages and tables [*albertodone*]
+---
 
 ## Release 25.2.155.0 (PR #162) - 05/03/2025
 ### ✨ Features
   * Add permissions for IPL Report Layout Substitution in Document Report [*albertodone*]
+---
 
 ## Release 25.2.152.0 (PR #157) - 26/02/2025
 ### ✨ Features
@@ -604,6 +662,7 @@ generator: Automated from private BusinessCentral repository
   * Add event subscribers to manage responsibility center validation in purchase header [*albertodone*]
 ### 🔧 Other Changes
   * Replace customer account operation update with job queue entry creation for account operation synchronization [*albertodone*]
+---
 
 ## Release 25.2.150.0 (PR #155) - 20/02/2025
 ### ✨ Features
@@ -614,6 +673,7 @@ generator: Automated from private BusinessCentral repository
   * Remove filter on credit amount in CRM credit request logic [*albertodone*]
 ### 🔧 Other Changes
   * Increase timeout for CRM order background task in IPL Dyn365 Sales Order Act page extension [*albertodone*]
+---
 
 ## Release 25.2.148.0 (PR #152) - 19/02/2025
 ### ✨ Features
@@ -622,6 +682,7 @@ generator: Automated from private BusinessCentral repository
   * Refactor VAT date assignment logic in IPLInvoiceDocumentSKExt report extension [*albertodone*]
 ### 🔧 Other Changes
   * Warning cleanup [*albertodone*]
+---
 
 ## Release 25.2.144.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -643,6 +704,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.142.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -664,6 +726,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.138.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -685,6 +748,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.136.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -706,6 +770,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.134.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -727,6 +792,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.132.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -748,6 +814,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.130.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -769,6 +836,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.128.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -790,6 +858,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.125.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -811,6 +880,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.122.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -832,6 +902,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.2.119.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -853,6 +924,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.1.108.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -874,6 +946,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.1.104.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -895,6 +968,7 @@ generator: Automated from private BusinessCentral repository
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
   * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
 
 ## Release 25.1.101.0 (PR #457) - 28/09/2025
 ### ✨ Features
@@ -915,7 +989,9 @@ generator: Automated from private BusinessCentral repository
   * Update email subject assignment to use GetSubjectFromWordTemplate method [*mpisana*]
 ### 🪲 Bug Fixes
   * Update IPL Vessel Status enum values and captions for clarity [*mpisana*]
-  * Update report ID for IPL Expenses Receipts Images [*albertodone*]        </pre>
+  * Update report ID for IPL Expenses Receipts Images [*albertodone*]
+---
+</pre>
     </div>
 </body>
 </html>
