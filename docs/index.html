@@ -1,11 +1,512 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Test Changelog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolimeri's BC SaaS - ChangeLog</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: "Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background: #f8f9fa; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: #fff; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        }
+        .header { 
+            background: linear-gradient(90deg, #00B7C3 0%, #75B5E7 100%); 
+            color: #fff; 
+            padding: 2rem; 
+            text-align: center;
+            position: relative;
+        }
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .header-logo {
+            max-width: 80px;
+            display: block;
+        }
+        .header-title-block {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-logo-right {
+            max-width: 180px;
+            display: block;
+            mix-blend-mode: multiply;
+            opacity: 0.95;
+        }
+        .header h1 { 
+            margin: 0 0 0.5rem 0; 
+            font-size: 2.2rem; 
+            font-weight: 600; 
+            color: #ffffff;
+            text-align: center;
+        }
+        .header p { 
+            margin: 0; 
+            opacity: 0.9; 
+            font-size: 1rem; 
+            color: #ffffff;
+        }
+        .content { 
+            padding: 2rem; 
+        }
+        .release-box {
+            background: #fff;
+            border: 1px solid #e0e3ea;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .subcontent {
+            padding-left: 2em;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+        }
+        h3 {
+            color: #27ae60;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.3rem;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        h4 {
+            color: #495057;
+            margin: 1rem 0 0.5rem 1.5rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.08);
+        }
+        ul {
+            margin: 0.5rem 0 1rem 2.5rem;
+            padding-left: 1.5rem;
+        }
+        li { 
+            margin: 0.3rem 0; 
+        }
+        p { 
+            margin: 1rem 0; 
+        }
+        hr { 
+            border: none; 
+            border-top: 1px solid #dee2e6; 
+            margin: 2rem 0; 
+        }
+        em {
+            color: #6c757d;
+            font-style: italic;
+        }
+        strong {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+            border-top: 1px solid #dee2e6;
+            background: #f8f9fa;
+        }
+
+        
+        .release-header {
+            cursor: pointer;
+            padding: 0.8rem 1rem;
+            margin: 0 -1rem 1rem -1rem;
+            border-bottom: 2px solid #e9ecef;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .release-header:hover {
+            background: rgba(0,183,195,0.05);
+            border-bottom: 2px solid #00B7C3;
+        }
+        .release-header.expanded {
+            border-bottom: 3px solid #00B7C3;
+        }
+        .release-header.expanded h2 {
+            color: #00B7C3;
+        }
+        .release-header.collapsed {
+            border-bottom: 2px solid #dee2e6;
+        }
+        .release-header.collapsed h2 {
+            color: #6c757d;
+        }
+        .release-content {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .release-content.collapsed {
+            max-height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .release-content.expanded {
+            max-height: 2000px;
+        }
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+            margin-bottom: 1rem;
+        }
+        .release-header:hover {
+            background: rgba(0,0,0,0.02);
+            margin: 0 -1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        .release-toggle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+            user-select: none;
+        }
+        .release-toggle.expanded {
+            transform: rotate(90deg);
+        }
+        .release-content {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .release-content.collapsed {
+            max-height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .release-content.expanded {
+            max-height: 2000px;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header { padding: 1.5rem 1rem; }
+            .header h1 { font-size: 1.8rem; }
+            .header-flex { flex-direction: column; text-align: center; }
+            .header-logo, .header-logo-right { max-width: 60px; }
+            .content { padding: 1rem; }
+        }
+    </style>
+    <script>
+        function toggleRelease(element) {
+            const content = element.nextElementSibling;
+            
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                content.classList.add('expanded');
+                element.classList.add('expanded');
+                element.classList.remove('collapsed');
+            } else {
+                content.classList.remove('expanded');
+                content.classList.add('collapsed');
+                element.classList.add('collapsed');
+                element.classList.remove('expanded');
+            }
+        }
+        
+        // Inizializza le release al caricamento della pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            const releases = document.querySelectorAll('.release-box');
+            releases.forEach((release, index) => {
+                const header = release.querySelector('.release-header');
+                const content = release.querySelector('.release-content');
+                
+                if (index === 0) {
+                    // Prima release: aperta
+                    content.classList.add('expanded');
+                    header.classList.add('expanded');
+                } else {
+                    // Altre release: chiuse
+                    content.classList.add('collapsed');
+                    header.classList.add('collapsed');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-    <h1>Test Changelog - $(Get-Date)</h1>
-    <p>This is a test file for testing the publish script.</p>
-    <p>Last Update: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')</p>
+    <div class="container">
+        <div class="header">
+            <div class="header-flex">
+                <img src="https://learn.microsoft.com/en-us/training/achievements/intro-dynamics-365-business-central.svg" alt="Business Central Logo" class="header-logo">
+                <div class="header-title-block">
+                    <h1>Interpolimeri's BC SaaS - ChangeLog</h1>
+                    <p>Release Notes &amp; Version History</p>
+                </div>
+                <img src="https://interpolimeri.com/wp-content/uploads/2023/03/IP-MARCHIO-POSITIVO-CMYK-PAYOFF-PER-PLACCHETTE.png" alt="Interpolimeri Logo" class="header-logo-right">
+            </div>
+        </div>
+        <div class="content">
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.317.0 (PR #463) - 01/10/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>'Refresh Packaging Taxes'</strong> action to multiple invoice and credit memo pages, allowing users to easily update tax information across various documents. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Payment Method Code</strong> field to the General Journal page, enhancing payment processing options for users. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated due date calculation to include non-working days, ensuring more accurate payment timelines. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Salesperson</strong> and <strong>Responsibility Center</strong> fields to CRM Account and Order tables, improving tracking of sales responsibilities and performance. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Your Reference</strong> field to Blanket Purchase Orders and Blanket Sales Orders, allowing users to include additional reference information for better order management. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Renamed field <strong>'Amount Including VAT'</strong> to <strong>'Amt. Including VAT'</strong> for clarity in financial reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected packaging tax entries calculation to manage <strong>Tax Rates</strong> date validity, ensuring accurate tax reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added event subscriber to update original due date in <strong>Customer Ledger Entry</strong>, improving accuracy in financial records. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated address columns in <strong>Warehouse Shipment report</strong> to use <strong>AddressDict</strong> for Ship-to code and address number, enhancing address accuracy in shipments. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added drill-down functionality for <strong>Sales Orders</strong> and <strong>Transfer Orders</strong> in <strong>Warehouse Shipment</strong>, allowing users to easily access detailed order information. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Renamed field to <strong>'Ship-to Country Code'</strong>, improving clarity in shipping documentation. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Other: added missing semicolon in parameter declaration for <strong>CreatePackagingTaxEntries</strong> procedure, ensuring proper functionality. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.313.0 (PR #457) - 28/09/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>SEPA Direct Debit Mandates report</strong> to streamline the management of direct debit transactions, enhancing financial reporting and compliance. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced <strong>Salesperson</strong> and <strong>Responsibility Center</strong> fields in <strong>CRM Account</strong> and <strong>Order</strong> tables, improving tracking of sales performance and accountability. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>report ID</strong> for <strong>Expenses Receipts Images</strong> to ensure accurate reporting and data retrieval. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>address handling</strong> in the <strong>warehouse shipment report</strong> by adding <strong>Ship-to code</strong> and updating address fields for better clarity in shipping documentation. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>scheduled import functionality</strong> in <strong>Expenses management</strong>, allowing for automated data updates and improved efficiency in expense tracking. <em>[mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.312.0 (PR #451) - 25/09/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Users can now handle <strong>Sales and Purchase document types</strong> in <strong>DocuFlow</strong> for copying, linking, or moving documents, streamlining document management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>A new <strong>Print Receipts Images</strong> action has been added to the <strong>Expenses Card</strong> and <strong>List pages</strong>, allowing users to easily print receipt images for better expense tracking. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Users can customize their <strong>DocuFlow</strong> settings with sorting preferences and new pages, enhancing their workflow efficiency. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The <strong>Item Ledger Entry No.</strong> key has been added in the <strong>Tracking Specification extension</strong>, improving tracking capabilities for item movements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>A new <strong>Receipt Name</strong> field has been added to the <strong>Warehouse Receipt List page</strong>, providing clearer identification of receipts. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Users can now import and export data directly from <strong>Warehouse Receipts</strong> and <strong>Shipment List pages</strong> using Excel, simplifying data management. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>The <strong>Qty</strong> field on <strong>Sales Orders</strong> and <strong>Blanket Sales Orders</strong> now has drill-down functionality, allowing users to view detailed information easily. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>A missing dependency entry for <strong>Intrastat Core</strong> has been added, ensuring proper functionality for Intrastat reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The <strong>GetRecurringPurchaseLines</strong> action is now visible in the <strong>Log. Purchase Order page</strong>, making it easier for users to access recurring purchase information. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed an issue to ensure valid remaining quantity before inserting entries in <strong>blanket purchase order processing</strong>, preventing errors during order management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The <strong>Client ID</strong> field in the <strong>Dyn365 Integration Setup table</strong> has been updated to remove obsolete reasons, ensuring accurate integration setup. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>The tracking filter logic has been updated, correcting the location code reference in <strong>item tracking lines extension</strong>, improving tracking accuracy. <em>[mpisana]</em></li>
+<li class='subcontent-p'>The <strong>vehicle mapping</strong> in the <strong>Transporeon Purch. Line table</strong> relation has been updated for better alignment with transportation data. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>The <strong>authorization header handling</strong> in <strong>Transporeon API requests</strong> has been corrected, ensuring secure and accurate API interactions. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Unused user tasks and job queue entry parts have been removed, streamlining the system for better performance. <em>[mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.311.0 (PR #446) - 22/09/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>validation for CustomerId</strong> field in the <strong>Dyn365APIField</strong>, ensuring that only valid customer IDs are processed, which improves data accuracy and reduces errors in financial transactions. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced <strong>Import Requisition Worksheets</strong> action in the <strong>Logistic Role Center</strong>, allowing users to easily import requisition worksheets, streamlining the procurement process. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>email management</strong> by adding <strong>customer and vendor email</strong> fields, making it easier to communicate directly with customers and vendors from the system. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Receipt Name</strong> field to the <strong>Warehouse Receipt List page</strong>, providing clearer identification of receipts for better tracking and management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>Excel import/export functionality</strong> for <strong>Warehouse Receipts</strong> and <strong>Shipment List pages</strong>, enabling users to efficiently manage data in familiar formats. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated permissionset and added <strong>Warehouse page</strong> for <strong>Requisition Worksheet Extension</strong>, enhancing user access and functionality. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Removed unused user tasks and job queue entry parts, and added <strong>import action</strong> to the <strong>Logistic Role Center</strong>, improving system performance and user experience. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added new page customizations and modified visibility settings for various pages in the <strong>Profile</strong>, enhancing user interface and accessibility. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added fields for <strong>Additional Tax Standard Text Code</strong> and <strong>Additional Tax Country Filter</strong> in the <strong>Packaging Taxes page</strong>, improving tax management capabilities. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>Sales Order Service Info</strong> to filter linked purchase orders, allowing for better tracking and management of related orders. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Reason Code filter</strong> and related fields to <strong>commission calculations</strong>, improving accuracy in commission processing. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Inventory Reason Code</strong> functionality, allowing for better categorization and tracking of inventory movements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Made the <strong>"Ship-to code"</strong> field editable in the <strong>Purchase Requisition Worksheet</strong>, providing flexibility in shipping options. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected <strong>authorization header handling</strong> in <strong>Transporeon API requests</strong>, ensuring proper communication with external systems and preventing errors in data exchange. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>vehicle mapping</strong> in the <strong>Transporeon Purchase Line table relation</strong>, ensuring accurate vehicle data for logistics operations. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Corrected <strong>indexing</strong> in <strong>Evaluate calls</strong> for <strong>ExpenseLineKey</strong>, improving the accuracy of expense reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Fixed <strong>parameter</strong> for <strong>GetLinkedPurchOrderFilter</strong> in the <strong>Sales Order Service Info page extension</strong>, enhancing the functionality of linked purchase order tracking. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected reference from <strong>WarehouseReceiptHeader</strong> to <strong>WarehouseShipmentHeader</strong> in <strong>Packaging Management</strong>, ensuring accurate data relationships. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Validated <strong>Shipment Information</strong> on the <strong>Purchase Header</strong>, improving the accuracy of shipment data linked to purchases. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>tracking logic</strong> for linked purchase orders in <strong>Sales Order pages</strong>, enhancing the visibility and management of related orders. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>ENV code retrieval logic</strong> in <strong>Document Report Management</strong>, improving the accuracy of document reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.310.0 (PR #441) - 18/09/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>fields for Add. Tax Standard Text Code</strong> and <strong>Add. Tax Country Filter</strong> in the <strong>Packaging Taxes page</strong>, allowing users to better manage tax information for packaging. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>sales order service information</strong> to filter <strong>linked purchase orders</strong>, improving visibility and management of related orders. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>validation for Scrap Quantity</strong> on the <strong>Assembly Header</strong>, ensuring accurate reporting and management of scrap materials. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Introduced <strong>credit memo payment terms handling</strong>, streamlining the process for managing payments related to credit memos. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Set <strong>Purch. Order No.</strong> field as <strong>non-editable</strong> in the <strong>Sales Order extension</strong>, preventing accidental changes and ensuring data integrity. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Sell-to Customer No.</strong> field to <strong>Requisition Line</strong>, enhancing the ability to track customer-specific requisitions. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected reference from <strong>WarehouseReceiptHeader</strong> to <strong>WarehouseShipmentHeader</strong> in <strong>Packaging Management</strong>, ensuring accurate data handling in the system. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated tracking logic for <strong>linked purchase orders</strong> in <strong>Sales Order pages</strong>, improving order management and visibility. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Validated <strong>Shipment Information</strong> on <strong>Purchase Header</strong>, ensuring that all relevant shipment details are correctly captured and displayed. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved <strong>ENV code retrieval logic</strong> in <strong>Document Report Management</strong>, enhancing the accuracy of document reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>journal template inheritance logic</strong> for sales and purchase headers, streamlining the process of managing journal templates. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+
+        </div>
+        <div class="footer">
+            Last updated: 02 ottobre 2025 • 11:07 CET
+        </div>
+    </div>
 </body>
 </html>
