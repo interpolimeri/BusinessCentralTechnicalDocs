@@ -270,41 +270,43 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
-<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.318.0 (PR #463) - 01/10/2025</h2>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.318.0 (PR #468) - 08/10/2025</h2>
 </div>
 <div class='release-content'>
 <h3>✨ Features</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Introduced a new <strong>automated payment processing</strong> feature that allows users to schedule and manage payments directly within the system. This enhancement streamlines the payment workflow, reducing manual entry and ensuring timely transactions. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added a <strong>real-time financial dashboard</strong> that provides users with up-to-date insights into their financial status. This feature enables better decision-making by displaying key metrics and trends at a glance. <em>[mpisana]</em></li>
-</ul>
-</div>
-<h4>🛍️ Sales</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Enhanced the <strong>customer management</strong> module by integrating a new <strong>customer feedback system</strong>. Users can now collect and analyze customer feedback directly within the sales process, improving customer satisfaction and service quality. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Users can now <strong>restart job queue entries</strong> that are in an <strong>error status</strong> for external logistics, allowing for smoother processing and resolution of issues without needing to manually intervene. <em>[mpisana]</em></li>
+<li class='subcontent-p'>New <strong>document templates</strong> have been added specifically for <strong>Portugal</strong>, enhancing compliance and usability for users operating in that region. <em>[mpisana]</em></li>
+<li class='subcontent-p'>The <strong>tracking log</strong> has been enhanced with <strong>qualifier assignment</strong> and new <strong>enum values</strong>, improving the ability to categorize and track items effectively. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Users can now <strong>update journal template names</strong> in both <strong>G/L</strong> and <strong>VAT entries</strong>, streamlining the management of financial records. <em>[albertodone]</em></li>
+<li class='subcontent-p'>A new app has been introduced, providing a <strong>Profile</strong> specifically for <strong>Portugal</strong>, which will assist users in managing local requirements more effectively. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Scripts for <strong>changelog generation</strong> and <strong>publishing</strong> have been added, facilitating better documentation and communication of changes. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Fixed an issue with the <strong>invoice generation</strong> process that caused delays in sending invoices to customers. The system now generates and sends invoices promptly, ensuring timely billing and improved cash flow. <em>[mpisana]</em></li>
-</ul>
-</div>
-<h4>📦 Logistic</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Resolved a bug in the <strong>warehouse inventory tracking</strong> system that inaccurately displayed stock levels. Users can now trust that the inventory counts are accurate, leading to better stock management and fulfillment processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The <strong>tracking filter logic</strong> for non-transfer line entries in <strong>item tracking</strong> has been enhanced, ensuring more accurate filtering and reporting of items. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The <strong>payment due date logic</strong> in the <strong>Invoice Document</strong> extension for <strong>Spain</strong> has been updated, ensuring that due dates are calculated correctly for better cash flow management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>The correct <strong>subtype</strong> is now set for <strong>sales</strong> and <strong>purchase document details</strong> in <strong>packaging</strong>, improving the accuracy of document processing. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The error message for existing <strong>CRM orders</strong> during <strong>sales order processing</strong> has been updated, providing clearer guidance to users when issues arise. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The dimensions of the <strong>logo</strong> have been adjusted, ensuring that branding appears correctly across all documents. <em>[mpisana]</em></li>
+<li class='subcontent-p'>The <strong>space</strong> separator in the <strong>Invoice Document</strong> for <strong>Slovakia</strong> has been corrected, enhancing the clarity of the document layout. <em>[mpisana]</em></li>
+<li class='subcontent-p'>The <strong>space</strong> separator in the <strong>Invoice Document</strong> for <strong>Hungary</strong> has also been corrected, ensuring consistency in document presentation. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Fields have been marked as <strong>obsolete</strong> with appropriate reasons, helping users understand which fields are no longer in use and why. <em>[mpisana]</em></li>
+<li class='subcontent-p'>The <strong>packaging material code</strong> recalculation during the <strong>tax rate rebuilding</strong> on invoices has been updated, ensuring accurate tax calculations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The handling of <strong>temporary CRM orders</strong> in <strong>Sales Order Activities</strong> has been improved, allowing for better management of these orders. <em>[albertodone]</em></li>
+<li class='subcontent-p'>The logic to check if the <strong>Sales Header</strong> is empty during the <strong>Duplicate Check</strong> has been updated, preventing unnecessary errors and improving user experience. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated the <strong>system configuration settings</strong> to enhance performance and security. This change ensures that users experience a more stable and secure environment while using Business Central. <em>[albertodone]</em></li>
+<li class='subcontent-p'>A new <strong>system change</strong> has been implemented to enhance overall performance and user experience, ensuring that the application runs more smoothly. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -864,7 +866,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 08 ottobre 2025 • 02:17 CET
+            Last updated: 08 ottobre 2025 • 02:21 CET
         </div>
     </div>
 </body>
