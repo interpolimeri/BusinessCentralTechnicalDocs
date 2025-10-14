@@ -277,38 +277,63 @@
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enhanced company management with updates to <strong>system indicators</strong> and <strong>display names</strong>, allowing users to better identify and manage company-specific data. This improvement streamlines navigation and enhances clarity in financial reporting. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>exposure factoring filters</strong> and <strong>fields</strong> to <strong>customer ledger entries</strong>, enabling users to analyze customer exposure more effectively and make informed decisions regarding credit management. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Introduced a <strong>Payment Method Code</strong> field to the <strong>Sales Order List</strong> customization (profile accounting), allowing users to easily identify and manage different payment methods associated with sales orders. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added a <strong>bank account field</strong> to <strong>receivables cartera docs (ES)</strong>, facilitating better tracking and management of receivables linked to specific bank accounts in Spain. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Implemented <strong>document type filtering</strong> to the <strong>VAT statement</strong> and <strong>settlement line processing</strong>, improving the accuracy and efficiency of VAT reporting by allowing users to filter based on document types. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Introduced <strong>archiving functionality</strong> for <strong>price lists</strong>, enabling users to manage historical pricing data more effectively and reduce clutter in active price lists. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>status fields</strong> and <strong>fact boxes</strong> to the <strong>Fixed Assets EDS Card</strong> and <strong>List pages</strong>, providing users with quick access to important asset status information, enhancing asset management capabilities. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added a new app, enhancing functionality and integration options for users. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Refactored the <strong>SendPrintJob</strong> function to a public procedure in the <strong>OnPrem Print codeunit</strong>, improving the flexibility and usability of print job management. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added <strong>Variant Code</strong> in the <strong>Purchase Return Order Subform</strong>, allowing users to specify variants when processing purchase returns, enhancing inventory management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>exposure factoring filters</strong> and <strong>fields</strong> to <strong>Customer Ledger Entries</strong>. This allows users to better analyze and manage factoring processes directly within the ledger, improving visibility into customer exposure. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>VAT statement</strong> and <strong>settlement line processing</strong> with <strong>document type filtering</strong>. Users can now filter VAT-related entries by document type, simplifying tax reporting and reconciliation. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>bank account field</strong> to <strong>Receivables Cartera Docs (ES)</strong>. This provides users with direct visibility into the associated bank account for receivables, streamlining financial tracking. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>status fields</strong> and <strong>fact boxes</strong> to <strong>Fixed Assets EDS Card</strong> and <strong>List Pages</strong>. Users can now view asset statuses and related details at a glance, improving asset management efficiency. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Payment Method Code field</strong> to <strong>Sales Order List</strong> customization for accounting profiles. This enables users to quickly identify and manage payment methods directly from the sales order list, enhancing payment tracking. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>archiving functionality</strong> for <strong>Price Lists</strong>. Users can now archive outdated price lists, keeping the system organized and ensuring only relevant pricing data is active. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>item tracking summary page</strong> and enhanced <strong>requisition line tracking fields</strong>. Users can now view summarized tracking details and manage requisition lines more effectively, improving inventory control and traceability. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Variant Code</strong> to <strong>Purchase Return Order Subform</strong>. This allows users to specify and manage item variants directly within purchase return orders, ensuring accurate returns processing. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced company management with <strong>system indicator</strong> and <strong>display name updates</strong>. Users can now easily identify the active company and its display name, reducing confusion when working across multiple companies. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added new app - <strong>Profile IT</strong>. This introduces additional functionality tailored to specific user profiles, improving customization options. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated the <strong>Intrastat report line processing</strong> to utilize <strong>location post codes</strong>, ensuring accurate reporting and compliance with regulations regarding location-based data. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Common Data Layer</strong> dependency to the <strong>Base ES application</strong>, improving system stability and integration capabilities. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added a <strong>Load-from Code</strong> field to the <strong>Blanket Purchase Orders page</strong>, enhancing user experience by allowing easier access to relevant data. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Increased the <strong>description field length</strong> in the <strong>Add. Cost Purchase Line table</strong>, allowing users to provide more detailed descriptions for additional costs associated with purchase lines. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>packaging tax management</strong> by refining the <strong>tax rate filtering logic</strong>, ensuring more accurate tax calculations and compliance. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>ADMIN365 user</strong> to the permission check in <strong>Correction Management</strong>, improving security and access control for correction processes. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated <strong>Intrastat report line fields</strong> based on <strong>document type</strong> and <strong>transport method</strong>, ensuring that the report reflects the most accurate and relevant information for compliance. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Corrected <strong>transport method assignment</strong> in <strong>Intrastat report processing</strong>, resolving issues with incorrect transport method data being reported. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Updated the <strong>print CoA procedure</strong>, enhancing the accuracy and reliability of the print process for Chart of Accounts. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>Intrastat report line processing</strong> to use <strong>location post code</strong>. This ensures accurate reporting of Intrastat data based on location, improving compliance with EU regulations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>packaging tax management</strong> by refining <strong>tax rate filtering logic</strong>. Users can now apply tax rates more accurately, reducing errors in tax calculations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Intrastat report line fields</strong> based on <strong>document type</strong> and <strong>transport method</strong>. This improves the accuracy of Intrastat reporting by aligning fields with the correct transaction details. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected <strong>transport method assignment</strong> in <strong>Intrastat report processing</strong>. This resolves errors in transport method categorization, ensuring compliance with reporting standards. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Load-from Code field</strong> to <strong>Blanket Purchase Orders page</strong>. This provides users with additional filtering options for purchase orders, improving procurement management. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Common Data Layer dependency</strong> to the <strong>Base ES application</strong>. This ensures compatibility and stability when integrating with other applications, reducing system errors. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Increased <strong>description field length</strong> in <strong>Additional Cost Purchase Line table</strong>. Users can now input longer descriptions, improving clarity and detail in purchase records. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>ADMIN365 user</strong> to <strong>permission check</strong> in <strong>Correction Management</strong>. This ensures administrative users have the necessary permissions for correction processes, improving security and control. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>print CoA procedure</strong>. This resolves issues with printing the chart of accounts, ensuring accurate and complete outputs. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Implemented various system changes to improve overall performance and user experience, ensuring a smoother operation of Business Central functionalities. *[albertod</li>
+<li class='subcontent-p'>Refactored <strong>SendPrintJob</strong> to a <strong>public procedure</strong> in the <strong>OnPrem Print codeunit</strong>. This improves system extensibility and allows users to customize print job handling more effectively. <em>[mpisana]</em></li>
 </ul>
 </div>
 </div></div>
@@ -923,7 +948,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 14 ottobre 2025 • 23:25 CET
+            Last updated: 14 ottobre 2025 • 23:28 CET
         </div>
     </div>
 </body>
