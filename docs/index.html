@@ -270,6 +270,90 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.325.0 (PR #487) - 23/10/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>checklist management</strong> with setup and line functionalities. This allows users to create, manage, and track checklists for financial processes, improving task organization and compliance tracking. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Introduced the <strong>Sales Document List with VAT Details</strong> report. Users can now generate detailed VAT reports for sales documents, ensuring compliance with tax regulations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>Packaging Tax Entry</strong> and <strong>Tax Rate calculation</strong>. This ensures accurate tax calculations for packaging-related transactions, reducing errors in tax reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added the ability to <strong>export VAT data in CSV format</strong> for Spain. This simplifies tax reporting by enabling users to generate exportable files for external systems. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>document type filtering</strong> to the <strong>VAT statement</strong> and <strong>settlement line processing</strong>. This allows users to filter VAT data by document type, improving accuracy and efficiency in tax reporting. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>archiving functionality</strong> for price lists. Users can now archive outdated price lists, keeping their pricing data organized and relevant. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>status fields</strong> and <strong>fact boxes</strong> to the <strong>Fixed Assets EDS Card</strong> and <strong>List pages</strong>. This provides users with a clearer overview of asset statuses and related details. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>document type filtering</strong> in <strong>Sales Detail Management</strong>. This improves the ability to filter and manage sales data by document type, streamlining sales processes. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Payment Method Code</strong> field to the <strong>Sales Order List</strong> (profile accounting). This helps users quickly identify and manage payment methods for sales orders. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>location code</strong> in the <strong>Purchase Requisition Worksheet</strong>. This ensures accurate location tracking for purchase requisitions, improving inventory and procurement management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added the <strong>Variant Code</strong> field to the <strong>Purchase Return Order Subform</strong>. This allows users to specify item variants in purchase return orders, improving accuracy in returns processing. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added an <strong>item tracking summary page</strong> and enhanced <strong>requisition line tracking fields</strong>. This provides users with a consolidated view of item tracking details, improving inventory management and traceability. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>💳 Credit</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>exposure factoring filters</strong> and fields to <strong>customer ledger entries</strong>. This enables users to better analyze and manage customer credit exposure, improving credit control processes. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>field ID</strong> for <strong>Open Price</strong> in <strong>Sales Detail tables</strong>. This resolves issues with incorrect field references, ensuring accurate data handling. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed the <strong>Sales Detail filter</strong> to exclude the 'NEW' security status in the API. This ensures that only relevant data is included in API responses. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Intrastat report line processing</strong> to use the <strong>location post code</strong>. This improves the accuracy of Intrastat reporting for compliance purposes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed the <strong>transport method assignment</strong> in <strong>Intrastat report processing</strong>. This ensures correct transport method data is included in reports, improving compliance. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>print CoA procedure</strong>. This resolves issues with printing the Chart of Accounts, ensuring accurate and complete output. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed the <strong>deletion functionality</strong> in the <strong>Message Center</strong>. Users can now delete messages without encountering errors, improving communication management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed an issue where <strong>empty messages</strong> were created after converting a <strong>Blanket Order to an Order</strong>. This ensures clean and accurate message handling during order conversions. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Load-from Code</strong> field to the <strong>Blanket Purchase Orders page</strong>. This resolves issues with missing data, ensuring accurate purchase order processing. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Adjusted <strong>context menu positioning</strong> for better visibility in the chat interface. This improves usability by ensuring menus are displayed in accessible locations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Escaped <strong>DSNavKey</strong> in <strong>RefreshDocuFlowEntriesFromRecRef</strong> for proper URI handling. This resolves issues with incorrect URI processing, ensuring smooth system operations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Increased the <strong>description field length</strong> in the <strong>Add. Cost Purchase Line table</strong>. This allows users to input longer descriptions, improving data clarity and flexibility. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>company management</strong> with updates to the <strong>system indicator</strong> and <strong>display name</strong>. This provides clearer identification of companies within the system, improving user navigation. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.319.0 (PR #474) - 14/10/2025</h2>
 </div>
 <div class='release-content'>
@@ -948,7 +1032,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 14 ottobre 2025 • 23:28 CET
+            Last updated: 23 ottobre 2025 • 02:29 CET
         </div>
     </div>
 </body>
