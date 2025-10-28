@@ -278,77 +278,78 @@
 <div class='subcontent'>
 <ul>
 <li class='subcontent-p'>Added <strong>Rounding Precision</strong> field to <strong>Packaging Tax Rate</strong>. This allows users to define precise rounding rules for tax calculations, ensuring compliance with tax regulations and improving accuracy in financial reporting. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Vend. Aging Forecast XLSX</strong> report. This new report provides a detailed forecast of vendor aging in Excel format, making it easier to analyze and share financial data. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>Packaging Tax Entry</strong> and <strong>Tax Rate Calculation</strong> by adding <strong>Source Country/Region Code</strong>, <strong>Source VAT Business Posting Group</strong>, and <strong>Source Location Code</strong> to tax rates. This ensures more accurate tax calculations based on source-specific data. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>proforma field</strong> to <strong>Report Setup</strong> and updated related reports. This enables users to generate proforma invoices directly, improving document management and customer communication. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added new <strong>Finance IT</strong> app. This app introduces specialized tools and features tailored for financial operations, streamlining workflows and enhancing productivity for finance teams. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>Packaging Tax Entry</strong> and <strong>Tax Rate calculation</strong> by adding <strong>Source Country/Region Code</strong>, <strong>Source VAT Business Posting Group</strong>, and <strong>Source Location Code</strong>. This provides more detailed tax rate configurations for better tracking and reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>"Vend. Aging Forecast XLSX" report</strong>. Users can now generate aging forecasts for vendor balances in Excel format, improving analysis and decision-making for accounts payable. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Sales Document List with VAT Details</strong> report. This report provides detailed VAT information for sales documents, helping users ensure compliance and streamline VAT reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Export in CSV format for IEPNR tax in Spain</strong>. Users can now export tax data in a standardized format for easier submission to Spanish tax authorities. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated linked <strong>Sales Order</strong> in <strong>Purchase Line</strong> and linked <strong>Purchase Order</strong> in <strong>Sales Line</strong>. This improves traceability between sales and purchase documents, making it easier to track related transactions. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added an option in <strong>Sales Setup</strong> to disable <strong>order correction</strong> on credit memo posting. This provides more control over credit memo processing, reducing errors and ensuring compliance with company policies. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>document type filtering</strong> in <strong>Sales Detail Management</strong>. Users can now filter documents more effectively, improving navigation and data analysis. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added <strong>Sales Document List with VAT Details</strong> report. This report provides a comprehensive overview of sales documents, including VAT details, for better financial tracking and compliance. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>linked Sales Order in Purchase Line</strong> and <strong>linked Purchase Order in Sales Line</strong>. Users can now easily navigate between related sales and purchase documents, improving traceability and workflow efficiency. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added validation for <strong>location code</strong> when copying documents from <strong>Sales Order</strong>. This ensures that copied documents maintain accurate location information, reducing errors in sales processes. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added an option to disable <strong>order correction</strong> on <strong>credit memo posting</strong> in <strong>Sales Setup</strong>. This provides users with more control over credit memo processing, preventing unintended changes to posted orders. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>new email templates for Italy</strong>. These templates simplify communication with Italian customers, ensuring compliance with local standards and improving efficiency in email correspondence. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>🛒 Purchase</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>location code</strong> in <strong>Purchase Requisition Worksheet</strong>. This ensures that the correct location code is applied during requisition processing, reducing errors in purchase workflows. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added validation for <strong>due date</strong> and <strong>country of origin</strong> in <strong>Requisition Line Tracking</strong>. This ensures accurate tracking of requisition lines, improving procurement workflows and compliance. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>location code</strong> in <strong>Purchase Requisition Worksheet</strong>. This ensures that requisition worksheets reflect accurate location information, reducing errors in purchase planning. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>assembly order cue type</strong> and <strong>activities page</strong> for the <strong>Logistic Role Center</strong>. This provides logistics teams with a clear overview of assembly orders and related activities, improving operational efficiency. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Enhanced <strong>Export Report</strong> to aggregate <strong>packaging tax entries</strong> and <strong>weights</strong>. This simplifies reporting for packaging-related taxes and ensures accurate data aggregation. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Packaging features</strong>, including new tables, pages, and extensions. These enhancements support better management of packaging operations, improving warehouse and shipping workflows. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>assembly order cue type</strong> and <strong>activities page</strong> for the <strong>Logistic Role Center</strong>. This provides warehouse staff with better visibility into assembly orders and related activities, improving operational efficiency. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated description for inserting <strong>Lot No. Information</strong>. This change clarifies the process for adding lot numbers, reducing confusion and improving inventory tracking. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>DocuFlow Factbox</strong> to the <strong>Issued Reminder Card</strong> page. This provides quick access to document flow details, improving visibility and document tracking. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Disabled <strong>DocuFlow</strong> and <strong>background email settings</strong> on environment copy. This prevents unintended email or document processing in copied environments, ensuring data integrity during testing or migration. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added dependencies for <strong>DocuFlow</strong> and <strong>Email Management</strong> to the sandbox environment. This ensures compatibility and functionality for document and email management in test environments. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Created a <strong>new role center for accounting IT</strong>. This role center provides IT staff with tailored tools and actions for managing accounting-related configurations and processes. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>page extension for Profile Assembly Orders</strong> with <strong>location filtering</strong>. This allows users to filter assembly orders by location, improving navigation and operational control. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>profiles for Accounting Purchases and Sales</strong> with customizations. These profiles streamline workflows for accounting staff, providing tailored tools for managing purchases and sales. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Role Center pages for Accounting Purchases and Sales</strong> with actions and layouts. These pages improve usability and efficiency for accounting staff managing purchase and sales processes. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>DocuFlow Factbox</strong> to the <strong>Issued Reminder Card page</strong>. This provides users with quick access to document flow information, improving visibility and workflow efficiency. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Disabled <strong>DocuFlow</strong> and <strong>background email settings</strong> on environment copy. This prevents unintended configurations from being carried over during environment setup, ensuring clean initialization. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added dependencies for <strong>DocuFlow</strong> and <strong>Email Management</strong> to sandbox environments. This ensures compatibility and functionality for document and email workflows in sandbox setups. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added initial implementation of <strong>Document Report PT</strong>. This report provides users with detailed document information for improved tracking and reporting. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>field ID</strong> for <strong>Open Price</strong> in <strong>Sales Detail tables</strong>. This resolves issues with incorrect field references, ensuring accurate data display. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Application Area</strong> to fields in <strong>Customer Bill</strong> and <strong>Sales Document reports</strong>. This ensures fields are visible and functional based on user roles and permissions. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Fixed <strong>deletion functionality</strong> in <strong>Message Center</strong> to prevent empty messages from being created after converting a blanket order to an order. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>country code</strong> to Italy in settings and added new dependency in <strong>app.json</strong>. This ensures compatibility with Italian localization requirements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>field ID</strong> for <strong>Open Price</strong> in <strong>Sales Detail tables</strong>. This resolves issues with incorrect field references, ensuring accurate data handling. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Application Area</strong> to fields in <strong>Customer Bill</strong> and <strong>Sales Document reports</strong>. This ensures proper visibility and usability of these fields in the system. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Application Area</strong> to date fields in <strong>Packaging Tax Purchases Summary report</strong>. This improves usability and ensures compliance with system configurations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated dependencies in <strong>Sandbox app.json</strong> for compatibility. This resolves issues with app dependencies, ensuring smooth operation in sandbox environments. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>Sales Detail filter</strong> to exclude documents with a 'NEW' security status in the API. This ensures only relevant documents are included in API responses, improving data accuracy. <em>[albertodone]</em></li>
-</ul>
-</div>
-<h4>📦 Logistic</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Added <strong>application area</strong> to date fields in the <strong>Packaging Tax Purchases Summary report</strong>. This ensures the fields are accessible and functional for users with the appropriate permissions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed <strong>deletion functionality</strong> in <strong>Message Center</strong> to prevent empty messages from being created after converting <strong>Blanket Orders to Orders</strong>. This ensures cleaner message handling and reduces clutter. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Sales Detail filter</strong> to exclude <strong>'NEW' security status</strong> in API. This prevents unintended inclusion of new security statuses in API responses, improving data accuracy. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>dependencies</strong> in <strong>app.json</strong> for compatibility with Advanced Document Reporting. This ensures seamless integration and functionality with the latest reporting features. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Escaped <strong>DSNavKey</strong> in <strong>RefreshDocuFlowEntriesFromRecRef</strong> to handle URIs correctly. This resolves issues with incorrect URI handling, ensuring reliable document flow processing. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Adjusted <strong>context menu positioning</strong> for better visibility in the chat interface. This improves usability and ensures menu options are easily accessible. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Adjusted <strong>context menu positioning</strong> for better visibility in the chat interface. This improves usability and ensures that menus are displayed correctly during interactions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Escaped <strong>DSNavKey</strong> in <strong>RefreshDocuFlowEntriesFromRecRef</strong> for proper URI handling. This resolves issues with incorrect URI formatting, ensuring smooth document flow operations. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enabled <strong>sales and purchase lines rebuild</strong> during the initialization of a new environment. This ensures that data structures are correctly set up, improving system reliability and performance. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enabled <strong>sales and purchase lines rebuild</strong> during initialization of new environments. This ensures that new environments are set up with accurate and complete data structures for sales and purchase processes. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -1116,7 +1117,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 28 ottobre 2025 • 09:56 CET
+            Last updated: 28 ottobre 2025 • 09:59 CET
         </div>
     </div>
 </body>
