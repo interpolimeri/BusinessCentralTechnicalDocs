@@ -315,26 +315,14 @@
 <li class='subcontent-p'>Added <strong>profiles for Accounting Purchases and Sales</strong> with customizations. These profiles streamline workflows for accounting staff, providing tailored tools for managing purchases and sales. <em>[mpisana]</em></li>
 <li class='subcontent-p'>Added <strong>Role Center pages for Accounting Purchases and Sales</strong> with actions and layouts. These pages improve usability and efficiency for accounting staff managing purchase and sales processes. <em>[mpisana]</em></li>
 <li class='subcontent-p'>Added <strong>DocuFlow Factbox</strong> to the <strong>Issued Reminder Card page</strong>. This provides users with quick access to document flow information, improving visibility and workflow efficiency. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Disabled <strong>DocuFlow</strong> and <strong>background email settings</strong> on environment copy. This prevents unintended configurations from being carried over during environment setup, ensuring clean initialization. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added dependencies for <strong>DocuFlow</strong> and <strong>Email Management</strong> to sandbox environments. This ensures compatibility and functionality for document and email workflows in sandbox setups. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added initial implementation of <strong>Document Report PT</strong>. This report provides users with detailed document information for improved tracking and reporting. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
-<h4>💰 Finance</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Updated <strong>country code</strong> to Italy in settings and added new dependency in <strong>app.json</strong>. This ensures compatibility with Italian localization requirements. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated <strong>field ID</strong> for <strong>Open Price</strong> in <strong>Sales Detail tables</strong>. This resolves issues with incorrect field references, ensuring accurate data handling. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Application Area</strong> to fields in <strong>Customer Bill</strong> and <strong>Sales Document reports</strong>. This ensures proper visibility and usability of these fields in the system. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Application Area</strong> to date fields in <strong>Packaging Tax Purchases Summary report</strong>. This improves usability and ensures compliance with system configurations. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated dependencies in <strong>Sandbox app.json</strong> for compatibility. This resolves issues with app dependencies, ensuring smooth operation in sandbox environments. <em>[albertodone]</em></li>
-</ul>
-</div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
 <li class='subcontent-p'>Fixed <strong>deletion functionality</strong> in <strong>Message Center</strong> to prevent empty messages from being created after converting <strong>Blanket Orders to Orders</strong>. This ensures cleaner message handling and reduces clutter. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Open Price</strong> in <strong>Sales Detail tables</strong>. This resolves issues with incorrect field references, ensuring accurate data handling. <em>[albertodone]</em></li>
 <li class='subcontent-p'>Updated <strong>Sales Detail filter</strong> to exclude <strong>'NEW' security status</strong> in API. This prevents unintended inclusion of new security statuses in API responses, improving data accuracy. <em>[albertodone]</em></li>
 </ul>
 </div>
@@ -343,13 +331,6 @@
 <ul>
 <li class='subcontent-p'>Adjusted <strong>context menu positioning</strong> for better visibility in the chat interface. This improves usability and ensures that menus are displayed correctly during interactions. <em>[albertodone]</em></li>
 <li class='subcontent-p'>Escaped <strong>DSNavKey</strong> in <strong>RefreshDocuFlowEntriesFromRecRef</strong> for proper URI handling. This resolves issues with incorrect URI formatting, ensuring smooth document flow operations. <em>[albertodone]</em></li>
-</ul>
-</div>
-<h3>🔧 Other Changes</h3>
-<h4>⚙️ System</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Enabled <strong>sales and purchase lines rebuild</strong> during initialization of new environments. This ensures that new environments are set up with accurate and complete data structures for sales and purchase processes. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -1117,7 +1098,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 28 ottobre 2025 • 09:59 CET
+            Last updated: 28 ottobre 2025 • 10:03 CET
         </div>
     </div>
 </body>
