@@ -270,6 +270,82 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.329.0 (PR #502) - 14/11/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>API pages</strong> for <strong>Customers</strong> and <strong>Vendors</strong> to integrate with external systems like Arxivar. This allows users to streamline customer and vendor data management across platforms. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Split <strong>fields for Purchase and Sales Invoice Posting Nos.</strong> and <strong>Credit Memo Posting Nos.</strong> in category setups. Users can now define separate posting numbers for invoices and credit memos, improving clarity in financial reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>country of origin retrieval</strong> for <strong>Intrastat lines</strong> in report processing for Italy. This ensures compliance with Italian Intrastat reporting requirements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>Causale tags</strong> and <strong>order data handling</strong> in <strong>E-Invoice processing</strong>. Users can now include specific tags and order details in electronic invoices, enhancing compliance and accuracy. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>cost regulation field</strong> to <strong>Intrastat Line</strong> and <strong>Entry/Exit Point tables</strong>. This enables users to manage cost adjustments directly within Intrastat reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>cost regulation by quantity</strong> in <strong>Intrastat management</strong> and <strong>entry points</strong>. Users can now calculate costs based on quantities, improving accuracy in Intrastat reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Blocked <strong>Combine Shipment report</strong> and added a prompt to use <strong>Extended Combined Shipment</strong>. This ensures users leverage the enhanced shipment functionality for better consolidation and reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added validation for <strong>location code</strong> when copying documents from <strong>Sales Orders</strong>. This prevents errors caused by invalid location codes during document duplication. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>requisition line</strong> to calculate <strong>Due Date</strong> based on availability days. This helps purchasers plan better by automatically adjusting due dates based on stock availability. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated linked <strong>Sales Order in Purchase Line</strong> and linked <strong>Purchase Order in Sales Line</strong>. Users can now easily track connections between sales and purchase documents, improving visibility and coordination. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Lot information</strong> on <strong>Return Shipment reporting</strong>. Users can now track lot details in return shipments, improving traceability and inventory management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>assembly order cue type</strong> and <strong>activities page</strong> for the <strong>logistic role center</strong>. This provides warehouse staff with quick access to assembly order tasks, streamlining operations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Created a new <strong>role center for accounting IT</strong>. This provides Italian accountants with a tailored workspace for managing financial tasks efficiently. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>page extension</strong> for <strong>Profile Assembly Orders</strong> with location filtering. Users can now filter assembly orders by location, improving navigation and task management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>profiles for Accounting Purchases and Sales</strong> with customizations. These profiles offer tailored views and actions for accounting tasks, simplifying workflows. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Accounting Purchase and Sales Role Center pages</strong> with actions and layout. This enhances usability for accounting teams by providing dedicated role centers for purchase and sales tasks. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added new <strong>email templates for Italy</strong>. Users can now utilize localized templates for email communications, ensuring consistency and compliance. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>location code validation</strong> in <strong>Import Requisition Worksheet</strong> to prevent invalid location codes. This ensures accurate location data during requisition imports. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Prevented processing of <strong>item journal lines with charges</strong> in <strong>CheckCountryOfOrigin</strong>. This resolves errors caused by invalid country of origin data in journal lines. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Scheduled <strong>item history cost calculation</strong> now only runs for valid costing periods. This prevents errors and ensures accurate cost calculations. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Commented out unused <strong>GetWorkingDocument procedure</strong> in <strong>sales report extension</strong>. This improves system performance by removing unnecessary code. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed unused <strong>currency code variable</strong> from <strong>payment lines factbox page</strong>. This simplifies the page layout and eliminates redundant elements. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.326.0 (PR #491) - 27/10/2025</h2>
 </div>
 <div class='release-content'>
@@ -1098,7 +1174,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 14 novembre 2025 • 00:56 CET
+            Last updated: 14 novembre 2025 • 01:05 CET
         </div>
     </div>
 </body>
