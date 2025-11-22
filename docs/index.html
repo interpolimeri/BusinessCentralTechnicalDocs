@@ -270,41 +270,106 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
-<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.332.0 (PR #502) - 13/11/2025</h2>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.332.0 (PR #515) - 22/11/2025</h2>
 </div>
 <div class='release-content'>
 <h3>✨ Features</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>new functionality</strong> to streamline financial reporting processes. Users can now generate <strong>customized financial reports</strong> directly from the <strong>General Ledger</strong> module, improving efficiency and reducing manual work. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>payment reconciliation</strong> by introducing a new <strong>auto-matching feature</strong> for bank transactions. This reduces errors and saves time during the reconciliation process. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>empty GUID handling</strong> in document flow management procedures to ensure smoother processing of documents with missing identifiers. This prevents errors and improves document tracking. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>Accounting Role Center layout</strong> to include <strong>E-Document activities</strong>, providing users with quicker access to e-document management tools. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>factoring amount calculation</strong> to credit management processes, enabling users to calculate and track amounts related to factoring agreements directly in the system. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Introduced new fields for <strong>factorized amounts</strong> and filters in the <strong>Customer Finance extension</strong>, allowing users to better manage and analyze customer financial data. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Italian translations</strong> for <strong>Reminder Emails</strong>, ensuring better localization and usability for Italian-speaking users. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>fields for Purchase and Sales Invoice and Credit Memo Posting Nos.</strong> in category setups, enabling more granular control over posting number assignments. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>country of origin retrieval</strong> for Intrastat lines in report processing, improving compliance with reporting requirements for international trade. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>cost regulation field</strong> to Intrastat Line and Entry/Exit Point tables, allowing users to manage cost adjustments more effectively in Intrastat reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>original due date field</strong> to the <strong>Customer Ledger Entries page</strong>, helping users track and manage payment deadlines more efficiently. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>Requisition Line</strong> to calculate the <strong>Due Date</strong> based on availability days, improving accuracy in procurement planning. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Introduced a <strong>new comment system</strong> for <strong>Sales Orders</strong>, allowing users to add notes and track team discussions directly on orders. This improves collaboration and ensures all relevant information is stored in one place. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added a <strong>Chat Add-In page</strong> to the <strong>Warehouse Receipt</strong> and hid standard notes, enabling users to communicate more effectively within the system while maintaining a cleaner interface. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>email templates</strong> for order cancellation, closure, delay, and modification, streamlining communication with customers and improving operational efficiency. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Promised Delivery Date field</strong> to the <strong>Sales Order page</strong>, helping users manage customer expectations and track delivery commitments. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated labels in the <strong>Sales Document VAT Details report</strong> for clarity and consistency in English terminology, ensuring better understanding of VAT details. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Vendor Credit Memo number field</strong> to the <strong>Posted Purchase Credit Memos page</strong>, making it easier to track and reference vendor credit memos. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added customizations for <strong>Purchase Invoice</strong> and related forms, improving usability and alignment with specific accounting requirements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added integration for <strong>purchase invoices management</strong>, enabling seamless handling of purchase invoices with external systems. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Lot No.</strong> and <strong>Variant Code fields</strong> to the <strong>Item Ledger Entries page</strong>, providing users with more detailed tracking of inventory movements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added a <strong>bill of lading number field</strong> to the <strong>Import Requisition Line Tracking Summary</strong>, improving traceability for imported goods. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Lot information</strong> to the <strong>Return Shipment reporting</strong>, enhancing visibility into returned inventory. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added sorting by <strong>date field</strong> and updated logic for using global FIFO on the <strong>Select Entries</strong> page in <strong>Item Tracking Lines</strong>, improving inventory management workflows. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Blocked the <strong>Combine Shipment report</strong> and prompted users to use the <strong>Extended Combined Shipment</strong>, ensuring users follow the updated process for shipment consolidation. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>💳 Credit</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new <strong>Credit Management module</strong> with event subscribers and permissions, enabling users to better manage credit-related processes and ensure compliance with company policies. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new app for <strong>Base IT for Italy</strong>, providing localized functionality tailored to Italian business requirements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated dependencies in <strong>app.json</strong> for the Finance IT application, ensuring compatibility with the latest system updates. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Fixed an issue where <strong>VAT calculations</strong> were incorrect in specific scenarios. The system now calculates VAT accurately, ensuring compliance with tax regulations and preventing reporting errors. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Corrected the <strong>version number</strong> in the Document Report IT and updated dependencies, ensuring proper version tracking and compatibility. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed an issue in the <strong>Payment Terms extension</strong> to correct layout control references, improving the accuracy of payment term displays. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Scheduled <strong>item history cost calculation</strong> now only runs for valid costing periods, preventing errors in cost reporting. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the management of <strong>Dis. Ord. Corr. on Credit Memo</strong>, ensuring accurate handling of discounts and corrections. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>field order and validation</strong> for <strong>Vendor Shipment</strong> and <strong>B/L Number</strong>, improving data accuracy and usability. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Prevented processing of <strong>item journal lines with charges</strong> in <strong>CheckCountryOfOrigin</strong>, ensuring compliance with country-specific requirements. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Resolved a problem with <strong>warehouse shipment tracking</strong>, where incorrect statuses were displayed for partially shipped orders. Users can now rely on accurate status updates for better inventory management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>Pack Tax Purch Summary report</strong>, improving the accuracy and clarity of tax-related summaries. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Removed the <strong>"shpt date" field</strong> in the shipment report for Spain, aligning the report with local requirements. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed <strong>app.json</strong>, resolving configuration issues and ensuring proper system functionality. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>system performance</strong> to improve the speed of <strong>data imports</strong> and <strong>report generation</strong>. This ensures smoother operations for users handling large datasets. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added a <strong>permission set</strong> for the Arxivar connector, improving security and access control for document management integrations. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Renamed files to improve organization and clarity in the system. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -1214,7 +1279,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 22 novembre 2025 • 01:27 CET
+            Last updated: 22 novembre 2025 • 01:29 CET
         </div>
     </div>
 </body>
