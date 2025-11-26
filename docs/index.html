@@ -270,41 +270,74 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
-<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.334.0 (PR #515) - 22/11/2025</h2>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.334.0 (PR #522) - 26/11/2025</h2>
 </div>
 <div class='release-content'>
 <h3>✨ Features</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>new functionality</strong> to streamline financial reporting processes. Users can now generate <strong>customized financial reports</strong> directly from the <strong>General Ledger</strong> module, improving efficiency and accuracy in reporting. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>payment reconciliation</strong> by introducing a new <strong>auto-matching feature</strong> for bank transactions. This reduces manual effort and ensures faster, more accurate reconciliation. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>posting description</strong> to <strong>Purchase Credit Memos</strong> and <strong>Invoices</strong>, enabling users to include detailed descriptions for better clarity in financial records. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Customized <strong>Chart of Accounts layout</strong> to hide unnecessary fields for Italy, simplifying the view for accountants and improving usability. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>reminder</strong> and <strong>issued reminder activities</strong> to the <strong>Accounting Sales Role Center page</strong>, helping users track and manage reminders directly from their role center. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Introduced a <strong>new discount management feature</strong> in <strong>Sales Orders</strong>, allowing users to apply and track discounts more effectively. This helps improve pricing transparency and customer satisfaction. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Adjusted <strong>posting date</strong> for <strong>sales orders</strong> and <strong>purchase orders</strong> created from <strong>blanket orders</strong>, ensuring accurate posting dates for better alignment with financial processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added actions for <strong>downloading</strong> and <strong>printing Certificate of Analysis</strong> in the <strong>Sales Shipment Card</strong>, allowing users to easily access and share quality assurance documents. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>posting date field</strong> to the <strong>Blanket Purchase Order page</strong>, enabling users to specify and track posting dates directly on blanket purchase orders. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added actions for <strong>Item By Event</strong> in the <strong>Purchase Requisition Worksheet page</strong>, improving item tracking and event-based procurement processes. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added actions for <strong>Item and Lot by Event</strong> in the <strong>Requisition Worksheet page</strong>, enhancing inventory management and event-based tracking capabilities. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Frame Size field</strong> to the <strong>DocuFlow Library</strong>, resolving refresh issues and improving document management workflows. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added a new <strong>Work Order report</strong>, providing users with a detailed overview of work orders for better operational tracking. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added dependencies for <strong>Common Data Layer</strong> and <strong>Doc Shipping Common Data Layer</strong> to the <strong>Packing App</strong>, ensuring seamless integration and improved functionality. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Doc. Shipping Info management</strong> and personalized <strong>Doc. Shipping Info</strong> and <strong>Factbox pages</strong>, enabling users to manage and customize shipping information more effectively. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Implemented <strong>EDocArx Document Type management</strong> and related UI components, enhancing document type handling and user interface customization. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>employee location retrieval</strong> with a default location option and introduced a new token: <strong>MYDEFAULTLOCATIONS</strong>, simplifying location management for employees. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>create labels</strong> on Excel file creation, improving label generation for exported files. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Fixed an issue where <strong>VAT calculations</strong> were incorrect in certain scenarios. The system now ensures accurate VAT amounts, preventing errors in tax reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Reordered <strong>date fields</strong> in the <strong>PO/BPO page</strong> for better clarity, ensuring users can easily identify and manage date-related information. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Corrected <strong>page customization name</strong> for the <strong>Chart of Accounts layout</strong>, resolving naming inconsistencies and improving customization accuracy. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Removed hidden <strong>shortcut dimension fields</strong> in the <strong>Purchase Invoice Subform</strong>, simplifying the view and eliminating unnecessary fields. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Resolved a problem with <strong>warehouse shipment tracking</strong> where incorrect statuses were displayed. Users can now rely on accurate shipment status updates, improving warehouse operations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>variant mandatory logic</strong> in the <strong>warehouse receipt export process</strong>, ensuring accurate handling of mandatory variants during exports. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enabled <strong>export</strong> and <strong>import functionality</strong> for <strong>warehouse receipts</strong>, allowing users to manage warehouse receipt data more efficiently. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Handled <strong>zero ETA</strong> in <strong>Requisition Line availability days calculation</strong>, ensuring accurate availability calculations even when ETA is not provided. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>decimal places</strong> for the <strong>Cost Regulation field</strong> in the <strong>Entry/Exit Point table</strong>, improving precision in cost calculations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Increased field size for <strong>Code</strong> and <strong>Description</strong> in the <strong>Employee Timetable</strong>, allowing users to input longer and more detailed information. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>system performance</strong> to improve the speed of <strong>data processing</strong> in large datasets. This ensures smoother operations for users handling high volumes of transactions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>dependencies</strong> and improved <strong>system integration</strong> for better performance and compatibility across modules. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -1319,7 +1352,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 26 novembre 2025 • 03:20 CET
+            Last updated: 26 novembre 2025 • 03:22 CET
         </div>
     </div>
 </body>
