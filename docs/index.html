@@ -270,6 +270,62 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.335.0 (PR #530) - 30/11/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>preview pane</strong> functionality in the <strong>Expenses Card DocuFlow Factbox</strong>. Users can now view document details directly upon opening the page, improving efficiency in expense management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>credit management calculations</strong> and updated the <strong>Customer Statistics FactBox</strong> to display more accurate customer data, including negative exposure values. This helps users better assess credit risk. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Exposure field</strong> to the <strong>Customer Statistics FactBox</strong>, enabling users to track exposure values directly within customer statistics for improved financial insights. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>error handling</strong> for document sending processes to display messages instead of errors, ensuring smoother workflows and clearer communication when issues arise. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>auto invoice functions</strong> for customer details in <strong>DocuFlow management</strong>, streamlining invoice creation and reducing manual effort for finance teams. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>page navigation</strong> to show posted documents in <strong>Message Center management</strong>, allowing users to quickly access finalized sales-related documents. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added support for opening the <strong>document card</strong> instead of lists in <strong>Message Center management</strong>, enabling users to view detailed document information more efficiently. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>CSR Purch. field</strong> to <strong>Blanket Purchase Order Subform extensions</strong>, providing users with additional tracking capabilities for purchase commitments. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>document entry handling</strong> by modifying existing entries when insert failures occur, ensuring smoother data management during procurement processes. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added support for <strong>Transfer Shipment Line</strong> in <strong>Document Report Management</strong>, enabling users to include shipment line details in logistics reports for better tracking and documentation. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed layout issues in the <strong>Customer Statistics FactBox</strong> by commenting out move commands, ensuring a cleaner and more user-friendly interface. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Limited the length of <strong>document IDs</strong> in purchase order data for <strong>XML output</strong>, preventing errors and ensuring compatibility with external systems. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>User ID field</strong> to the <strong>Posted Purchase Receipt page extension</strong>, allowing users to track who processed receipts for improved accountability. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Refactored and simplified <strong>title extraction logic</strong> in <strong>Message Center management</strong>, improving system performance and reducing complexity for users. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>XML With Stylesheet field</strong> to the <strong>DocuFlow Library</strong> and updated related logic, enabling users to manage XML documents with embedded stylesheets for better formatting and presentation. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>date formatting</strong> in <strong>DocuFlow entries</strong> and enhanced deletion logic, ensuring consistent date displays and smoother record management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>document year filtering</strong> for vendor invoices and credit memos during <strong>Arxivar imports</strong>, allowing users to focus on relevant documents and streamline import processes. <em>[mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.334.0 (PR #522) - 26/11/2025</h2>
 </div>
 <div class='release-content'>
@@ -1352,7 +1408,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 26 novembre 2025 • 03:22 CET
+            Last updated: 30 novembre 2025 • 21:39 CET
         </div>
     </div>
 </body>
