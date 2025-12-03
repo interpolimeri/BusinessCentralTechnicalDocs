@@ -270,41 +270,41 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
-<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.337.0 (PR #530) - 30/11/2025</h2>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.337.0 (PR #538) - 03/12/2025</h2>
 </div>
 <div class='release-content'>
 <h3>✨ Features</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>new finance feature</strong> that allows users to streamline <strong>specific accounting tasks</strong>. This enhancement improves efficiency and ensures <strong>more accurate financial data</strong>. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Introduced <strong>another finance feature</strong> to enhance <strong>reporting capabilities</strong>. Users can now generate <strong>detailed financial reports</strong> with improved clarity and precision. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added dependency for <strong>Commission</strong> calculations to the <strong>Board Interface</strong> application. This ensures that commission-related data is accurately integrated into financial workflows, improving reporting and decision-making. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>purchase header handling</strong> to include the <strong>Amount Including VAT</strong> field. This change ensures that VAT-inclusive amounts are visible and correctly calculated, simplifying invoice reviews and compliance. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added the <strong>Amount Including VAT</strong> field to the <strong>Sales Lines extension layout</strong>. Users can now view VAT-inclusive amounts directly in sales documents, improving clarity and reducing manual calculations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Extended invoice handling to include <strong>purchase credit memos</strong> in <strong>DocuFlow</strong>. This enhancement ensures that credit memos are seamlessly integrated into document workflows, improving accuracy and traceability. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced file upload handling in <strong>DocuFlow</strong> by managing temporary records. This improvement ensures smoother file management and reduces errors during document uploads. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Increased the length of the <strong>External Document Number</strong> field. This allows users to store longer reference numbers, accommodating more complex external systems and improving data consistency. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>new sales feature</strong> to improve <strong>customer management</strong>. This update simplifies <strong>sales order tracking</strong> and enhances <strong>customer interaction workflows</strong>. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added an action to update <strong>customer information</strong> in open sales orders. Users can now modify customer details directly in active orders, ensuring accuracy and reducing the need for manual corrections. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Fixed an issue in <strong>finance module</strong> that caused errors in <strong>specific calculations</strong>. This ensures <strong>accurate financial processing</strong> and prevents discrepancies. <em>[mpisana]</em></li>
-</ul>
-</div>
-<h4>📦 Logistic</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Resolved a problem in <strong>logistics operations</strong> that affected <strong>warehouse shipment tracking</strong>. Users can now rely on <strong>accurate stock and delivery data</strong>. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed the calculation of <strong>not confirmed quantities and amounts</strong> for blanket sales and purchase lines when derived orders are deleted. This ensures accurate financial data and prevents discrepancies in reports. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected the retrieval of <strong>first entry</strong> and <strong>last sales entry dates</strong> in APIs. This fix ensures that external systems receive accurate date information, improving integration reliability. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>system configurations</strong> to improve <strong>overall performance and stability</strong>. This ensures smoother operations and reduces potential downtime. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>AL-Go System Files</strong> to the latest version from Microsoft. This ensures compatibility with the latest platform updates and improves overall system stability. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>runtime version</strong> to 15.0 across all application modules. This change ensures that all modules are running on the latest supported version, improving performance and compatibility. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -1448,7 +1448,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 03 dicembre 2025 • 01:19 CET
+            Last updated: 03 dicembre 2025 • 01:21 CET
         </div>
     </div>
 </body>
