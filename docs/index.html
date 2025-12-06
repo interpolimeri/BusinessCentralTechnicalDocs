@@ -270,6 +270,65 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.338.0 (PR #543) - 06/12/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>fixed asset management actions</strong> to the Accounting Role Center. This allows users to manage fixed assets more efficiently, directly from their role center. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>document summary buffers</strong> by including <strong>item reference number fields</strong> and <strong>fixed quantities</strong>. This provides more detailed and accurate summaries for financial documents. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>VAT exemption text retrieval</strong> to the <strong>Invoice Document report extension</strong>, ensuring that VAT exemption details are automatically included in reports where applicable. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>page customizations</strong> for external logistics and updated the <strong>profile</strong> to better align with logistics workflows. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Introduced the <strong>Req. Worksheet Ext. Whse Setup page</strong> with related filters, enabling users to apply warehouse-specific configurations directly in the requisition worksheet. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added an <strong>OnOpenPage trigger</strong> to filter the <strong>location code</strong> for external logistics, ensuring that users see only relevant data based on their location. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>vendor fields</strong> and moved the <strong>expense line functionality</strong> to the next month, improving vendor management and expense tracking processes. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the <strong>currency conversion logic</strong> in the <strong>Purchase Details API</strong>, ensuring accurate currency calculations for purchase transactions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>caption</strong> for the <strong>Invoice Document report</strong>, improving clarity for users when working with E-Invoices. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Restored visibility of the <strong>Balance Due</strong> field and updated the drilldown logic for the <strong>Factorized Amount</strong>, ensuring users can access and analyze these fields correctly. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected the <strong>expected cost calculation</strong> for <strong>item ledger entries</strong>, ensuring accurate cost tracking for financial reporting. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Repositioned the <strong>Exposure field</strong> in the <strong>Customer Statistics FactBox layout</strong>, improving usability and visibility for users analyzing customer data. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Commented out the <strong>filter for location code</strong> in the <strong>Import action</strong> on the Role Center page, resolving issues with location-based filtering during imports. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>💳 Credit</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added functionality to <strong>force activation of customer credit lines</strong>, ensuring that credit lines are correctly activated when required. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>system configuration</strong> to enhance performance and improve the overall user experience. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.337.0 (PR #538) - 03/12/2025</h2>
 </div>
 <div class='release-content'>
@@ -1448,7 +1507,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 03 dicembre 2025 • 06:32 CET
+            Last updated: 06 dicembre 2025 • 02:03 CET
         </div>
     </div>
 </body>
