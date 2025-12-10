@@ -270,6 +270,68 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.339.0 (PR #549) - 10/12/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Italian External API app</strong> to manage <strong>Italian Fields</strong> on PBI and Credit Mixer API calls. This enables compliance with Italian-specific financial reporting and credit management requirements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Closed Customer Ledger</strong> and <strong>Open Customer Ledger APIs</strong> to include new fields and logic. This provides more detailed and accurate customer ledger data for financial analysis. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>PBI Closed Customer Ledger</strong> and <strong>Open Customer Ledger APIs</strong> with additional fields and logic. Users can now access improved data granularity for Power BI reporting. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>Purchase Price Tracking</strong> management and UI for invoices and orders. This allows users to track historical purchase prices directly on invoices and orders, improving cost analysis and vendor negotiations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Price Tracing</strong> functionality in the <strong>Blanket Sales Order Subform</strong>. Users can now trace historical pricing directly within the subform, enabling better pricing decisions and customer negotiations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed an unnecessary <strong>posting date filter</strong> in customer ledger entry retrieval. This ensures that all relevant entries are displayed without restrictions, improving data accuracy for financial reporting. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected <strong>caption and area casing</strong> in the <strong>Purchase Price Tracking</strong> page. This improves the visual consistency and usability of the page. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Fixed error handling for the <strong>undo function</strong> on invoiced purchase receipt lines. Users can now undo these lines without encountering errors, ensuring smoother corrections in purchase processes. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added support for opening <strong>Blanket Sales Orders (BSO)</strong> and <strong>Blanket Purchase Orders (BPO)</strong> directly from the <strong>Message Center Task Item</strong>. This streamlines navigation and improves efficiency for users managing blanket orders. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added support for <strong>Sales Credit Memo</strong> in <strong>Docuflow functions</strong>. This enables smoother document workflows for credit memos, reducing manual effort. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>language code retrieval</strong> in extended text for document processing. This ensures that the correct language is applied consistently across documents, improving localization accuracy. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Removed an unused variable in the <strong>Expenses Subform</strong> and enhanced <strong>journal report logic</strong>. This improves system performance and ensures accurate reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added error handling and validation improvements to the <strong>system change description</strong>. This enhances system stability and reduces the likelihood of unexpected errors during operations. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.338.0 (PR #543) - 06/12/2025</h2>
 </div>
 <div class='release-content'>
@@ -1507,7 +1569,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 06 dicembre 2025 • 02:03 CET
+            Last updated: 10 dicembre 2025 • 23:17 CET
         </div>
     </div>
 </body>
