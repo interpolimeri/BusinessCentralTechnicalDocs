@@ -270,6 +270,80 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.340.0 (PR #554) - 20/12/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Fixed Asset Depreciation Book Report</strong>, enabling users to generate detailed reports for asset depreciation, improving financial analysis and compliance. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Balance Account Name</strong> field to the <strong>General Journal</strong> page, providing better visibility into account details during journal entry processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added actions for <strong>Periodic VAT Settlement</strong> and <strong>Calculation</strong> in the <strong>Accounting Role Center</strong> for Italy, streamlining VAT processes for Italian users. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>external document number assignment</strong> in the journal line posting process, ensuring better traceability and alignment with external systems. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>Sales Details API</strong> to calculate <strong>Open Price for Shipment</strong>, providing more accurate pricing information for sales analysis. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>packaging type retrieval</strong> by adding manufacturer code filtering, improving accuracy in selecting packaging types for shipments. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added a <strong>Location List Base extension</strong> with new fields for location management, offering better control and visibility over warehouse locations. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>attachment management and viewing</strong> in the <strong>DocuFlow module</strong>, allowing users to upload, view, and manage attachments directly within the system. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>DocuFlow Libraries page</strong> with tooltips and visibility adjustments, improving usability and navigation for users. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>JSON object construction</strong> for the <strong>Document Type</strong> in the DocuFlow module, ensuring compatibility with external systems. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed an issue with the <strong>Sales Shipment Header COA document template</strong> for Portugal, ensuring accurate document generation for compliance. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>email sending process</strong> for the <strong>Certificate of Analysis</strong>, ensuring emails are sent correctly and improving communication reliability. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed an issue with printing multiple copies of the <strong>Shipment Document report</strong>, ensuring users can now print the correct number of copies as needed. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Items API</strong> to use the consolidation code instead of the item category, improving data consistency and reporting accuracy. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Reset the <strong>ArxivarNext API endpoint</strong> in the DocuFlow site management procedure for sandbox environments, ensuring proper API functionality during testing. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Cleared the <strong>security vault key</strong> and reset user credentials in the DocuFlow site management process, enhancing security and user management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Simplified validation logic for vendor fields in the <strong>Purchase Header restoration</strong>, reducing errors and improving usability. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Handled empty user backup filters in the <strong>User Task Filter Management</strong>, ensuring smoother user experience and preventing errors. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>Closed Customer Ledger API</strong> to include Italian bank fields, improving financial reporting for Italian users. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added an event subscriber to apply the <strong>payment method</strong> from the customer bill header, automating payment method assignment and reducing manual effort. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.339.0 (PR #549) - 10/12/2025</h2>
 </div>
 <div class='release-content'>
@@ -1569,7 +1643,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 10 dicembre 2025 • 23:27 CET
+            Last updated: 20 dicembre 2025 • 03:08 CET
         </div>
     </div>
 </body>
