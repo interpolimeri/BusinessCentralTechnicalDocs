@@ -270,6 +270,84 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.351.0 (PR #594) - 22/01/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Activity Code management</strong> in <strong>No. Series</strong> for VAT entry processing. This simplifies VAT handling by automating the assignment of activity codes during financial transactions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>permission set for Aging BC14IT</strong> to manage asset data access. This ensures secure and controlled access to asset-related information for users with specific roles. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Restored <strong>Aging BC14 functionality</strong> from BC14, enabling users to access legacy aging reports for financial analysis. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>new sales analysis view</strong> for <strong>item ledger entries</strong>, allowing users to better analyze sales data and track item movements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>discount formatting</strong> for <strong>sales and invoice document reports</strong>, improving the clarity and presentation of discounts applied to transactions. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>automatic posting and shipment date handling</strong> in warehouse processes, streamlining operations and reducing manual adjustments during shipment processing. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>transfer shipment processing</strong> in <strong>document reports</strong>, improving the accuracy and efficiency of shipment-related reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>ship-to contact</strong> and <strong>external document number</strong> fields to the <strong>transfer shipment report</strong>, providing more detailed shipment information for better tracking and communication. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>e-document processing</strong> by adding <strong>file name extraction logic</strong>, making it easier to identify and manage electronic documents. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>new functions</strong> to the <strong>Expression Solver</strong>, enabling users to perform more complex calculations and analyses directly within the system. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>legacy description field</strong> to the <strong>PBI Items API</strong>, improving data visibility for historical item descriptions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>fixed assets section</strong> and changed the <strong>Depreciation Book report</strong> in the <strong>Accounting Role Center IT</strong>, ensuring accurate reporting and better alignment with local requirements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>report title</strong> for the <strong>Depreciation Book</strong>, improving clarity and consistency in financial reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>discount column</strong> to <strong>Sales and Invoice Reports</strong> for multiple regions (SK, PT, IT, HU, ES, DE, BE), ensuring consistent visibility of discounts across all sales documents. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Adjusted <strong>decimal places</strong> for <strong>Unit Price visibility</strong> in the <strong>Item Ledger Entries page</strong>, ensuring accurate display of pricing information. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected <strong>loop termination condition</strong> in <strong>transport management codeunit</strong>, resolving issues with transport-related processes. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>NuGet feed URL</strong> to version 26 for <strong>AL-Go settings configuration</strong>, ensuring compatibility with the latest system updates. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>NuGet feed URL</strong> to version 26 for <strong>multiple language settings files</strong>, improving system localization and compatibility. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Ensured <strong>posting and receiving number series</strong> are set only if not empty, preventing errors during transaction processing. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>user backup cues visibility</strong>, improving clarity and usability for backup-related tasks. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>XML content retrieval</strong> in the <strong>DocuFlow File Preview page</strong>, ensuring accurate and efficient file previews. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Commented out <strong>debug sequence logic</strong> in the <strong>Assets Detail table procedure</strong>, improving system performance and stability. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Changed <strong>Calculate Conai field type</strong> to <strong>Boolean</strong> in <strong>purchase header and invoice</strong>, simplifying field usage and improving data accuracy. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed obsolete <strong>Slovak translation file</strong> for the <strong>Base module</strong>, cleaning up unnecessary system files. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.350.0 (PR #589) - 14/01/2026</h2>
 </div>
 <div class='release-content'>
@@ -1831,7 +1909,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 15 gennaio 2026 • 08:45 CET
+            Last updated: 22 gennaio 2026 • 23:48 CET
         </div>
     </div>
 </body>
