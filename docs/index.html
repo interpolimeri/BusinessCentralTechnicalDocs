@@ -277,77 +277,91 @@
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>Create PDF - Item Register report</strong> and <strong>Inventory Register 1 - Print report</strong> <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added functionality to <strong>link e-documents</strong> to posted purchase documents, improving traceability and document management. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated <strong>contact information display</strong> in invoice and credit note stylesheets, ensuring accurate and professional communication with customers. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>payment methods management</strong> for e-document processing, enabling users to define and manage payment methods more efficiently. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>invoice and payment details layout</strong> in the <strong>XRechnung stylesheet</strong>, improving clarity and compliance with invoicing standards. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>reminder fields</strong> to the <strong>Customer Ledger Entries page</strong>. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>countries of origin tracking</strong> to the <strong>Purchase Line</strong> and <strong>Invoice Subform</strong>. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added an <strong>exclusion rule</strong> for credit limits in sales blanket orders. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added an <strong>option to skip sending emails</strong> for zero‑amount invoices in the background setup, reducing unnecessary email notifications. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>location validation functions</strong> for sales and purchase lines in e-document management, ensuring accurate location data for transactions. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>layout styling</strong> for documents in an error state on the <strong>Bill Subform ES</strong> page, improving readability and presentation. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>ApplicationArea</strong> to fields in <strong>Create PDF - Item Register report</strong> and <strong>Inventory Register 1-Print report</strong>. This ensures that users only see relevant fields based on their role, improving usability and reducing clutter. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced permissions for the <strong>Finance Admin role</strong>. This update provides more granular access control, ensuring that administrators can manage financial data securely and efficiently. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced metadata handling in <strong>DocuFlow SharePoint management codeunit</strong>. This improves document management by ensuring metadata is processed more accurately, streamlining workflows. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added functionality to link <strong>e-documents</strong> to <strong>posted purchase documents</strong>, enabling better traceability and compliance with document management requirements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>reminder fields</strong> to the <strong>Customer Ledger Entries page</strong>, allowing users to track and manage reminders directly within the ledger, improving follow-up processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>payment methods management</strong> for <strong>e-document processing</strong>, enabling users to define and manage payment methods more effectively for electronic documents. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>invoice and payment details layout</strong> in the <strong>XRechnung stylesheet</strong>, ensuring compliance with formatting standards and improving readability for users. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added sorting options for customers in the <strong>Customer Detailed Aging report</strong>, making it easier to analyze and prioritize customer balances. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added an exclusion filter for <strong>credit limit</strong> in <strong>sales line calculations</strong>, allowing users to bypass credit limit checks for specific scenarios, providing more flexibility in sales processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added an exclusion flag for <strong>credit limit</strong> in <strong>sales document and line extensions</strong>, enabling users to manage credit limits more effectively in specific cases. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>Posted Sales Invoice</strong> and <strong>Credit Memo cues</strong> to Role Center pages for DE and BE regions, providing quick access to key sales documents. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>credit limit handling</strong> in sales documents and related extensions. This ensures that credit limits are validated consistently across all sales processes, reducing errors and improving financial control. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Validated <strong>Salesperson Code</strong> and <strong>Responsibility Center</strong> during customer creation. This ensures that all customer records are complete and accurate, reducing errors in sales processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Posted Sales Invoice</strong> and <strong>Credit Memo cues</strong> to <strong>Role Center pages</strong> for DE and BE regions. This provides users with quick access to key sales documents, improving efficiency. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added an option to skip sending emails for <strong>zero-amount invoices</strong> in the background setup. This prevents unnecessary email notifications, streamlining communication with customers. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>countries of origin tracking</strong> to the <strong>Purchase Line</strong> and <strong>Invoice Subform</strong>, enabling users to track and report on the origin of purchased goods for compliance and reporting purposes. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added an <strong>email field</strong> to <strong>Warehouse Receipt</strong> and <strong>Shipment Headers</strong>, allowing automatic sending of location‑specific email information for better communication. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Enhanced <strong>drill‑down functionality</strong> for inventory on the <strong>Item Card page</strong> to show only open entries. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added <strong>Open Price field</strong> to the <strong>Sales Order Archive Subform layout</strong>, providing better visibility into historical pricing information. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added <strong>Destination Name field</strong> to the <strong>Get Source Documents page</strong>, providing more detailed information for document tracking. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added an <strong>email field</strong> to <strong>Warehouse Receipt</strong> and <strong>Shipment Headers</strong> for location information. This allows users to include email details for better communication during warehouse operations. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced drill-down functionality for inventory in the <strong>Item Card page extension</strong>, enabling users to access detailed inventory information more efficiently. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Open Price field</strong> to the <strong>Sales Order Archive Subform layout</strong>, providing users with better visibility into historical pricing information. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>warehouse request fields</strong> for <strong>sales and purchase line descriptions</strong>, improving clarity and accuracy in warehouse operations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>location check functions</strong> for <strong>sales and purchase lines</strong> in <strong>EDS Management</strong>, ensuring that location data is accurate and consistent across processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Destination Name field</strong> to the <strong>Get Source Documents page</strong>, providing users with more detailed information for logistics planning. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced layout styling for <strong>Docs in BG Subform ES page extension</strong>, improving readability and usability for users. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>assembly orders part</strong> to the <strong>Logistic Role Center page</strong>, enabling users to manage assembly orders directly from the role center. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enhanced <strong>metadata handling</strong> in the <strong>DocuFlow SharePoint management codeunit</strong>, improving integration and data consistency on Arxivar. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Common Data Layer dependency</strong> to the <strong>E-Document application configuration</strong> and <strong>Base application configuration</strong>, ensuring seamless integration and data consistency across applications. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>contact information display</strong> in <strong>invoice and credit note stylesheets</strong>, ensuring that customer and vendor details are displayed correctly and consistently. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated file preview procedures to handle <strong>temporary DocuFlow entries</strong>, improving document management and reducing errors during file previews. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>tax unit amount calculation</strong> on the Packaging Tax Report, ensuring accurate tax reporting and compliance. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated the <strong>Depreciation Book report</strong>, ensuring accurate and clear financial reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>acquisition year field logic</strong> in the <strong>Fixed Asset API page</strong>, ensuring accurate data entry and reporting for fixed assets. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected <strong>IBAN reference document reports</strong> for multiple regions (SK, HU, PT, DE, BE, IT, W1, ES), ensuring that IBAN details are displayed correctly in financial documents. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>tax unit amount calculation</strong>, ensuring accurate tax calculations in financial transactions. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Fixed functionality to <strong>validate Salesperson Code</strong> and <strong>Responsibility Center</strong> during customer creation from CRM. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated the <strong>"Sales Order Delay ENU" Word template</strong>, ensuring accurate and professional communication with customers. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>"Sales Order Delay ENU" word template</strong>, ensuring that the template reflects the correct formatting and content for sales orders. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>visibility settings</strong> for fields in the <strong>Item Ledger Entries page customizations</strong>, improving usability and data clarity. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Enhanced <strong>first and last entry date calculations</strong> in the <strong>Lot No. Information extension</strong>, ensuring accurate tracking of inventory movements. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Adjusted <strong>decimal places for Unit Cost visibility</strong> in the <strong>Item Ledger Entries page</strong>, improving accuracy in cost reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated visibility settings for fields in the <strong>Item Ledger Entries page customizations</strong>, ensuring that users see only relevant fields based on their role. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>first and last entry date calculations</strong> in the <strong>Lot No. Information extension</strong>, improving accuracy in lot tracking. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Adjusted decimal places for <strong>Unit Cost visibility</strong> in the <strong>Item Ledger Entries page</strong>, ensuring that cost data is displayed accurately. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Corrected <strong>IBAN reference document reports</strong> for multiple regions (SK, HU, PT, DE, BE, IT, W1, ES), ensuring accurate banking information. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Ensured <strong>item description</strong> is set only when available in PT document report extensions, preventing errors in document generation. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Hid the <strong>'Create new Word template' action</strong> in the <strong>Word Template Wizard</strong>, simplifying the user interface and avoiding confusion. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Corrected the <strong>page extension ID</strong> for the <strong>Get Source Document extension</strong>, ensuring that the correct extension is applied during system operations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>Depreciation Book report</strong>, ensuring accurate and consistent reporting for asset depreciation. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Corrected the <strong>document type filter</strong> in the <strong>Assets Engine for payment processing</strong>, ensuring accurate filtering of documents during payment processing. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Hid the <strong>'Create new Word template' action</strong> in the <strong>Word Template Wizard</strong>, preventing users from accessing an unsupported feature. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>Assembly Orders part</strong> to the <strong>Extended Logistic Role Center page</strong>, providing users with better visibility and management of assembly orders. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Updated <strong>AL-Go System Files</strong> to 8.1 <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>AL-Go System Files</strong> from <strong>microsoft/AL-Go-PTE@main</strong>, ensuring the system is up-to-date with the latest platform improvements. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -1992,7 +2006,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 03 febbraio 2026 • 23:42 CET
+            Last updated: 04 febbraio 2026 • 00:45 CET
         </div>
     </div>
 </body>
