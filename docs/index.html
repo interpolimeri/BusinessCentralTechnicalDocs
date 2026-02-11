@@ -270,6 +270,77 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.356.0 (PR #619) - 10/02/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>action to check open invoices</strong> in the <strong>General Journal</strong> page extension. This allows users to quickly verify outstanding invoices directly from the journal, improving efficiency in financial reconciliation. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Outstanding BSO fields</strong> with drill-down functionality to the <strong>Customer Statistics</strong> page. Users can now access detailed information about outstanding blanket sales orders directly from the statistics page. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Not Confirmed BSO field</strong> to the <strong>Customer Statistics Factbox</strong>. This provides visibility into blanket sales orders that are not yet confirmed, helping users track pending approvals. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>VAT Register Grouped - XLSX report</strong>. This new report format allows users to generate VAT registers in an Excel-friendly format, simplifying data analysis and reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Implemented <strong>expense management features</strong> in the Expenses module. This enhancement streamlines the process of managing and tracking expenses, improving financial oversight and reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Set default exclusion from availability for <strong>sales order lines</strong>. This ensures that specific items are automatically excluded from availability calculations, reducing errors in inventory planning. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>item synchronization</strong> and <strong>user setup</strong> for the <strong>Item Wizard</strong>. This ensures smoother and more accurate synchronization of item data, reducing manual adjustments. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the layout of the <strong>Item Card extension</strong> to include the <strong>Technical Product Part</strong> field. This provides users with additional product details directly on the item card for better decision-making. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>source table view filter</strong> for the <strong>Transfer Line API page</strong>. This allows users to filter transfer line data more effectively, improving data management and visibility. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>API synchronization tables</strong>, <strong>pages</strong>, and <strong>log management functionality</strong>. This enhancement improves the system's ability to manage and monitor API synchronization processes. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>request page parameters</strong> for downloading PDF documents. This provides users with more control over the document download process, enabling customization of the output. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>MoveDocuFlowEntry procedure</strong> to handle source entry deletion. This ensures smoother data management and prevents errors during document flow operations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added calculation for <strong>amount per ton</strong> when inserting a <strong>commission ledger entry</strong>. This ensures accurate financial calculations for commission-based transactions. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the visibility of the <strong>Items part</strong> in the <strong>Generic Role Center page</strong>. This fix ensures that users can access item-related information as intended. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the caption for the <strong>Reprint Info Item Register page</strong>. This resolves any confusion caused by incorrect or unclear captions. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>Reprint Info Item Register</strong> functionality to improve usability and ensure accurate information display. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>product group code management</strong>. This fix ensures that product group codes are handled correctly, improving data consistency and accuracy. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Set visibility for the <strong>Technical Product Part</strong> in the <strong>Item Card extension</strong>. This ensures that users can view and manage this field as part of their item data. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>document linking process</strong> in the <strong>EDocArx MD Import codeunit</strong>. This enhancement improves the reliability and accuracy of document imports. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>Product Group Code field ID</strong> in the <strong>Sales Detail tables</strong>. This ensures compatibility and consistency across related tables. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>fields for No. and type as integer</strong> in <strong>Board APIs</strong>. This update enhances the API's functionality and data handling capabilities. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Internal Assessment Request Case SubType Id field</strong> to the <strong>integration setup</strong>. This provides additional configuration options for managing internal assessment requests. <em>[albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 26.0.355.0 (PR #612) - 03/02/2026</h2>
 </div>
 <div class='release-content'>
@@ -1992,7 +2063,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 04 febbraio 2026 • 08:30 CET
+            Last updated: 11 febbraio 2026 • 01:03 CET
         </div>
     </div>
 </body>
