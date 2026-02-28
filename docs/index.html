@@ -278,7 +278,6 @@
 <div class='subcontent'>
 <ul>
 <li class='subcontent-p'>Added <strong>new finance feature</strong> to improve the management of financial transactions. This enhancement simplifies workflows and ensures more accurate financial reporting. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Introduced <strong>additional finance functionality</strong> to streamline the processing of payments and invoices, reducing manual effort and improving efficiency. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
@@ -300,15 +299,93 @@
 <li class='subcontent-p'>Fixed a problem in <strong>logistics operations</strong> that caused errors in inventory tracking. This update ensures accurate stock levels and smoother warehouse processes. <em>[albertodone]</em></li>
 </ul>
 </div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.360.0 (PR #634) - 28/02/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>country source fields</strong> for sales and purchase category lookup in <strong>customer</strong> and <strong>vendor</strong> records. This helps users better categorize transactions based on geographical data. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>EDS function</strong> for <strong>CONAI item packaging</strong>, enabling compliance with Italian environmental regulations for packaging waste. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>expense management</strong> with new <strong>document handling</strong> and <strong>reporting features</strong>, improving tracking and reporting of business expenses. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>language configuration</strong> for Italian in the <strong>Finance IT module</strong>, allowing users to manage financial data in Italian. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>payment terms management</strong> with <strong>fixed due dates</strong> and <strong>stop payment periods</strong> for Portugal, ensuring compliance with local financial regulations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>VAT exemption handling</strong> in <strong>E-Invoice</strong> based on <strong>document setup configuration</strong>, ensuring accurate VAT reporting for exempt transactions. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Implemented <strong>VAT exemption handling</strong> in <strong>E-Invoice</strong> for sales documents, streamlining compliance with VAT regulations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Promised Delivery Date field</strong> to the <strong>Blanket Sales Orders page</strong>, enabling users to track and manage delivery commitments more effectively. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>export to Excel action</strong> for the <strong>Requisition Worksheet page</strong>, allowing users to easily export data for analysis or reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>product synchronization</strong> and new <strong>CRM data management pages</strong>, improving integration between inventory and customer relationship management systems. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>packaging type selection logic</strong> with <strong>manufacturer</strong> and <strong>category filters</strong>, making it easier to choose the correct packaging for items. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Ship-to Name field</strong> to the <strong>Purch. Open Price Closing page</strong>, providing better visibility into shipping details for purchase orders. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>EDS status handling</strong> to <strong>assembly order</strong> and <strong>header extensions</strong>, improving tracking and management of assembly processes. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>Work Order report</strong> to display <strong>lot numbers</strong> and <strong>quantities</strong>, providing more detailed information for warehouse operations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Html Viewer control add-in</strong> for enhanced document previewing, allowing users to view documents directly within the system. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>user setup</strong> with new <strong>employee</strong> and <strong>resource admin fields</strong>, improving user management capabilities. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>employee management codeunit</strong> with <strong>simple data synchronization</strong>, streamlining employee data updates. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>employee management codeunit</strong> with <strong>birthplace handling logic</strong> for Italian users, ensuring compliance with local HR requirements. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>clipboard management</strong> with <strong>toast notifications</strong> for user feedback, improving usability when copying and pasting data. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>filter functionality</strong> for pasted data in the <strong>Filter From Paste page</strong>, resolving issues with dropdown auto-selection. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Ensured <strong>header modification flag</strong> is set correctly in the <strong>warehouse management codeunit</strong>, improving data accuracy during warehouse operations. <em>[albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>VAT Management</strong> and <strong>exemption dependencies</strong> for Italy in the <strong>app configuration</strong>, ensuring compliance with local tax regulations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Resolved issues in <strong>data processing</strong> for the <strong>sales order validation function</strong>, ensuring accurate validation of sales orders. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>email sending logic</strong> to use the <strong>customer number</strong>, ensuring emails are sent to the correct recipients. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>Refresh Packaging Taxes action</strong> to use the correct <strong>Purchase Credit Memo header</strong>, ensuring accurate tax calculations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Validated <strong>payment terms code</strong> in the <strong>purchase header</strong> during document import, preventing errors in imported purchase documents. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Resolved a <strong>division by zero issue</strong> in the <strong>commission amount calculation</strong> for the <strong>sales detail by lot</strong>, ensuring accurate commission reporting. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>usage category</strong> for the <strong>Get Item Ledger Entries page</strong> to <strong>None</strong>, ensuring the page is categorized correctly. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Data Security dependency</strong> to the <strong>Conai IT application configuration</strong>, improving system security and compliance. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>permissions for table data</strong> and <strong>codeunit</strong> in the <strong>BasePTAdmin permission set</strong>, ensuring proper access control for administrative users. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>PDF item register</strong>, resolving formatting and data display issues. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Hid <strong>birthplace fields</strong> in the <strong>employee card extension</strong>, improving data privacy and compliance with privacy regulations. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Hid <strong>Calculate Depreciation action</strong> in the <strong>Accounting Role Center IT page</strong>, simplifying the interface for users in Italy. <em>[mpisana]</em></li>
+</ul>
+</div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated <strong>table 50163 "Test Object"</strong> in the system registry to improve data management and ensure compatibility with future updates. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Reserved <strong>table 50163 "Test Object"</strong> in the system registry to prevent conflicts and ensure data integrity. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Completed a <strong>full scan of 1953 objects</strong> in the system registry to ensure consistency and identify potential issues. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Conducted a <strong>full scan of 3530 objects</strong> in the system registry to enhance system performance and reliability. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Performed an additional <strong>full scan of 3530 objects</strong> to validate system updates and maintain optimal functionality. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated to <strong>Version 27.4</strong>, ensuring access to the latest features and improvements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>AL-Go System Files</strong> from <strong>microsoft/AL-Go-PTE@main</strong>, ensuring the system is up-to-date with the latest platform enhancements. <em>[albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -2107,7 +2184,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 28 febbraio 2026 • 22:52 CET
+            Last updated: 28 febbraio 2026 • 22:53 CET
         </div>
     </div>
 </body>
