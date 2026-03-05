@@ -171,6 +171,7 @@
             color: #6c757d;
         }
         .release-content {
+            overflow: hidden;
             transition: max-height 0.3s ease;
         }
         .release-content.collapsed {
@@ -259,89 +260,96 @@
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added new <strong>Bank API</strong> and <strong>Cash Flow Ledger API</strong> for improved financial data integration and reporting. These APIs allow users to access banking and cash flow information directly from Business Central, making it easier to analyze liquidity and manage financial operations. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced the <strong>Board Sales Details API</strong> by adding <strong>Amount</strong> and <strong>Cost AC</strong> fields. This provides more detailed sales data for financial analysis and reporting, helping users track profitability and costs more accurately. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added new <strong>Bank API</strong> and <strong>Cash Flow Ledger API</strong> for improved integration with reporting tools. Users can now access detailed banking and cash flow information directly from Business Central, making financial analysis and reconciliation easier and more accurate. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>Board Sales Details API</strong> by adding <strong>Amount</strong> and <strong>Cost AC</strong> fields. This provides more comprehensive sales data for financial reporting and analysis, helping users track profitability and sales performance more effectively. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enhanced <strong>Sales Detail Management</strong> to include open price calculations, now also retrieving open price from <strong>Sales Shipment Line</strong>. This gives sales teams a clearer view of outstanding prices and helps with accurate revenue tracking. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added a new <strong>Dismissed Sales Archive API</strong> for detailed retrieval of archived sales data. Users can now access dismissed sales records for audit and reporting purposes, improving transparency and historical tracking. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added an <strong>Intercompany Field</strong> to the <strong>Customers API</strong> for improved data handling. This allows users to filter and manage customer records across multiple companies, streamlining intercompany sales processes. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Implemented validation for <strong>Shipment Method</strong> and <strong>Payment Terms</strong> during sales order creation. This ensures that orders are processed with correct shipping and payment details, reducing errors and improving compliance. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Responsibility Center API Page</strong> with read-only access, enabling users to view responsibility center information for sales reporting and management. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>Sales Detail Management</strong> to include open price calculations, now also retrieving open price from <strong>Sales Shipment Line</strong>. This gives sales teams more accurate pricing visibility for shipped items, supporting better margin tracking and customer communication. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Intercompany Field</strong> to the <strong>Customers API</strong> for improved data handling. This allows users to distinguish between internal and external customers in sales reports, supporting more precise intercompany sales tracking. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Implemented a new <strong>Dismissed Sales Archive API</strong> for detailed data retrieval. Users can now access archived sales documents that were dismissed, improving audit trails and historical sales analysis. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Shipment Method</strong> and <strong>Payment Terms</strong> validation during <strong>Sales Order Creation</strong>. This ensures that every sales order includes valid shipping and payment details, reducing errors and streamlining order processing. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Created a new <strong>Responsibility Center API page</strong> with read-only access. Sales managers can now view responsibility center information for better oversight and reporting without risk of accidental changes. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛒 Purchase</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>Invoice Document Date</strong> field to the <strong>Purchase Details API</strong> and updated related logic. This enhancement allows users to track invoice dates more accurately for reporting and compliance. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Created a new <strong>Dismissed Purchase Archive API</strong> for detailed retrieval of archived purchase data. Users can now access dismissed purchase records for audit and historical analysis. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced the <strong>Vendors API</strong> by adding an <strong>Intercompany Field</strong> for improved data integration. This helps users manage vendor information across multiple companies, simplifying intercompany procurement. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Invoice Document Date</strong> field to the <strong>Purchase Details API</strong> and updated related logic. Purchasers can now track invoice dates more accurately, improving reporting and payment scheduling. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Created a new <strong>Dismissed Purchase Archive API</strong> for detailed data retrieval. Users can access archived purchase documents that were dismissed, supporting better audit trails and historical procurement analysis. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>Vendors API</strong> by adding an <strong>Intercompany Field</strong>. This helps users identify internal vendors in purchase reports, improving intercompany procurement tracking and reporting. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enhanced <strong>Item Weight Update Logic</strong> in <strong>Document Detail Processing</strong>. This improvement ensures item weights are updated accurately during logistics operations, supporting better inventory and shipping calculations. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Assembly Order</strong> and <strong>Post Assembly APIs</strong> to the permission set for access control, and introduced new <strong>Assembly Order</strong> and <strong>Line APIs</strong>. These changes improve assembly tracking and reporting, allowing users to monitor assembly operations and manage permissions more effectively. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>Variant Code</strong> field to the <strong>Transport Detail API</strong> and updated related logic. This provides greater visibility into item variants during transport, helping users track and manage shipments with more detail. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated <strong>Packaging Type Selection Logic</strong> in the <strong>Packaging Management Codeunit</strong>. This enhancement streamlines packaging operations, ensuring the correct packaging type is selected automatically based on item and shipment requirements. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Improved <strong>Transport Detail Management</strong> by ensuring open price calculations are included, giving logistics teams more accurate pricing information for shipments. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>Item Weight Update Logic</strong> in <strong>Document Detail Processing</strong>. Warehouse staff can now rely on more accurate item weight calculations during document handling, improving inventory management and shipping accuracy. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Assembly Order</strong> and <strong>Post Assembly APIs</strong> to the permission set for access control, and introduced new <strong>Assembly Order</strong> and <strong>Line APIs</strong>. This enables better tracking and reporting of assembly operations, allowing users to monitor production and assembly status in real time. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Variant Code</strong> field to the <strong>Transport Detail API</strong> and updated related logic. Logistics teams can now see variant information for transported items, improving traceability and shipment accuracy. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Packaging Type Selection Logic</strong> in the <strong>Packaging Management Codeunit</strong>. This streamlines packaging selection, ensuring the correct packaging type is applied automatically based on item and shipment requirements. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Improved <strong>Transport Detail Management</strong> by ensuring open price calculations are included, giving logistics users better visibility into shipment costs and pricing. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>💳 Credit</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added an <strong>Intercompany Filter</strong> to the <strong>CM Customers API</strong> for improved data accuracy. This allows credit managers to filter customer records by company, making credit control processes more precise and efficient. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Intercompany Filter</strong> to the <strong>CM Customers API</strong> for improved data accuracy. Credit managers can now filter customer data to focus on intercompany transactions, supporting more precise credit risk analysis and reporting. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🌐 General</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added <strong>EDS Transaction Log API</strong> for enhanced transaction tracking. This API provides detailed logs of electronic data submissions, helping users monitor and audit system-level transactions across all business areas. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced the <strong>Permission Set</strong> for the <strong>PBI Interface</strong> with additional API access, allowing broader integration and reporting capabilities across the system. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Added <strong>GitHub CLI Integration</strong> for the <strong>AL Object Registry Extension</strong>, enabling developers and system administrators to manage AL objects more efficiently using GitHub tools. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Improved <strong>Data URI Handling</strong> in the <strong>HTML Viewer</strong> to open files with the correct filename and enhanced iframe functionality for data URI links. This makes viewing and sharing documents within Business Central more seamless and user-friendly. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added new <strong>EDS Transaction Log API</strong> for enhanced transaction tracking. Users can now access detailed logs of electronic data submissions, improving transparency and compliance monitoring across all business areas. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>Permission Set</strong> for the <strong>PBI Interface</strong> with additional API access, allowing users to connect more data sources for reporting and analytics. This supports broader integration with Power BI and other tools. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>GitHub CLI Integration</strong> for the <strong>AL Object Registry Extension</strong>. This enables system administrators and power users to manage AL objects more efficiently using GitHub tools, streamlining development and deployment workflows. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Improved <strong>Data URI Handling</strong> in the <strong>HTML Viewer</strong> to open files with proper filenames, and enhanced iframe functionality to handle data URI links. Users can now view documents and reports in-browser with correct file names and improved link handling, making document review easier and more reliable. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Corrected the <strong>Table Extension ID</strong> for the <strong>CV Ledger Entry Buffer IT</strong> to ensure proper financial data processing and compatibility. This fix prevents errors in ledger entry management and improves reliability. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Corrected the <strong>Table Extension ID</strong> for the <strong>CV Ledger Entry Buffer IT</strong>. This ensures that financial data is stored and processed correctly, preventing potential errors in ledger entry management. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Removed duplicate <strong>Application Area Declaration</strong> in the <strong>Board Sales Details API</strong>, ensuring the API functions correctly and avoids confusion in sales reporting. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Enhanced <strong>VAT Posting Group Validation</strong> for free gift codes in sales lines, ensuring correct VAT handling and compliance when processing promotional items. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Removed duplicate <strong>Application Area Declaration</strong> in the <strong>Board Sales Details API</strong>. This prevents confusion and ensures the API functions as intended for sales reporting. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>VAT Posting Group Validation</strong> for free gift codes in <strong>Sales Lines</strong>. Sales users will now see improved validation, reducing errors when assigning VAT groups to promotional items. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Set fields as non-editable in the <strong>Import Sales Journal Table</strong>. This prevents accidental changes to imported sales data, ensuring data integrity during price management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Modified the layout of the <strong>Employee Card Extension</strong> and hid visibility of <strong>Nationality</strong>, <strong>Board Member</strong>, and <strong>Manager Role</strong> fields. This streamlines the employee card for sales users, focusing only on relevant information. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Moved fields customization in the <strong>Employee Card IT</strong> for compatibility with ES localization, ensuring employee data displays correctly for users in Spain. <em>[albertodone]</em></li>
 </ul>
 </div>
 <h4>🛒 Purchase</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Validated <strong>Asset Number</strong> in import processes for purchase and sales price management, preventing errors and ensuring accurate asset tracking during price imports. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Set fields as <strong>Non-Editable</strong> in <strong>Import Purchase Journal</strong> and <strong>Import Sales Journal</strong> tables, protecting imported data from accidental changes and maintaining data integrity. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Set fields as non-editable in the <strong>Import Purchase Journal Table</strong>. This prevents accidental changes to imported purchase data, maintaining data integrity during price management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Validated <strong>Asset Number</strong> in import processes for purchase price management. Purchasers will now see improved validation, reducing errors when importing asset-related purchase prices. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Ensured <strong>Transport Log Entry</strong> is created only for valid transport IDs, preventing incorrect log records and improving the accuracy of transport tracking. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Added <strong>Responsibility Center Field</strong> to the <strong>Acc. Sales Order List Page</strong>, allowing logistics and sales teams to filter and view orders by responsibility center for better management. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Ensured <strong>Transport Log Entry</strong> is created only for valid transport IDs. This prevents unnecessary or incorrect log entries, improving the accuracy of transport tracking and reporting. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Responsibility Center Field</strong> to the <strong>Acc. Sales Order List Page</strong>. Logistics users can now see responsibility center information directly on sales orders, supporting better tracking and accountability. <em>[mpisana]</em></li>
 </ul>
 </div>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated the <strong>Permission Set Name</strong> for <strong>Document Report DE</strong>, ensuring correct access control and preventing permission errors in document reporting. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Modified the layout of the <strong>Employee Card Extension</strong>, improving usability and compatibility with other regions. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Hid visibility of <strong>Nationality</strong>, <strong>Board Member</strong>, and <strong>Manager Role</strong> fields in the <strong>Employee Card</strong>, streamlining the interface and focusing on relevant employee information. <em>[mpisana]</em></li>
-<li class='subcontent-p'>Moved fields customization in <strong>Employee Card IT</strong> for compatibility with ES region, ensuring consistent employee data management across countries. <em>[albertodone]</em></li>
-<li class='subcontent-p'>Updated report and page extension versions for <strong>Reminder Document SK</strong>, <strong>Acc. Sales Role Center DE</strong>, <strong>Accounting Role Center DE</strong>, <strong>Profile Purchase Credit Memo SK</strong>, and <strong>Accounting Role Center SK</strong> to maintain compatibility and ensure smooth system updates. <em>[mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>Permission Set Name</strong> for the <strong>Document Report DE</strong>. This ensures correct access control and prevents permission errors when generating document reports. <em>[albertodone]</em></li>
+<li class='subcontent-p'>Updated report and page extension versions for <strong>Reminder Document SK</strong>, <strong>Acc. Sales Role Center DE</strong>, <strong>Accounting Role Center DE</strong>, <strong>Profile Purchase Credit Memo SK</strong>, and <strong>Accounting Role Center SK</strong>. This maintains compatibility and ensures users have access to the latest features and fixes. <em>[mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Modified the layout of the <strong>Employee Card Extension</strong> for improved usability and compatibility across regions. This makes employee management more consistent and user-friendly. <em>[mpisana]</em></li>
 </ul>
 </div>
 </div></div>
@@ -2243,7 +2251,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 05 marzo 2026 • 00:57 CET
+            Last updated: 05 marzo 2026 • 01:01 CET
         </div>
     </div>
 </body>
