@@ -260,107 +260,100 @@
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Improved the logic for updating item weight in <strong>Document Detail processing</strong>, ensuring more accurate calculations for financial documents and compliance reporting. This enhancement helps accountants and finance users maintain precise records for inventory and related financial transactions. *[App: Conai IT] [albertodone]*</li>
+<li class='subcontent-p'>Improved the logic for updating item weight in <strong>Document Detail processing</strong>. This ensures more accurate weight calculations for financial documents, helping users maintain precise records for compliance and reporting. <em>[App: Conai IT - Author: albertodone]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enhanced <strong>Sales Detail Management</strong> to include open price calculations, now also retrieving open price directly from <strong>Sales Shipment Line</strong>. This provides sales managers with more accurate pricing information for shipped items, supporting better sales analysis and reporting. *[App: Sales Detail] [albertodone]*</li>
-<li class='subcontent-p'>Added validation for <strong>Shipment Method</strong> and <strong>Payment Terms</strong> during <strong>Sales Order creation</strong>, ensuring that orders cannot be processed without these key details. This reduces errors and improves order processing reliability for sales teams. *[App: Dyn365] [albertodone]*</li>
+<li class='subcontent-p'>Enhanced <strong>Sales Detail Management</strong> to include open price calculations, now also retrieving open price from <strong>Sales Shipment Line</strong>. This gives sales teams better visibility into outstanding prices and helps with accurate sales tracking and reporting. <em>[App: Sales Detail - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added validation for <strong>Shipment Method</strong> and <strong>Payment Terms</strong> during <strong>Sales Order creation</strong>. This ensures that orders cannot be created without valid shipping and payment information, reducing errors and improving process reliability. <em>[App: Dyn365 - Author: albertodone]</em></li>
 </ul>
 </div>
 <h4>🛒 Purchase</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added the <strong>Invoice Document Date</strong> field to <strong>Purchase Details</strong> and updated related logic. Purchasers can now track invoice dates more precisely, improving reporting and audit trails for purchase transactions. *[App: Purchase Detail] [albertodone]*</li>
-<li class='subcontent-p'>Updated import processes to validate asset numbers in <strong>Purchase Price Management</strong>, ensuring that imported purchase prices are linked to valid assets. This helps maintain data integrity and supports accurate asset tracking. *[App: Purchase Price] [mpisana]*</li>
+<li class='subcontent-p'>Added the <strong>Invoice Document Date</strong> field to <strong>Purchase Details</strong> and updated related logic. Users can now track the invoice date directly in purchase records, improving reporting accuracy and audit trails. <em>[App: Purchase Detail - Author: albertodone]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added the <strong>Variant Code</strong> field to <strong>Transport Detail</strong> and updated related logic. Warehouse and logistics staff can now track item variants during transport, improving visibility and accuracy in shipment management. *[App: Transport Detail] [albertodone]*</li>
-<li class='subcontent-p'>Updated the packaging type selection logic in <strong>Packaging Management</strong>, making it easier for warehouse teams to select the correct packaging type for each shipment. This streamlines packing operations and reduces errors. *[App: Packaging] [albertodone]*</li>
-</ul>
-</div>
-<h4>👥 HR</h4>
-<div class='subcontent'>
-<ul>
-<li class='subcontent-p'>Modified the layout of the <strong>Employee Card</strong> extension, making it easier for HR staff to view and manage employee information. The changes improve usability and compatibility with localized versions. *[App: Resource Employee, Base IT] [mpisana, albertodone]*</li>
-<li class='subcontent-p'>Hid the visibility of <strong>Nationality</strong>, <strong>Board Member</strong>, and <strong>Manager Role</strong> fields on the <strong>Employee Card</strong>, ensuring sensitive or irrelevant information is not displayed to users. This helps HR departments maintain privacy and focus on relevant data. *[App: Resource Employee] [mpisana]*</li>
+<li class='subcontent-p'>Updated the <strong>Packaging Type selection logic</strong> in <strong>Packaging Management</strong>. This change streamlines how packaging types are chosen, making it easier for warehouse staff to select the correct packaging and reducing mistakes during shipment preparation. <em>[App: Packaging - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Variant Code</strong> field to <strong>Transport Detail</strong> and updated related logic. This provides enhanced visibility into item variants during transport, helping logistics teams track and manage shipments more precisely. <em>[App: Transport Detail - Author: albertodone]</em></li>
 </ul>
 </div>
 <h4>📊 Integration</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Added new APIs for <strong>Assembly Order</strong> and <strong>Post Assembly</strong> to the permission set, enabling improved access control and integration with external systems for assembly tracking and reporting. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Introduced <strong>Assembly Order</strong> and <strong>Assembly Order Line</strong> APIs, allowing for detailed tracking and reporting of assembly operations through integration platforms. This supports better visibility and automation for manufacturing and logistics teams. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>EDS Transaction Log API</strong>, providing enhanced transaction tracking for integration with external reporting tools. This helps finance and operations teams monitor and audit transaction flows. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Enhanced the permission set for the <strong>PBI Interface</strong> with additional API access, allowing users to connect more data sources and improve integration capabilities across departments. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>Intercompany</strong> field to the <strong>Vendors API</strong>, improving data integration between companies and supporting more accurate vendor reporting in cross-company scenarios. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>Variant Code</strong> field to the <strong>Transport Detail API</strong>, increasing data visibility for item variants in transport records shared with external systems. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>Invoice Document Date</strong> field to the <strong>Purchase Details API</strong>, enabling enhanced reporting and integration with external analytics tools for purchase transactions. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Implemented the <strong>Dismissed Sales Archive API</strong>, allowing detailed retrieval of archived sales data for integration with reporting and analytics platforms. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Created the <strong>Dismissed Purchase Archive API</strong>, enabling detailed data retrieval of archived purchase records for external reporting and compliance. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added <strong>Amount</strong> and <strong>Cost AC</strong> fields to the <strong>Board Sales Details API</strong>, providing more comprehensive sales data for integration with Board reporting dashboards. *[App: Board Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added an <strong>Intercompany</strong> filter to the <strong>CM Customers API</strong>, improving data accuracy for customer records shared across companies. *[App: Credit Mixer Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>Intercompany</strong> field to the <strong>Customers API</strong>, enhancing data handling for customer integrations in multi-company environments. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Created a read-only API page for <strong>Responsibility Center</strong>, allowing external systems to access responsibility center data without risk of modification. *[App: PBI Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>Bank API</strong> and <strong>Cash Flow Ledger API</strong> to the Business Central interface, enabling finance teams to integrate banking and cash flow data with external reporting and analytics tools. *[App: PBI Interface] [albertodone]*</li>
+<li class='subcontent-p'>Added <strong>Assembly Order</strong> and <strong>Post Assembly APIs</strong> to the permission set for improved access control. Users can now securely access assembly order data and post assembly operations through integration, supporting better tracking and reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced new <strong>Assembly Order</strong> and <strong>Assembly Order Line APIs</strong> for enhanced assembly tracking and reporting. These APIs allow integrated systems to retrieve detailed assembly information, improving visibility across departments. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>EDS Transaction Log API</strong> for improved transaction tracking. This API enables external systems to monitor and analyze transaction logs, supporting better audit and integration capabilities. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>PBI Interface permission set</strong> with additional API access, allowing users to interact with more data endpoints for improved integration and reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Intercompany</strong> field to <strong>PBI Vendors API</strong> for improved data integration. This allows users to distinguish vendors involved in intercompany transactions, supporting more accurate reporting and consolidation. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Variant Code</strong> field to <strong>PBI Transport Detail API</strong> for enhanced data visibility. Users can now see item variants in transport details, improving tracking and analysis. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Invoice Document Date</strong> field to <strong>Purchase Details API</strong> for enhanced reporting. This helps users track invoice dates in purchase data shared with external systems. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented the <strong>Dismissed Sales Archive API</strong> for detailed data retrieval. Users can now access archived sales data that has been dismissed, supporting historical analysis and compliance. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Created the <strong>Dismissed Purchase Archive API</strong> for detailed data retrieval. This allows users to retrieve archived purchase records that have been dismissed, aiding in audits and historical reviews. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Amount</strong> and <strong>Cost AC</strong> fields in the <strong>Board Sales Details API</strong>. These fields provide more detailed financial information for board-level sales reporting and analysis. <em>[App: Board Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Intercompany filter</strong> to <strong>CM Customers API</strong> for improved data accuracy. Users can now filter customer data based on intercompany status, ensuring more precise reporting and integration. <em>[App: Credit Mixer Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Intercompany</strong> field to <strong>PBI Customers API</strong> for enhanced data handling. This helps users identify customers involved in intercompany transactions, improving data management and reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Created a new <strong>Responsibility Center API page</strong> with read-only access. Users can now view responsibility center data through integration, supporting better organizational reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Bank</strong> and <strong>Cash Flow Ledger APIs</strong> to the interface, allowing users to access banking and cash flow data for improved financial integration and reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
 </ul>
 </div>
 <h4>🌐 General</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Enhanced data URI handling in the <strong>HTML Viewer</strong> to open files with the correct filename, improving document viewing and download experience for users. Also improved iframe functionality to handle data URI links, making it easier to view embedded documents. *[App: PBI Interface] [albertodone]*</li>
+<li class='subcontent-p'>Enhanced <strong>Data URI handling</strong> in the <strong>HTML Viewer</strong> to open the viewer with the correct filename and improved iframe functionality for data URI links. This makes it easier for users to view documents and files directly in the system, improving usability and document management. <em>[App: PBI Interface - Author: albertodone]</em></li>
 </ul>
 </div>
 <h3>🪲 Bug Fixes</h3>
 <h4>💰 Finance</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Improved VAT posting group validation for <strong>Free Gift Codes</strong> in <strong>Sales Lines</strong>, ensuring correct VAT assignment and compliance for promotional items. *[App: Finance] [mpisana]*</li>
+<li class='subcontent-p'>Improved <strong>VAT posting group validation</strong> for free gift codes in <strong>Sales Lines</strong>. This ensures that VAT groups are correctly assigned when processing free gifts, reducing errors and supporting compliance. <em>[App: Finance - Author: mpisana]</em></li>
 </ul>
 </div>
 <h4>🛍️ Sales</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Set fields as non-editable in <strong>Import Sales Journal</strong> tables, preventing accidental changes to imported sales data and maintaining data integrity. *[App: Sales Price] [mpisana]*</li>
-<li class='subcontent-p'>Updated import processes to validate asset numbers in <strong>Sales Price Management</strong>, ensuring imported sales prices are linked to valid assets and improving data accuracy. *[App: Sales Price] [mpisana]*</li>
+<li class='subcontent-p'>Set fields as non-editable in <strong>Import Sales Journal</strong> tables. This prevents accidental changes to imported sales data, ensuring data integrity and reliability. <em>[App: Sales Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Validated asset numbers in import processes for <strong>Sales Price Management</strong>. This helps prevent errors when importing sales prices, ensuring that asset numbers are correct and consistent. <em>[App: Sales Price - Author: mpisana]</em></li>
 </ul>
 </div>
 <h4>🛒 Purchase</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Set fields as non-editable in <strong>Import Purchase Journal</strong> tables, preventing accidental edits to imported purchase data and ensuring data consistency. *[App: Purchase Price] [mpisana]*</li>
+<li class='subcontent-p'>Set fields as non-editable in <strong>Import Purchase Journal</strong> tables. This protects imported purchase data from unintended edits, maintaining data accuracy. <em>[App: Purchase Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Validated asset numbers in import processes for <strong>Purchase Price Management</strong>. This ensures asset numbers are properly checked during import, reducing mistakes and improving data quality. <em>[App: Purchase Price - Author: mpisana]</em></li>
 </ul>
 </div>
 <h4>📦 Logistic</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Ensured that <strong>Transport Log Entry</strong> is created only for valid transport IDs, preventing erroneous log records and improving the reliability of transport tracking. *[App: Transporeon API] [mpisana]*</li>
+<li class='subcontent-p'>Ensured that <strong>Transport Log Entry</strong> is created only for valid transport IDs. This prevents incorrect log entries and improves the reliability of transport tracking. <em>[App: Transport Detail - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added the <strong>Responsibility Center</strong> field to the <strong>Acc. Sales Order List</strong> page, giving logistics and sales teams better visibility into which responsibility center is associated with each sales order. <em>[App: Profile - Author: mpisana]</em></li>
 </ul>
 </div>
 <h4>👥 HR</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Moved field customizations in the <strong>Employee Card IT</strong> extension for compatibility with localized versions, ensuring HR users in different regions have a consistent experience. *[App: Base IT] [albertodone]*</li>
-<li class='subcontent-p'>Corrected the table extension ID for <strong>CV Ledger Entry Buffer IT</strong>, resolving potential issues with employee-related financial records. *[App: Finance IT] [albertodone]*</li>
+<li class='subcontent-p'>Modified the layout of the <strong>Employee Card extension</strong> and moved field customizations for compatibility with ES localization. Also, hid the visibility of <strong>Nationality</strong>, <strong>Board Member</strong>, and <strong>Manager Role</strong> fields to streamline the employee card and reduce unnecessary information. <em>[App: Resource Employee, Base IT - Author: mpisana, albertodone]</em></li>
 </ul>
 </div>
 <h4>📊 Integration</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Removed duplicate application area declaration in the <strong>Board Sales Details API</strong>, streamlining API configuration and preventing confusion for integration users. *[App: Board Interface] [albertodone]*</li>
-<li class='subcontent-p'>Added the <strong>Responsibility Center</strong> field to the <strong>Acc. Sales Order List</strong> page, improving reporting and filtering capabilities for integrated sales order data. *[App: Profile] [mpisana]*</li>
+<li class='subcontent-p'>Removed duplicate application area declaration in the <strong>Board Sales Details API</strong>, ensuring cleaner API configuration and preventing confusion for users accessing board sales data. <em>[App: Board Interface - Author: albertodone]</em></li>
 </ul>
 </div>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated the permissionset name for <strong>Document Report DE</strong>, ensuring correct security and access control for document reporting features in the German localization. *[App: Document Report DE] [albertodone]*</li>
-<li class='subcontent-p'>Updated report and page extension versions for <strong>Reminder Document SK</strong>, <strong>Acc. Sales Role Center DE</strong>, <strong>Accounting Role Center DE</strong>, <strong>Profile Purchase Credit Memo SK</strong>, and <strong>Accounting Role Center SK</strong>, ensuring compatibility and stability for users in these localized environments. *[App: Document Report SK, Role Center DE, Profile SK, Role Center SK] [mpisana]*</li>
+<li class='subcontent-p'>Updated the permissionset name for <strong>Document Report DE</strong> to align with system standards, ensuring correct access control and easier management for administrators. <em>[App: Document Report DE - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated report and page extension versions for <strong>Reminder Document SK</strong>, <strong>Acc. Sales Role Center DE</strong>, <strong>Accounting Role Center DE</strong>, <strong>Profile Purchase Credit Memo SK</strong>, and <strong>Accounting Role Center SK</strong>. These updates ensure compatibility and stability across system modules. <em>[App: Document Report SK, Role Center DE, Profile SK, Role Center SK - Author: mpisana]</em></li>
+<li class='subcontent-p'>Corrected the table extension ID for <strong>CV Ledger Entry Buffer IT</strong>, ensuring proper system referencing and preventing potential errors in financial data processing. <em>[App: Finance IT - Author: albertodone]</em></li>
 </ul>
 </div>
 </div></div>
@@ -2262,7 +2255,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 05 marzo 2026 • 02:03 CET
+            Last updated: 05 marzo 2026 • 02:06 CET
         </div>
     </div>
 </body>
