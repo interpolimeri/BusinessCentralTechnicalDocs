@@ -253,6 +253,96 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.369.0 (PR #651) - 10/03/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the ability to automatically copy <strong>VAT Posting Group</strong> and <strong>Gen. Product Posting Group</strong> information when assigning free gifts in sales and purchase documents. This ensures that free gifts are posted with the correct tax and product group settings, reducing manual errors and streamlining accounting processes. <em>[App: Finance - Author: mpisana]</em></li>
+<li class='subcontent-p'>Implemented extended text management for <strong>item charges</strong> in both sales and purchase lines. Users can now add detailed descriptions and notes to item charges, improving clarity and supporting more comprehensive documentation for financial transactions. <em>[App: Finance - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced a new <strong>Sales Analysis report</strong> for <strong>Item Ledger Entries</strong>. This report provides detailed insights into sales activity, helping users analyze item movements, sales trends, and performance directly from ledger data. <em>[App: Base - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Salesperson Code</strong> field to the <strong>Customer Card</strong> customization. Sales teams can now easily assign and track the responsible salesperson for each customer, improving sales management and reporting. <em>[App: Base - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced the handling of <strong>product group codes</strong> in sales and purchase lines. The system now automatically sets the product group code based on line details, ensuring consistent categorization and simplifying reporting. <em>[App: Base - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the calculation of shipping line weight to use the <strong>Quantity to Ship</strong> field. This change ensures that shipping documents and logistics planning reflect the actual quantities being shipped, improving accuracy for warehouse and transport operations. <em>[App: Base - Author: mpisana]</em></li>
+<li class='subcontent-p'>Improved vendor information management in <strong>lot tracking</strong> processes. Users can now access more detailed vendor data when tracking lots, supporting better traceability and compliance in inventory management. <em>[App: Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new fields for <strong>Table Name</strong> and <strong>Table Subtype Name</strong> in the <strong>DocuFlow Table Setup</strong> page. This enhancement allows users to better configure and identify document flow tables, supporting more flexible document management setups. <em>[App: DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced tooltips and visibility settings for <strong>fixed due dates</strong> and <strong>stop payment periods</strong>. Users now benefit from clearer guidance and improved usability when managing payment terms and restrictions. <em>[App: Base PT, IPL Payment Due Date - Author: albertodone]</em></li>
+<li class='subcontent-p'>Expanded the management of <strong>fixed due dates</strong> and <strong>stop payment periods</strong> to be available for all countries. This ensures consistent payment term controls across international operations, supporting global compliance. <em>[App: IPL Payment Due Date, Base PT - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored the material skip logic in the <strong>CONAI packaging process</strong> to streamline operations. This update simplifies packaging management and reduces unnecessary steps for users handling packaging compliance. <em>[App: Packaging, Conai IT - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added permissions for <strong>CRM Annotation</strong> in the <strong>Dyn365 Base permission set</strong>, enabling users to access and manage CRM notes and attachments within the Dynamics 365 integration. <em>[App: Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>IC Inventory API</strong> with detailed lot and cost history fields, a new description field, and a dedicated page for item data access. Users can now retrieve comprehensive inventory information, including lot details and cost history, directly through integration interfaces, supporting better data analysis and reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added inventory valuation and costing dependencies to the <strong>IC Inventory API</strong> and updated permissions to allow access to inventory data. This ensures that integrated systems can retrieve accurate inventory values and costing information for improved financial and operational reporting. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented payment due date management setup to prevent activation in specific countries. This feature allows organizations to control payment term configurations based on country-specific requirements, supporting compliance and reducing errors in international transactions. <em>[App: PBI Interface, IPL Payment Due Date - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new fields and improved visibility for <strong>fixed due dates</strong> and <strong>stop payment periods</strong> management, making these features easier to configure and use across different document workflows. <em>[App: IPL Payment Due Date, DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the <strong>enum extension ID</strong> for the <strong>E-Document Format DE</strong>, ensuring proper identification and compatibility for electronic document formats in German localization. <em>[App: E-Document DE - Author: albertodone]</em></li>
+<li class='subcontent-p'>Fixed the <strong>page ID</strong> for the <strong>Issued Bill Lines Analysis</strong> page, resolving issues with accessing and analyzing issued bill lines in credit management. <em>[App: Credit Management IT - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the logic for retrieving archived sales lines in the <strong>Sales Archive Dismissed API</strong>, ensuring that dismissed sales orders are processed and displayed correctly. <em>[App: PBI Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Resolved issues in sales order validation logic, improving data processing and reducing errors when validating sales orders. <em>[App: PBI Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the <strong>page extension ID</strong> for the <strong>Item Card extension</strong> in the Item Wizard module, ensuring proper display and functionality for item cards. <em>[App: Item Wizard - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed redundant query permission from the <strong>Sell Off List permission set</strong>, streamlining security and reducing unnecessary access rights. <em>[App: Sell Off List - Author: albertodone]</em></li>
+<li class='subcontent-p'>Removed temporary source table setting from the <strong>EDS Transaction Log</strong> page, improving data integrity and simplifying transaction log management. <em>[App: Communication - Author: albertodone]</em></li>
+<li class='subcontent-p'>Adjusted date filter logic in the <strong>User Task Backup retrieval process</strong>, ensuring accurate filtering and retrieval of user tasks based on date criteria. <em>[App: Communication - Author: albertodone]</em></li>
+<li class='subcontent-p'>Renamed the <strong>Fixed Due Date app</strong> to <strong>Payment Due Date</strong>, clarifying its purpose and making it easier for users to identify payment term management features. <em>[App: IPL Payment Due Date - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated inventory setup handling for <strong>demand forecast calculations</strong>, ensuring that inventory forecasts are based on correct setup parameters and improving planning accuracy. <em>[App: Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed the <strong>Sell Off List query</strong> and the <strong>DocuFlow Update page</strong> from the integration APIs, streamlining the API structure and removing obsolete endpoints for improved performance and clarity. <em>[App: PBI Interface, DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.367.0 (PR #642) - 04/03/2026</h2>
 </div>
 <div class='release-content'>
@@ -2255,7 +2345,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 05 marzo 2026 • 02:06 CET
+            Last updated: 11 marzo 2026 • 00:42 CET
         </div>
     </div>
 </body>
