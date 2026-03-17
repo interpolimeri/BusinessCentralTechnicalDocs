@@ -253,6 +253,78 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.372.0 (PR #660) - 17/03/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new <strong>VAT Register Grouped XLSX</strong> action to the <strong>Accounting Role Center IT</strong> page. This allows users to quickly export grouped VAT register data to Excel, making it easier to analyze and share VAT information for compliance and reporting purposes. <em>[App: IPL Role Center IT - Author: mpisana]</em></li>
+<li class='subcontent-p'>Introduced an <strong>initialization action</strong> for <strong>CONAI Item Packaging</strong> on the relevant page, streamlining the setup process for packaging compliance and ensuring all required data is correctly initialized for Italian environmental reporting. <em>[App: Conai IT - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>permission set</strong> for CRM Sold and Customer Address functionalities, ensuring users have the correct access to manage CRM-related sales and address data securely. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>customer ship-to address synchronization</strong> and new actions to update the sales header, improving the accuracy of shipping information between CRM and sales orders. This ensures that customer address changes in CRM are reflected in sales documents, reducing manual updates and errors. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented new <strong>CRM data synchronization functions</strong> for items, orders, and addresses, allowing for more seamless integration between Business Central and CRM. This ensures that product, order, and address data remain consistent across both systems, reducing discrepancies and manual reconciliation. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added an action to <strong>update CRM order status</strong> directly from Business Central and enhanced the integration with sales orders. Users can now keep CRM order statuses in sync with Business Central, improving visibility and coordination between sales and CRM teams. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced <strong>CRM Customer Address (Ship-to)</strong> and <strong>Sold</strong> data synchronization, ensuring that both ship-to and sold-to customer information is accurately maintained between CRM and Business Central. This reduces the risk of shipping errors and improves customer data reliability. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a <strong>Salesperson Code</strong> field to the <strong>Profile Customer Card</strong> layout, making it easier to assign and track the responsible salesperson for each customer directly from the customer card. <em>[App: Profile - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated the <strong>action caption and tooltip</strong> for updating vendor information, providing clearer guidance to users when performing vendor updates and reducing confusion during the process. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a new <strong>Sales Order 2 cue type</strong> and related activities to the <strong>Role Center</strong>, giving users quick access to key sales order metrics and actions from their dashboard. This helps sales teams monitor and manage orders more efficiently. <em>[App: IPL Role Center - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>IPL Sales Detail</strong> as a dependency to the <strong>Dyn365 application configuration</strong>, ensuring all necessary components are available for detailed sales data integration with Dynamics 365. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new <strong>Handling Unit Type</strong> field and related logic to shipping information management, allowing users to specify and manage the type of handling unit used for shipments. This improves tracking and handling of goods during warehouse and transport operations. <em>[App: Packaging - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>shipping notes</strong> in report management to include the new <strong>Handling Unit Type</strong> field, ensuring that all relevant shipping documentation reflects the correct handling unit details for better logistics coordination. <em>[App: Packaging - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added a page extension for the <strong>Profile Doc. Shipping Info Card</strong> with hidden fields, streamlining the user interface by displaying only the most relevant shipping information and reducing screen clutter. <em>[App: Profile IT - Author: mpisana]</em></li>
+<li class='subcontent-p'>Hid unnecessary fields in <strong>Posted Transfer Shipment Subform</strong> layouts, making the interface cleaner and helping users focus on the most important shipment details. <em>[App: Profile - Author: mpisana]</em></li>
+<li class='subcontent-p'>Implemented <strong>intercompany inventory data extraction</strong>, enabling users to extract and analyze inventory data across multiple companies. This supports better stock management and reporting in intercompany scenarios. <em>[App: Profile - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>due date calculation logic</strong> in <strong>requisition worksheet management</strong>, providing more accurate and reliable due dates for purchase and replenishment planning. This helps purchasing and warehouse teams better manage supply timelines. <em>[App: IPL Req. Worksheet Management - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>currency</strong> and <strong>amount</strong> fields to <strong>Board APIs</strong> and implemented record triggers, allowing for more detailed financial data to be shared with Board reporting tools. This enhances the quality of financial analytics and dashboards available to users. <em>[App: IPL Board Interface - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented <strong>intercompany inventory data extraction</strong> in the <strong>PBI IC Inventory API</strong> and related tables, enabling seamless integration of inventory data with Power BI for advanced reporting and analysis across companies. <em>[App: IPL PBI Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>AL registry validation</strong> with warnings for unregistered IDs and name mismatches, helping administrators maintain data integrity and avoid configuration errors. <em>[App: Profile - Author: albertodone]</em></li>
+<li class='subcontent-p'>Moved the <strong>changelog</strong> into the tools section, centralizing release notes and making it easier for users to find information about recent updates. <em>[App: Profile - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the <strong>query ID</strong> for the <strong>Dyn365 Sold Query</strong> to match the original specification, ensuring accurate data retrieval and preventing issues when accessing sold data from Dynamics 365. <em>[App: Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed <strong>WIP Item</strong> visibility from the <strong>Posted Transfer Shipment Subform</strong>, preventing users from seeing work-in-progress items where they are not relevant and reducing confusion in shipment records. <em>[App: Profile - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed unused references from various <strong>report documents</strong> for cleaner output, ensuring that generated reports are free from unnecessary data and easier to read. <em>[App: IPL Document Report - Author: mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.369.0 (PR #651) - 10/03/2026</h2>
 </div>
 <div class='release-content'>
@@ -2345,7 +2417,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 11 marzo 2026 • 00:42 CET
+            Last updated: 17 marzo 2026 • 01:26 CET
         </div>
     </div>
 </body>
