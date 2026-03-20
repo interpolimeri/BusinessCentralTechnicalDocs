@@ -253,6 +253,76 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.373.0 (PR #668) - 20/03/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced the new <strong>PBIInterfaceIT app</strong> for managing Italian electronic invoice files. Users can now access, import, and review AE invoice files directly within Business Central, with API pages available for integration with external systems. This streamlines invoice handling and improves visibility for finance and compliance teams. _[App: PBI interface IT - Author: albertodone]_</li>
+<li class='subcontent-p'>Added <strong>Board Customer API</strong> and <strong>Board Location API</strong> pages, allowing users and external systems to access customer and location data through secure APIs. This enables easier integration with reporting dashboards and third-party tools, improving data sharing and automation. _[App: IPL Board Interface - Author: albertodone]_</li>
+<li class='subcontent-p'>Enhanced <strong>Board Admin permissions</strong> to include access to Customer and Location APIs. Administrators can now manage API access for these areas, ensuring proper security and control over sensitive business data. _[App: IPL Board Interface - Author: albertodone]_</li>
+<li class='subcontent-p'>Added <strong>Credit Management dependency</strong> in Board Interface app configuration. This ensures that credit-related features are available and properly integrated when using Board Interface APIs, supporting better credit control and risk management. _[App: IPL Board Interface - Author: albertodone]_</li>
+<li class='subcontent-p'>Added <strong>CSR Purchase field</strong> to the <strong>Sales Detail table</strong> and exposed it in both <strong>Sales Details API</strong> and <strong>Sales Line API</strong>. This allows users and integrations to track CSR purchase information at a granular level, improving reporting and compliance for sales transactions. _[App: IPL Board Interface, IPL Sales Detail - Author: albertodone]_</li>
+<li class='subcontent-p'>Synchronized <strong>ship-to addresses</strong> and updated related operations in integration processes. This ensures that shipping information is consistent across Business Central and connected systems, reducing errors and improving logistics coordination. _[App: IPL Dyn365 - Author: albertodone]_</li>
+<li class='subcontent-p'>Implemented <strong>Vendor No. field</strong> in both the <strong>PBI Locations API page</strong> and the <strong>Location Table and Card</strong>. Users can now link locations to vendors, making it easier to track supplier relationships and streamline procurement processes. _[App: IPL PBI Interface, IPL Base - Author: albertodone]_</li>
+<li class='subcontent-p'>Created <strong>Board Sales Details API</strong> and <strong>Board Sales Line API</strong> pages for accessing detailed sales data via API. This supports advanced reporting and integration scenarios, enabling external tools to retrieve sales information efficiently. _[App: IPL Board Interface - Author: albertodone]_</li>
+<li class='subcontent-p'>Implemented <strong>Board Location API</strong> for accessing location data through integration. This facilitates automated data exchange with external systems, improving operational visibility and reducing manual data entry. _[App: IPL Board Interface - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the new <strong>Document Report SI app</strong> for managing document reports in the Italian localization. Users can now generate, customize, and manage sales, purchase, invoice, reminder, and shipment documents with enhanced reporting capabilities. Configuration files and setup rules are included for flexible deployment. _[App: IPL Document Report SI - Author: mpisana]_</li>
+<li class='subcontent-p'>Provided scripts for both cloud and local development environments in the new <strong>Document Report SI project</strong>. This makes it easier for administrators to set up and maintain the reporting module, ensuring smooth operation and compatibility. _[App: IPL Document Report SI - Author: mpisana]_</li>
+<li class='subcontent-p'>Added a template for <strong>Business Central App Registration configuration</strong>, simplifying the process of registering new apps and managing their setup. This helps system administrators streamline app onboarding and configuration. _[App: IPL Board Interface - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>starting and ending time fields</strong> to the <strong>Assembly Header</strong> and <strong>Posted Assembly Header</strong> tables, and created the new <strong>Assembly Order Report</strong>. Users can now track the duration of assembly orders, improving production planning and performance analysis. The new report provides detailed insights into assembly operations. _[App: IPL Transformation Order - Author: mpisana]_</li>
+<li class='subcontent-p'>Enhanced the <strong>Ship-to Name</strong> field in the <strong>Purchase Order List</strong> by adding <strong>Shipment Information</strong>. This gives users more visibility into shipment details directly from the purchase order list, making it easier to monitor logistics and delivery status. _[App: Profile - Author: mpisana]_</li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>CONAI ledger entry fields</strong> to include <strong>Variant Code</strong>, allowing users to track product variants in environmental reporting and compliance processes. This improves accuracy in CONAI declarations and supports better audit trails. _[App: IPL Conai IT - Author: albertodone]_</li>
+<li class='subcontent-p'>Added a page extension for the <strong>Conai Vendor Card</strong> with a new <strong>PRS field</strong>. Users can now record and view PRS information for vendors, supporting more detailed environmental compliance and vendor management. _[App: IPL Conai IT - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>purchase category source</strong> to use <strong>Load-from</strong> instead of <strong>Ship-to</strong>. This change ensures that purchase categories are determined based on the actual loading location, improving accuracy in procurement and logistics workflows. _[App: IPL Categories Management - Author: albertodone]_</li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated references from <strong>Ship-to Code</strong> to <strong>Ship-to Country/Region Code</strong> in the purchase process. This ensures that country and region information is correctly used for purchases, reducing errors and improving compliance with international procurement requirements. _[App: IPL Categories Management - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Trusted NuGet Feed URL</strong> to point to version 27 for EOA Apps, ensuring that the latest package versions are used for system updates and app installations. This improves reliability and compatibility for future deployments. _[App: IPL Board Interface - Author: albertodone]_</li>
+<li class='subcontent-p'>Updated the <strong>NuGet feed URL</strong> to point to version 27 for Business Central packages, guaranteeing that users and administrators receive the most recent updates and bug fixes for the platform. _[App: IPL Document Report SI - Author: mpisana]_</li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>AL-Go System Files</strong> from the Microsoft AL-Go-PTE main branch, ensuring that system utilities and deployment scripts are aligned with the latest standards. This helps maintain system stability and supports ongoing improvements. _[App: IPL Board Interface - Author: albertodone]_</li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.372.0 (PR #660) - 17/03/2026</h2>
 </div>
 <div class='release-content'>
@@ -2417,7 +2487,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 20 marzo 2026 • 22:21 CET
+            Last updated: 20 marzo 2026 • 22:23 CET
         </div>
     </div>
 </body>
