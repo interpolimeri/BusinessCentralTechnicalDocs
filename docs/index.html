@@ -253,6 +253,79 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.374.0 (PR #675) - 27/03/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved the <strong>diagram editor</strong> by adding new shapes and enhancing the user interface of the <strong>properties panel</strong>. Users can now create more detailed diagrams and easily adjust properties, making visual modeling and process mapping more intuitive and efficient. <em>[App: IPL EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>EDS Diagram</strong> page to provide better editing capabilities. This update allows users to modify diagrams more smoothly, improving workflow visualization and documentation. <em>[App: IPL EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>MoveTask</strong> function to improve task management during document posting. This feature clarifies who created each task and updates the <strong>Posted Document</strong> page for both sales and purchase invoices, making task tracking and audit trails more transparent. <em>[App: IPL Communication, IPL EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced improved item ledger entry retrieval for <strong>Lot Vendor No.</strong> calculation in the <strong>Item Tracking Management</strong> codeunit. This enhancement ensures more accurate vendor tracking for lot-managed items, supporting better traceability and compliance. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced vendor selection handling in the <strong>Lot No. Information List</strong> extension, making it easier to select and manage vendors associated with item lots. This streamlines lot tracking and vendor assignment processes. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved parameter selection handling in the <strong>Dyn365 Syncronizer</strong> codeunit, allowing users to synchronize data with Dynamics 365 more reliably and with clearer parameter choices. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the new <strong>Order Number</strong> field and updated logic for <strong>DTI Entries</strong>. Users can now record and track order numbers directly within DTI entries, improving document traceability and auditability in financial processes. <em>[App: IPL Finance - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>original document type</strong> field for purchase receipts in <strong>ledger entries</strong>. This helps users identify the source document for each receipt, supporting better financial reporting and reconciliation. <em>[App: IPL Conai IT - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the user task URL logic so that when saving a <strong>Sales Header Record Link</strong>, the URL is now correctly updated. This ensures that links to sales documents are always accurate, making it easier for users to access related records and collaborate. <em>[App: IPL Communication - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Lot By Event</strong> action to multiple item-related pages, including <strong>Item Card</strong>, <strong>Item List</strong>, and various order summary pages. This feature allows users to track item lots by specific events, improving inventory traceability and supporting compliance requirements. <em>[App: IPL Item By Event - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>update line</strong> action to the <strong>Transport Details</strong> page for item ledger entries. Users can now update transport lines directly, ensuring that inventory movements are accurately reflected and managed. <em>[App: IPL Transport Detail - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced packaging logic for transfer shipments in the <strong>Shipment Document</strong> report. Packaging fields are now automatically adjusted when transfer lines are inserted, reducing manual entry and minimizing errors in shipment processing. <em>[App: IPL Packaging, IPL Document Report - Author: mpisana, albertodone]</em></li>
+<li class='subcontent-p'>Improved transport detail management to include item charge calculations. This ensures that all relevant charges are considered during transport operations, supporting more accurate cost tracking and reporting. <em>[App: IPL Transport Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Created a new <strong>API page for Item Cost History</strong> to enhance data access for Power BI reporting. Users can now retrieve detailed item cost history for analytics and business intelligence, enabling better decision-making based on historical cost trends. <em>[App: IPL PBI Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed the <strong>OnRun trigger</strong> to ensure the <strong>Lot Number</strong> is correctly updated in dialogs during processing. This prevents errors when handling temporary lot numbers and improves reliability in lot tracking workflows. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Restored the <strong>Record Link URL</strong> field in the <strong>User Task Notification</strong> table extension, ensuring that URLs are preserved during document posting. This fix allows users to access linked documents without interruption. <em>[App: IPL Communication - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected logic in <strong>Transport Detail</strong> so that year and month are set only if the <strong>competence date</strong> is valid. This prevents incorrect period assignments and improves accuracy in financial transport records. <em>[App: IPL Transport Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>inventory API</strong> to improve data retrieval for item costs and quantities. Users will now see more accurate and timely inventory information, supporting better stock management and reporting. <em>[App: IPL PBI Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated transfer line logic to automatically adjust <strong>packaging fields</strong> when new lines are inserted. This reduces manual work and ensures packaging information is always correct for transfer shipments. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.373.0 (PR #668) - 20/03/2026</h2>
 </div>
 <div class='release-content'>
@@ -2487,7 +2560,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 20 marzo 2026 • 22:23 CET
+            Last updated: 27 marzo 2026 • 22:44 CET
         </div>
     </div>
 </body>
