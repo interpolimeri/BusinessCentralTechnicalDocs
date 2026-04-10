@@ -253,6 +253,72 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.382.0 (PR #694) - 10/04/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved <strong>diagram management</strong> by adding save functionality and a focus filter to the <strong>Diagram Viewer</strong> and <strong>Diagram</strong> pages. Users can now save diagrams for later review and filter shapes to focus on specific areas, making complex diagrams easier to manage and analyze. <em>[App: EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>settings configuration</strong> for multiple countries, including version and artifact usage enhancements. This ensures that system settings are aligned with local requirements and improves compatibility across regions. <em>[App: IPL Base, EDS Extension - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>cash flow management</strong> by validating bank account numbers and adding a new exclusion field to <strong>Purchase</strong> and <strong>Sales Document Classes</strong>. This helps prevent errors in cash flow calculations and allows users to exclude specific documents from cash flow analysis, improving accuracy and control. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a new <strong>date formula</strong> field to <strong>Payment Methods</strong> and related table extensions in cash flow management. This allows users to define custom date calculations for payment scheduling, offering greater flexibility in cash flow planning. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enabled <strong>payment method retrieval</strong> for vendor ledger entries in the <strong>Cash Flow API</strong>. Users can now access payment method details directly from vendor ledger entries, streamlining reconciliation and reporting processes. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated version and enhanced permissions for <strong>Invoice Check</strong> pages, improving security and ensuring only authorized users can access sensitive invoice validation features. <em>[App: IPL AE Invoices Check IT - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored the <strong>Invoice Check module</strong> for improved performance and reliability, making invoice validation processes faster and more robust. <em>[App: IPL AE Invoices Check IT - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>sales price verification</strong> to improve error handling and data integrity. Users will now receive clearer error messages and benefit from more reliable price checks during sales order processing, reducing mistakes and streamlining sales workflows. <em>[App: IPL Sales Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added an <strong>event subscriber</strong> to modify the <strong>Sales Header</strong> before releasing documents. This allows for last-minute adjustments and validations, ensuring sales documents are accurate before finalization. <em>[App: IPL Sales Price - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved <strong>purchase price verification</strong> to handle import errors more effectively. Users will experience fewer disruptions during price imports, with enhanced error reporting and correction options. <em>[App: IPL Purchase Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Validated <strong>payment terms</strong> on the <strong>Purchase Header</strong> after E-Document link validation, ensuring that payment terms are correct and compliant before processing purchase documents. <em>[App: IPL E-Document Arxivar Connector - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Vendor Order Number</strong> field to the <strong>CSR Blanket Purchase Orders</strong> page. This allows users to track vendor order references directly within purchase orders, improving traceability and communication with suppliers. <em>[App: Profile - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>artifact paths</strong> for multiple countries in the settings configuration, ensuring that system components are correctly referenced and reducing errors during setup and updates. <em>[App: IPL Base, EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Renamed the <strong>email action</strong> to "Email" for consistency across <strong>Posted Sales Shipment</strong> pages, making it easier for users to identify and use email functions when processing shipments. <em>[App: IPL Email Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Removed the <strong>Diagram Shape Enum</strong> to streamline the diagram rendering process, resulting in faster and more reliable diagram displays. <em>[App: EDS Extension - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Renamed the <strong>Cash Flow Worksheet</strong> file for clarity and easier identification, helping users locate and use the worksheet more efficiently. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Moved the <strong>PBI_IT</strong> object to <strong>Invoice Check IT</strong>, aligning integration files with the correct module for improved organization and easier maintenance. <em>[App: AE Invoices Check IT - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>version number</strong> for the <strong>AE Invoices Check IT</strong> application, ensuring users are working with the latest features and fixes. <em>[App: IPL AE Invoices Check IT - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.377.0 (PR #683) - 31/03/2026</h2>
 </div>
 <div class='release-content'>
@@ -2595,7 +2661,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 01 aprile 2026 • 00:42 CET
+            Last updated: 10 aprile 2026 • 02:45 CET
         </div>
     </div>
 </body>
