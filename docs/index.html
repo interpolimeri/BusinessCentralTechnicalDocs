@@ -253,6 +253,76 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.383.0 (PR #698) - 13/04/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new <strong>localized email templates</strong> for delay notifications, sales order confirmations, modifications, cancellations, receipt confirmations, and closed price notifications. These templates are now available in multiple languages, making communication with customers and vendors more consistent and tailored to their region. Outdated templates for order confirmations and notifications have been removed to avoid confusion. <em>[App: Email Management - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>email template processing</strong> by removing unused detail entries and improving management of template details. This streamlines the setup and maintenance of email templates, making it easier for users to select and customize the correct template for each scenario. <em>[App: Email Management - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added an <strong>update list action</strong> to the <strong>DocuFlow SP User List</strong> page, allowing users to refresh SharePoint user data directly from the user list. This ensures that user information is always up-to-date and reduces manual data entry. <em>[App: IPL DocuFlow - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced a new <strong>G/L entry export report</strong> with advanced filtering and Excel output functionality. Users can now easily export General Ledger entries to Excel, apply custom filters, and analyze financial data outside Business Central for reporting or auditing purposes. <em>[App: IPL Resource Employee - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>user permissions for item management</strong> in the <strong>Item Wizard User Setup</strong> page. Administrators can now control which users have access to item management features, improving security and compliance. The new <strong>IPL Item Management</strong> field allows for granular permission assignment. <em>[App: Item Wizard - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>responsibility center</strong> and <strong>salesperson binding</strong> to the account update process. When updating accounts, users can now link responsibility centers and salespersons, ensuring accurate tracking of sales activities and accountability. This helps with reporting and workflow management. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>VAT date retrieval</strong> in <strong>Sales Invoice</strong> and <strong>Credit Memo</strong> headers. The system now ensures that VAT dates are correctly populated, improving compliance and accuracy in tax reporting. <em>[App: IPL Dyn365 - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new <strong>localized purchase order templates</strong> in multiple languages. Users can now send purchase order notifications and confirmations in the recipient’s preferred language, improving clarity and reducing misunderstandings with international vendors. <em>[App: Email Management - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved error messaging for <strong>FTE electronic document sending</strong> in posted invoices. Users will now receive clearer and more actionable error messages when sending electronic documents, making troubleshooting easier. <em>[App: IPL EDoc Connector IT - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>JSON content handling</strong> in the <strong>API Sync Log Entries</strong> page. The system now processes JSON content more reliably, reducing errors and improving log accuracy for API synchronization activities. <em>[App: IPL Sync - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced log entry processing and status validation in <strong>API Sync Management</strong>, ensuring that synchronization logs are correctly updated and statuses are validated for accuracy. This helps users monitor API sync operations more effectively. <em>[App: IPL Sync - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved management of <strong>record links</strong> so that the URL1 trick is applied only for <strong>Invoices</strong> and <strong>Credit Memos</strong>, preventing incorrect link handling for other document types. <em>[App: IPL Sync - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced initialization of the <strong>sales document summary buffer</strong> in document management procedures, ensuring that summary data is correctly prepared and displayed for sales documents. <em>[App: IPL Document Summary - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Validated <strong>technical product setup</strong> in the <strong>Item Wizard</strong> navigation. Users are now prevented from proceeding with incomplete or incorrect technical product setups, reducing errors in item creation and ensuring data integrity. <em>[App: Item Wizard - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>codeunit number</strong> for <strong>AE Sales File Management IT</strong>, ensuring that the correct codeunit is used for Italian sales file management processes. This prevents potential errors and improves reliability in sales file operations. <em>[App: IPL AE Invoices Check IT - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Initialized the <strong>sales document summary buffer</strong> in document management procedures, ensuring that summary data is correctly prepared and displayed for sales documents. <em>[App: IPL Document Summary - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.382.0 (PR #694) - 10/04/2026</h2>
 </div>
 <div class='release-content'>
@@ -2661,7 +2731,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 10 aprile 2026 • 02:45 CET
+            Last updated: 13 aprile 2026 • 22:42 CET
         </div>
     </div>
 </body>
