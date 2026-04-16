@@ -253,6 +253,63 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.384.0 (PR #702) - 16/04/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced <strong>status mapping and synchronization</strong> for electronic documents, allowing users to track and align document statuses between Business Central and external systems. This improves visibility and control over the processing of invoices and credit memos. <em>[App: E-Document Arxivar Connector - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>PEPPOL validation</strong> and <strong>XML export</strong> with improved error handling. Users will now receive clearer feedback when exporting invoices or credit memos, making it easier to identify and resolve issues in electronic document submissions. <em>[App: E-Document - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>"Your Reference" field</strong> to the editing of <strong>Sales Credit Memos</strong> for electronic documents. This allows users to specify a reference for each credit memo, improving traceability and communication with customers. <em>[App: E-Document Arxivar Connector - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added new <strong>BSO templates</strong> for blanket sales orders, enabling users to generate standardized documents for recurring sales agreements. This streamlines sales processes and ensures consistency in documentation. <em>[App: E-Document Arxivar Connector - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added localized <strong>sales invoice</strong> and <strong>credit memo templates</strong> for Slovenia, providing users with country-specific formats that comply with local regulations and customer requirements. <em>[App: E-Document Arxivar Connector - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added localized <strong>COA</strong> (Chart of Accounts) and <strong>sales shipment templates</strong> for Slovenia, supporting local accounting and shipping practices with tailored document layouts. <em>[App: E-Document Arxivar Connector - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added localized <strong>warehouse receipt</strong> and <strong>shipment templates</strong> for Slovenia, allowing warehouse staff to generate compliant documents for inbound and outbound logistics. <em>[App: E-Document Arxivar Connector - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>unique VAT registration number retrieval</strong> to the <strong>Customer API</strong>. External systems can now access each customer's VAT number directly, improving integration accuracy and compliance for reporting and invoicing. <em>[App: PBI Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Implemented <strong>IXFE log functionality</strong> in <strong>DocuFlow management</strong> and entries. Users can now track detailed log entries for electronic document flows, including new fields such as <strong>Revision</strong>, <strong>Subject</strong>, and improved state handling. This provides greater transparency and auditability for document processing. <em>[App: DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>competence year retrieval</strong> from the VAT date in <strong>DocuFlow functions</strong>, enabling users to automatically determine the relevant fiscal year for VAT reporting based on document dates. This reduces manual errors and streamlines compliance. <em>[App: DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed issues with <strong>library code retrieval</strong> for sales invoices and credit memos, ensuring that the correct library code is applied during document processing and export. This prevents misclassification and improves document tracking. <em>[App: E-Document Arxivar Connector - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved <strong>EDoc processing</strong> for invoices and credit memos by updating library code retrieval logic, ensuring consistent and accurate assignment of codes across all electronic documents. <em>[App: E-Document Arxivar Connector - Author: albertodone]</em></li>
+<li class='subcontent-p'>Corrected <strong>sales order retrieval</strong> in invoice and credit memo processing, resolving cases where related sales orders were not properly linked. This ensures that all documents are accurately associated with their originating orders. <em>[App: E-Document Arxivar Connector - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>tooltips</strong> for <strong>Library Code fields</strong> in <strong>VAT Business Posting Groups</strong>, providing clearer guidance to users when selecting library codes for VAT posting. This reduces confusion and helps ensure correct setup. <em>[App: E-Document Arxivar Connector - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed <strong>ArxivarNext-specific logic</strong> from the DocuFlow site disabling process, simplifying site management and ensuring that disabling a site works consistently regardless of external integrations. <em>[App: DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored the calculation of <strong>IXFE log Enable</strong> to the ArxNext management codeunit, improving performance and reliability when determining if IXFE logging is active. <em>[App: DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>preview content generation</strong> for temporary and current DocuFlow entries, ensuring that users see accurate and up-to-date previews of document flows. This helps users verify document status and content before finalizing actions. <em>[App: DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>VAT Registration Number retrieval</strong> to DocuFlow function management, allowing users to access VAT numbers directly within DocuFlow processes for improved compliance and reporting. <em>[App: DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>event subscribers</strong> to update VAT registration numbers on sales and purchase headers for Slovakia. This ensures that VAT numbers are kept current and accurate whenever documents are created or modified, supporting local tax compliance. <em>[App: IPL Base SK - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.383.0 (PR #698) - 13/04/2026</h2>
 </div>
 <div class='release-content'>
@@ -2731,7 +2788,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 14 aprile 2026 • 03:13 CET
+            Last updated: 16 aprile 2026 • 23:40 CET
         </div>
     </div>
 </body>
