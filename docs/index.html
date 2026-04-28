@@ -2785,10 +2785,728 @@
 </ul>
 </div>
 </div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.260.0 (PR #299) - 19/06/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Telex No.</strong> field to both the <strong>Location Card</strong> and <strong>Location List</strong> pages. This allows users to record and view telex numbers for each warehouse location, improving contact information management and communication with external partners. <em>[App: IPL Item By Event - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced <strong>multiple email management</strong> for locations, enabling users to store and manage several email addresses per location. This helps ensure that all relevant contacts are available for logistics operations and notifications. <em>[App: IPL Item By Event - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enabled <strong>automatic account operation synchronization</strong> and added a <strong>delayed synchronization setting</strong>. Users can now automate the syncing of account operations and control the timing, reducing manual effort and ensuring data consistency across the system. <em>[App: IPL Email Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented the <strong>Address Book</strong> functionality for emails, allowing users to centrally manage email contacts. The new <strong>Address Book</strong> and <strong>My Address Book</strong> pages make it easier to organize, search, and select email addresses for communication, streamlining workflows and reducing errors. <em>[App: IPL Email Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced <strong>Security Group User Defaults</strong> for the <strong>Full Warehouse Employee</strong> role. Administrators can now set default values and permissions for users in this security group, simplifying user setup and ensuring consistent access rights for warehouse staff. <em>[App: IPL.UserManagement - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Refactored the system by commenting out unused <strong>Dyn365CRMIncident</strong> and <strong>Dyn365CRMOrder</strong> records. This cleanup improves system performance and reduces clutter in sales-related integrations, making it easier for users to focus on relevant data. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the type check for the <strong>Rec</strong> variable in the <strong>ATP Management</strong> codeunit. This fix ensures accurate processing of available-to-promise calculations, preventing errors and improving reliability in logistics planning. <em>[App: IPL ATP Management - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>permission set</strong> in <strong>User Management</strong> to ensure users have the correct access levels. This change improves security and prevents unauthorized actions in user administration. <em>[App: IPL.UserManagement - Author: albertodone]</em></li>
+<li class='subcontent-p'>Extended the <strong>permission set</strong> for <strong>Email Management</strong> to include access to <strong>Address Book entries</strong>. Users can now manage email contacts without encountering permission issues, supporting smoother communication workflows. <em>[App: IPL Email Management - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.257.0 (PR #710) - 28/04/2026</h2>
+</div>
+<div class='release-content'>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated core system files to the latest version from Microsoft, ensuring improved stability and compatibility for your Business Central environment. This update helps maintain optimal performance and security, reducing potential issues during daily operations. No changes to user-facing features, but background enhancements support smoother workflows and reliable access. _[App: AL-Go-PTE - Author: albertodone]_</li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.256.0 (PR #290) - 15/06/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced new functionality for managing emails with missing Certificates of Analysis (CoA). Users can now view, complete, and reopen actions directly from the <strong>Emails with Missing CoA</strong> and <strong>Email with Missing CoA</strong> pages. This streamlines tracking and resolution of missing CoA documents, improving compliance and communication with customers. <em>[App: Certificate of Analysis - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced the email sending process for completed CoA records. Users can now send emails automatically when a CoA is finalized, ensuring timely notification to stakeholders and reducing manual follow-up. <em>[App: Certificate of Analysis, Email Management - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added advanced user management features, including security group settings and default user initialization. Administrators can now configure user access more precisely using the <strong>Security Groups</strong> and <strong>User Management</strong> pages, improving control over permissions and onboarding. <em>[App: UserManagement - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved user task management by introducing <strong>User Task Types</strong> categorized by table type and subtype. This allows users to organize and filter tasks more efficiently, making it easier to prioritize and track responsibilities across different modules. <em>[App: Communication - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced user management with commit functionality and automatic session restart when user settings are changed. This ensures that updates to user permissions or settings are applied immediately, reducing errors and improving security. <em>[App: UserManagement - Author: albertodone]</em></li>
+<li class='subcontent-p'>Unified validation logic for closing lines in purchase and sales order extensions. This standardizes how closed lines are handled, reducing inconsistencies and making order processing more reliable. <em>[App: EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added dependency for Over- and Under-Delivery Quantities in system configuration. This enables more accurate tracking of delivery variances, supporting better inventory and order management. <em>[App: UserManagement - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>Purchase Detail</strong> management by adding new fields for order, receipt, and invoice details, including <strong>Order No.</strong>, <strong>Order Line No.</strong>, <strong>Order Dim. Set ID</strong>, <strong>Order Req. Date</strong>, <strong>Order Planned Date</strong>, <strong>Receipt No.</strong>, <strong>Receipt Line No.</strong>, and <strong>Receipt Dim. Set ID</strong>. These additions provide more granular tracking of purchase transactions, improving visibility and reporting. <em>[App: Purchase Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💳 Credit</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Outstanding Invoices (LCY)</strong> field to credit management, allowing users to quickly view the total value of unpaid invoices in local currency. This helps credit managers assess risk and prioritize collections more effectively. <em>[App: Credit Management - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a key for Global Dimension codes in the <strong>Item Cost History</strong> extension. This enables users to filter and analyze item costs by dimension, supporting more detailed financial reporting and analysis. <em>[App: IVC Extension - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added missing permissions for <strong>Email Related Record</strong> in CoA management, ensuring users have the correct access to view and manage related email records. <em>[App: Certificate of Analysis - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated Slovak translations and adjusted column sizes for report labels in the <strong>Reminder Document</strong> report, improving readability and localization for Slovak users. <em>[App: Certificate of Analysis - Author: mpisana]</em></li>
+<li class='subcontent-p'>Hid the <strong>Missing CoA Cue</strong> in <strong>Job Queue Entry Activities</strong> for Accounting, Credit Management, and Purchasing pages. This prevents unnecessary alerts for users in these areas, reducing confusion and streamlining the interface. <em>[App: Profile - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>💳 Credit</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated amount fields in the <strong>Open Customer Ledger API</strong> to use remaining amounts, ensuring that displayed balances accurately reflect outstanding values and improving financial accuracy. <em>[App: Credit Mixer Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Refactored status handling logic in the <strong>EDS Management</strong> codeunit, removing unused logic and improving system performance and reliability. <em>[App: EDS Extension - Author: albertodone, mpisana]</em></li>
+<li class='subcontent-p'>Defined permissions for the <strong>User Management Admin</strong> permission set, clarifying access rights for administrators and improving security. <em>[App: UserManagement - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Dependency Graph</strong> to include missing nodes and adjust relationships, ensuring that integration points between modules are correctly mapped and reducing errors in data synchronization. <em>[App: PBI Interface - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added, removed, and re-added the <strong>Role Center</strong> dependency in system configuration to resolve compatibility issues and ensure proper functioning of the main dashboard. <em>[App: UserManagement - Author: albertodone]</em></li>
+<li class='subcontent-p'>Included the <strong>Certificate of Analysis</strong> dependency in system configuration, ensuring that related features are available and integrated across modules. <em>[App: UserManagement - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Commented out unused status handling logic in <strong>EDS Management</strong> and <strong>Sales Order EDS</strong> extensions, simplifying code and improving maintainability without affecting user functionality. <em>[App: EDS Extension - Author: mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.251.0 (PR #279) - 10/06/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new <strong>Document Report</strong> functionality for Germany, including enhancements to invoice, purchase, reminder, shipment, and sales documents. This allows users to generate and manage localized document reports directly within the system, improving compliance and reporting for German operations. <em>[App: IPL Document Report DE - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced management of <strong>Surplus Output Quantity</strong> and <strong>Scrap Quantity</strong> in the <strong>Assembly Order</strong> flow. Users can now record surplus and scrap quantities during assembly, track them on dedicated pages, and view new fields such as <strong>Surplus Output Quantity</strong>, <strong>Scrap Quantity</strong>, and <strong>From Variant Code</strong>. This improves inventory accuracy and provides better visibility into production variances. <em>[App: IPL Transformation Order - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved the <strong>RefreshLibraryDocuFlowEntries</strong> procedure by adding filters for <strong>Table ID</strong> and <strong>Table SubType</strong>, allowing users to refine document flow entries and retrieve more relevant results. Also, GUI updates in SharePoint management are now conditional on the <strong>GuiAllowed</strong> flag, preventing unnecessary interface changes and ensuring smoother user experience. <em>[App: IPL DocuFlow - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the competence date logic in <strong>Sales Detail Management</strong> to ensure accurate calculation and display of competence dates in sales records. This refinement helps users maintain correct sales reporting and compliance with accounting standards. <em>[App: IPL Sales Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added permissions for <strong>Surplus Output</strong> management, ensuring only authorized users can access and modify surplus output data in transformation orders. This strengthens data security and prevents unauthorized changes. <em>[App: IPL Transformation Order - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Refined competence date logic in <strong>Sales Detail Management</strong> for improved accuracy and consistency in sales reporting. <em>[App: IPL Sales Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.249.0 (PR #272) - 06/06/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new <strong>'Skipped' status</strong> to the <strong>Expenses</strong> workflow, including updates to related tables, pages, and reports such as <strong>Expenses Card</strong>, <strong>Expenses List</strong>, <strong>Expenses Subform</strong>, <strong>Create Journal Expenses</strong>, and <strong>Expenses Report</strong>. This allows users to mark expenses as skipped, track reasons with the new <strong>Skipped Reason</strong> field, and see which expenses have been bypassed. The <strong>Expense Status</strong> field and logic for opening expenses on headers have also been improved for clearer tracking. <em>[App: IPL Expenses - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced a new <strong>document template</strong> and created a <strong>Profile DE</strong> configuration, enhancing document management and customization for users in the DE localization. Updates include new pages and extensions for profile and blanket purchase order management, making it easier to tailor document layouts and profiles to local requirements. <em>[App: Profile DE - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added an event subscriber to automatically <strong>delete all warehouse shipment lines</strong> before updating a receipt line. This ensures that outdated shipment lines are removed, preventing errors and keeping warehouse data accurate during receipt processing. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>DocuFlow Entries</strong> page and related management codeunits by adding patching functionality and new fields: <strong>To Be Patched</strong>, <strong>Last Patch Error</strong>, and <strong>Exist Skipped Lines</strong>. Users can now track patch status, see errors, and identify entries with skipped lines directly in the UI, improving visibility and troubleshooting for document flows. <em>[App: IPL DocuFlow - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Renamed the <strong>Payment Method Code</strong> field to <strong>Payment Method Code</strong> in all expense-related tables and pages for clearer identification and to avoid confusion with other payment codes. This change ensures users select the correct payment method when managing expenses. <em>[App: IPL Expenses - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved file upload triggers to ensure the <strong>current page</strong> is correctly updated after uploading files. This fix prevents navigation issues and ensures users always see the latest information after a file is uploaded. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced customer retrieval logic in the <strong>GetCustomer</strong> procedure, ensuring that customer information is fetched accurately and reliably across the system. This reduces errors when accessing customer data. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>GetTransferShipmentHeader</strong> procedure and updated logic for the <strong>Transfer Shipment Header</strong>, improving the accuracy and reliability of shipment header data during transfer operations. <em>[App: IPL Document Report - Author: mpisana]</em></li>
+<li class='subcontent-p'>Improved handling for <strong>Sales Shipment Header</strong> in the <strong>OnPreReport</strong> trigger, ensuring reports generate correctly and include all necessary shipment information. This fix prevents missing data in shipment reports. <em>[App: IPL Document Report - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced category validation logic in the <strong>ApplyOrderHeaderCategories</strong> procedure, ensuring that order headers are validated against the correct categories and reducing errors during order processing. <em>[App: IPL Categories Management - Author: mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.248.0 (PR #267) - 29/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced a new <strong>Profile ES app</strong> for enhanced configuration and management tailored to Spain. This allows users to access country-specific settings and workflows, improving localization and compliance for Spanish operations. <em>[App: Profile ES - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added <strong>Global Dimension fields</strong> to the <strong>Profile Item Card</strong>, enabling users to classify items with broader dimension values for improved reporting and analysis across departments. <em>[App: Profile ES - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added customizations to the <strong>Financial Journal</strong> profile, allowing users to better manage and configure journal entries according to local requirements. This improves flexibility and accuracy in financial processing. <em>[App: Profile BE - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>Receipt Lines</strong> page by adding new <strong>Purchase Order fields</strong> and validation logic. Users can now view and verify additional PO details directly when processing receipts, reducing errors and streamlining the receiving workflow. <em>[App: IPL Categories Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Item By Event</strong> action to both <strong>Purchase Document Summary</strong> and <strong>Sales Document Summary</strong> pages. This feature lets users quickly analyze item movements and events related to purchase and sales documents, improving traceability and decision-making. <em>[App: IPL Item By Event - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added customizations for <strong>Blanket Purchase Order</strong> profiles in Hungary and Slovakia, and extended the <strong>Logistic HU</strong> and <strong>Logistic SK</strong> profiles. This provides localized functionality for managing blanket orders and logistics processes in these countries. <em>[App: Profile HU, Profile SK - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved the <strong>Send Notification</strong> page layout and restructured the verification group, making it easier for users to send notifications and manage verification steps within document workflows. <em>[App: IPL Communication - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>👥 HR</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Employee List</strong> extension layout and hid unnecessary fields, making the employee overview cleaner and more focused on relevant information for HR users. <em>[App: IPL Resource Employee - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new verification features to <strong>User Tasks</strong> and related pages, including the ability to add replies directly into the <strong>Task Card</strong> and <strong>Message Center</strong>. This improves task tracking and communication, allowing users to respond and verify tasks within the same interface. <em>[App: IPL Communication - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced a verification feature for <strong>Chat Messages</strong>, displaying a new icon and status handling. Users can now easily see which messages have been verified, improving clarity and accountability in internal communications. <em>[App: Communication, IPL Communication - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated the verification caption to <strong>'Verification on completion'</strong> in user task pages, clarifying when verification is required and improving user understanding of task status. <em>[App: IPL Communication - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved automated posting for <strong>Transport Orders</strong>, ensuring that transport documents are processed reliably and reducing manual intervention. <em>[App: IPL Purchase Service Order - Author: albertodone]</em></li>
+<li class='subcontent-p'>Replaced generic evaluation logic with dedicated <strong>GetDecimal</strong> and <strong>GetDate</strong> procedures, making system calculations clearer and reducing potential errors in data processing. <em>[App: IPL Categories Management - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced condition checks in the <strong>Modify Purch. Price</strong> report for better flow control, ensuring that price modifications are handled accurately and consistently. <em>[App: IPL Purchase Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added validation checks for temporary records and empty journal batch names in <strong>Expenses Management</strong>, preventing errors during expense processing and improving data integrity. <em>[App: IPL Expenses - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated conditions in the <strong>Modify Purch. Price</strong> report to handle credit documents correctly, ensuring that credit notes and similar documents are processed as expected. <em>[App: IPL Purchase Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Removed the <strong>Ship-to Country/Region Code</strong> from the layout order in the <strong>Profile Blanket Purchase Order</strong> page, simplifying the interface and focusing on relevant fields for users. <em>[App: IPL Profile BE - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added customizations for <strong>Blanket Purchase Order</strong> profiles in Belgium, Hungary, and Slovakia, ensuring that localized requirements are met and improving usability for users in these regions. <em>[App: Profile BE, Profile HU, Profile SK - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated packing header methods to include a modification flag, ensuring that updates to packing information are tracked accurately and reducing the risk of missed changes. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+<li class='subcontent-p'>Moved the <strong>isVisible</strong> variable to protected scope in purchase and sales document summary pages, improving page stability and ensuring that visibility logic is handled securely. <em>[App: IPL Document Summary - Author: mpisana]</em></li>
+<li class='subcontent-p'>Set the <strong>Requested Delivery Date</strong> field to non-editable in the <strong>Sales Document Summary</strong> page, preventing accidental changes and ensuring delivery dates remain consistent once set. <em>[App: IPL Document Summary - Author: mpisana]</em></li>
+<li class='subcontent-p'>Renamed the <strong>Verificator</strong> field to <strong>Verifier</strong> in user task fields and filters for consistency, making terminology clearer and aligning with standard naming conventions. <em>[App: IPL Communication - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated date handling in <strong>Sales Document Summary</strong> and <strong>Purchase Document Summary</strong> pages, ensuring that dates are processed and displayed correctly for all document types. <em>[App: IPL Document Summary - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added handling for shipment date changes in <strong>Sales Line</strong> when a warehouse shipment already exists, preventing conflicts and ensuring that shipment dates are managed accurately. <em>[App: IPL Document Summary - Author: mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.244.0 (PR #262) - 23/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new <strong>Sales Role Center page extension</strong> with a dedicated action to view the <strong>CRM Account List</strong>. Sales users can now access CRM accounts directly from their main dashboard, streamlining access to customer information and improving integration with Dynamics 365 Sales. <em>[App: IPL Dyn365 - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the layout and tooltips for <strong>VAT information</strong> on the <strong>Purchase Credit Memo</strong>, <strong>Sales Credit Memo</strong>, and <strong>Sales Invoice</strong> pages. This update makes VAT details clearer and easier to understand, helping finance users avoid mistakes and ensuring accurate tax reporting. <em>[App: IPL Profile BE - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added the <strong>Enterprise No. field</strong> to the <strong>Purchase Credit Memo</strong>, <strong>Sales Credit Memo</strong>, and <strong>Sales Invoice</strong> pages. Users can now record and view enterprise numbers directly on these documents, supporting compliance and improving traceability for financial audits. <em>[App: IPL Profile BE - Author: mpisana]</em></li>
+<li class='subcontent-p'>Introduced new <strong>default posting options</strong> for purchase and sales orders in the <strong>Finance Setup pages</strong>. Finance teams can now predefine posting behaviors, reducing manual steps and ensuring consistent processing of orders and invoices. <em>[App: IPL Finance - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved packing logic to automatically calculate and assign values for <strong>handling units</strong>, <strong>bags count</strong>, <strong>gross weight</strong>, and <strong>volume</strong> based on quantities to ship or receive. These updates ensure that packing information is accurately reflected in related headers, supporting better tracking and reporting for warehouse and logistics operations. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Print Operational Office field</strong> and related logic to the <strong>Report Setups</strong>. Users can now specify the operational office for printed reports, ensuring documents are correctly attributed and supporting multi-location operations. <em>[App: IPL Document Report - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added an option to include the <strong>customer statement as an attachment</strong> when sending invoice emails. This allows users to provide customers with a summary of their account status alongside invoices, improving communication and reducing follow-up queries. <em>[App: IPL Document Report - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced an <strong>email confirmation action</strong> on the <strong>Blanket Purchase Order</strong> and <strong>Orders</strong> pages. Purchasers can now send confirmation emails directly from these pages, streamlining communication with vendors and ensuring timely order processing. <em>[App: IPL Email Management - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Series No. field</strong> to the <strong>Purchase Req. Worksheet</strong>, ensuring that series numbers are correctly tracked for requisitions and improving traceability in procurement workflows. <em>[App: IPL Packaging - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated logic to copy the <strong>Product Group Code</strong> in both <strong>Item Journal Line</strong> and <strong>Item Ledger Entry</strong>. This ensures product group information is consistently transferred during inventory transactions, supporting accurate reporting and analysis. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the assignment of <strong>Outstanding Quantity</strong> in the <strong>Purch. Detail Management codeunit</strong>, ensuring that purchase details reflect the correct quantities and improving accuracy in procurement tracking. <em>[App: IPL Purchase Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved document download handling so that single documents are now downloaded directly, rather than merged, when only one is requested. This change simplifies the download process and reduces unnecessary steps for users. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Merged and updated various <strong>page customizations</strong> for user profiles, ensuring that profile-specific pages are consistent and up-to-date. This improves user experience and reduces confusion across different profile setups. <em>[App: IPL Profile BE, IPL Profile HU, IPL Profile SK - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added validation for the <strong>Upd. Request Case SubType Id</strong> in the <strong>Dyn365 Integration Setup</strong>, preventing incorrect subtype entries and improving integration reliability with Dynamics 365. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Fixed a syntax error by removing an extraneous character from the <strong>Default Return Order Posting Option field</strong>, ensuring that setup options are displayed and processed correctly. <em>[App: IPL Finance - Author: albertodone]</em></li>
+<li class='subcontent-p'>Moved the <strong>Acc. Financial Journal</strong> page into the <strong>Profile BE</strong> app, aligning journal functionality with the correct user profile and improving access for finance users in Belgium. <em>[App: Profile BE - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.4.240.0 (PR #255) - 21/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the new <strong>Source Name</strong> field to the <strong>General Journal Line</strong> and extended the <strong>General Journal Fin.</strong> page. This allows users to track and display the origin of each journal entry, improving transparency and making it easier to identify where transactions come from during financial reviews. <em>[App: IPL Finance - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced an event subscriber to skip shipment date verification on the <strong>Sales Header</strong>. This change allows sales users to bypass shipment date checks in specific scenarios, offering more flexibility when entering or updating sales orders that require exceptions to standard date validation. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new actions for <strong>Item</strong> and <strong>Lot By Event</strong> directly on the <strong>Item Card</strong> page extension. Users can now quickly access item and lot event details from the item card, streamlining item tracking and event management. <em>[App: IPL Item By Event - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced packaging management by adding new packaging fields and updating the <strong>Shipment Document Report</strong> to utilize this data. Users can now record packaging details such as handling unit type and count, and see this information reflected in shipment documents, improving traceability and compliance. <em>[App: IPL Packaging, App: IPL Document Report - Author: mpisana, albertodone]</em></li>
+<li class='subcontent-p'>Refactored packaging logic: renamed <strong>Packagings Count</strong> to <strong>Handling Units Count</strong>, added the new <strong>Handling Unit Type</strong> field, and implemented logic to calculate header totals based on related lines in sales, purchase, transfer, and warehouse documents. This provides more accurate packaging information and supports better warehouse and logistics planning. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added support for <strong>Item Source Type</strong> in the <strong>Item Ledger Entry</strong> extension. This enables users to track the origin of item ledger entries, improving inventory traceability and reporting. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Extended the <strong>Profile Posted Purchase Receipt</strong> and <strong>Profile Posted Purchase Receipts</strong> pages to include a new <strong>Reference</strong> field. This allows users to link and view references directly on posted purchase receipts, making it easier to track and audit purchase transactions. <em>[App: IPL Profile - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the dependency graph by adding new relationships and removing obsolete links. This ensures that system dependencies are current, reducing errors and improving performance for users working across multiple modules. <em>[App: IPL Base - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved validation logic for the <strong>Purchase Order Header</strong> to include checks for <strong>Load-From</strong> and <strong>Shipment Method Codes</strong>. This ensures that purchase orders are only processed when all required shipping information is present, reducing errors and improving compliance. <em>[App: IPL Base - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>VAT Registration No.</strong> field to the <strong>Invoice Document Report</strong> for Slovakia. This ensures that invoices display the correct VAT registration number, supporting legal compliance and accurate reporting for Slovakian sales documents. <em>[App: IPL Document Report SK - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Renamed the <strong>Packagings Count</strong> field to <strong>Handling Units Count</strong> across relevant pages and reports. This update standardizes terminology and ensures users see consistent packaging information throughout the system. <em>[App: IPL Packaging - Author: mpisana]</em></li>
+<li class='subcontent-p'>Changed the <strong>PageType</strong> to Worksheet for the <strong>Purchase Open Price Closing</strong> and <strong>Sales Open Price Closing</strong> pages. This allows users to work with these pages in a worksheet format, improving usability for price closing operations. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated the page extension ID for <strong>Pack. Posted S.Shpt.-Upd.</strong> to ensure correct linking and access to posted shipment updates. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added handling unit type permissions to the <strong>Packaging</strong> permission set. This ensures users have the correct access rights to manage handling unit types, improving security and control over packaging data. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>GetAvailableStatus</strong> procedure to include handling for <strong>EOS DS Status Transaction</strong>. This ensures that system status checks are accurate and up-to-date, reducing errors when processing transactions. <em>[App: IPL EDS Extension - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added a <strong>Record System ID</strong> filter to <strong>DocuFlowEntry</strong> for purchase and sales headers posting. This improves filtering and tracking of document flow entries, making it easier to manage and audit document postings. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Incremented the version number by +0.1 to reflect the latest updates and improvements in the system. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.236.0 (PR #251) - 16/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new fields <strong>External Document No.</strong> and <strong>Source Name</strong> to the <strong>Profile Item Ledger Entries</strong> page. Users can now view and filter item ledger entries based on external document numbers and source names, making it easier to trace inventory movements and link them to external documents for improved tracking and auditability. _[App: IPL Profile - Author: mpisana]_</li>
+<li class='subcontent-p'>Enhanced the <strong>Transfer Order</strong> extension by adding event subscribers for the <strong>Transfer Header</strong> and updating the <strong>In-Transit Code</strong> field. This allows warehouse staff to better manage transfer orders and track items in transit, improving visibility and control over stock movements between locations. _[App: IPL Base - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced the <strong>Exclude Transfers</strong> field and related logic to <strong>Intrastat reporting</strong>. Users preparing Intrastat declarations can now easily exclude transfer transactions from reports, ensuring more accurate and compliant reporting of cross-border movements. This helps accountants and finance teams avoid errors and simplifies the reporting process. _[App: IPL Finance - Author: albertodone]_</li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the application name in the <strong>app.json</strong> configuration file. This ensures the system displays the correct app name in all relevant areas, reducing confusion for users and administrators when managing extensions. _[App: IPL Base - Author: albertodone]_</li>
+<li class='subcontent-p'>Updated filter groups and ranges for the <strong>Purch. Open Price Closing</strong> and <strong>Sales Open Price Closing</strong> pages. Users will now see more accurate and relevant data when closing prices, improving the reliability of price management and reducing the risk of errors during closing operations. _[App: IPL Base - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Changed the trigger from <strong>OnAfterInsert</strong> to <strong>OnBeforeInsert</strong> in the <strong>Item Ledger Entry</strong> extension. This adjustment ensures that custom logic is applied at the correct stage when new item ledger entries are created, preventing potential issues with data integrity and improving the reliability of financial records. _[App: IPL Base - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added an <strong>invoice subject label</strong> to the <strong>Email Management</strong> codeunit. When sending invoices by email, users will now see a clearer subject line, making it easier for recipients to identify invoice emails and improving communication with customers and vendors. _[App: IPL Email Management - Author: mpisana]_</li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated AL-Go system files to the latest version from Microsoft. This ensures the extension benefits from the newest platform improvements, security updates, and compatibility fixes, helping maintain system stability and performance. _[App: IPL Base - Author: albertodone]_</li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.233.0 (PR #247) - 15/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added customizations for the <strong>Acc. Issued Reminder List</strong> and <strong>Acc. Reminder List</strong> pages, now included in the <strong>Accounting</strong> profile. This allows users in the accounting role to access and manage reminders more efficiently, improving visibility and follow-up on outstanding items directly from their profile. <em>[App: Profile - Author: mpisana]</em></li>
+<li class='subcontent-p'>Introduced a new <strong>move functionality</strong> for <strong>DocuFlow entries</strong>. After posting documents such as invoices or credit memos, users can now move related DocuFlow entries, streamlining document management and ensuring that workflow records stay aligned with posted transactions. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored permissions by removing the <strong>Move Allowed</strong> field and its logic from the <strong>DocuFlow Permission</strong> table. This simplifies permission management and reduces confusion about who can move DocuFlow entries, making the system easier to administer. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>DocuFlow Factbox</strong> to both the <strong>Purchase Invoice</strong> and <strong>Purchase Invoice List</strong> pages. Users can now view and interact with DocuFlow information directly alongside purchase invoices, improving access to document workflow details and enhancing process transparency. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Created a new <strong>Utility User Settings</strong> extension for managing customer, vendor, and item preferences. This allows users to personalize settings for these entities, making day-to-day management more flexible and tailored to individual needs. <em>[App: IPL.Utility - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Navigate Exxon API</strong> page to better manage promoted actions and cleaned up the code. This improves the user experience when interacting with Exxon API integrations, making navigation and action selection more intuitive and reliable. <em>[App: IPL Exxon API - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>EDS Status Code</strong> field to <strong>Inventory Page Data</strong> and the <strong>Item Availability by Event</strong> pages. Also, included <strong>Location Description</strong> in the event list when dealing with requisition lines. These enhancements provide more detailed tracking and context for inventory events, helping warehouse staff monitor item statuses and locations more accurately. <em>[App: IPL Item By Event - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced <strong>Entry No.</strong> and <strong>First Entry Date</strong> fields in the <strong>Item Tracking Summary</strong>. Users can now see the initial entry date and reference number for tracked items, improving traceability and audit capabilities for inventory movements. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Gross Weight</strong> field to the <strong>Update Sales Shipment Lines</strong> page. This allows users to record and review shipment weights, supporting more accurate logistics planning and compliance with shipping requirements. <em>[App: IPL.Utility - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added actions to view related posted <strong>Purchase Receipts</strong> and <strong>Invoices</strong> directly from the <strong>Purchase Order</strong> pages. This makes it easier for users to track the full lifecycle of a purchase order, quickly accessing all relevant documents without navigating away from the order. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved commission recalculation for <strong>Posted Sales Invoice</strong> and <strong>Credit Memo</strong> lines. This ensures that commission amounts are updated correctly after posting, preventing errors in sales compensation and financial reporting. <em>[App: IPL Commission - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added logic to update the <strong>VAT category</strong> when the <strong>Reason Code</strong> changes in <strong>Sales</strong> and <strong>Purchase Headers</strong>. This guarantees that VAT settings remain consistent and accurate, reducing the risk of incorrect tax reporting. <em>[App: IPL Categories Management - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added validation for the <strong>Customer Price Group</strong> based on <strong>Price List Header</strong> settings. This prevents users from assigning incompatible price groups, ensuring pricing consistency and avoiding mistakes in sales transactions. <em>[App: IPL Sales Price - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed updates for <strong>shipment method</strong> and <strong>country of origin</strong> fields. This ensures that logistics information is correctly maintained, supporting accurate shipping documentation and compliance with customs requirements. <em>[App: IPL Item By Event - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.231.0 (PR #244) - 14/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a new action to update the <strong>document status</strong> directly within the <strong>Record Status</strong> extension. This allows users to quickly change the status of documents without navigating away, streamlining workflow and improving visibility of document progress. <em>[App: IPL EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>The standard <strong>Attachments Factbox</strong> is now hidden on several pages, including <strong>Sales Order</strong>, <strong>Sales Order List</strong>, <strong>Sales Return Order</strong>, and <strong>Sales Return Order List</strong>. This reduces screen clutter and ensures users only see relevant information, making the interface cleaner and easier to use. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced an <strong>OnLookup trigger</strong> for the <strong>Posting No. Series</strong> in both <strong>Sales Order</strong> and <strong>Sales Order List</strong> extensions. This enhancement allows users to select or review posting number series more efficiently, reducing errors and speeding up order processing. <em>[App: IPL DocuFlow - Author: mpisana]</em></li>
+<li class='subcontent-p'>Improved the <strong>Blanket Sales Order</strong> page by hiding the standard <strong>Attachments Factbox</strong>. This makes the page less cluttered and helps users focus on key sales information. <em>[App: IPL Profile - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added validation for the <strong>Direct Unit Cost</strong> field in <strong>Purchase Order Line</strong> during order insertion. This ensures that only valid cost values are entered, helping prevent mistakes and improving the accuracy of purchase records. <em>[App: IPL Profile - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Vendor Order No.</strong> field to the <strong>Blanket Purchase Orders</strong> page. Purchasers can now record and track vendor order numbers directly, improving traceability and communication with suppliers. <em>[App: Profile - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>requisition line management</strong> by adding the <strong>Shipment Method Code</strong> field and its validation logic. Users can now specify and validate shipment methods directly on requisition lines, ensuring correct logistics handling and reducing shipping errors. <em>[App: IPL Req. Worksheet Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved the <strong>Purchase Requisition Worksheet</strong> by adding location code validation and hiding unnecessary fields. This makes requisition entry more accurate and user-friendly, helping users focus on essential logistics details and reducing data entry mistakes. <em>[App: IPL Req. Worksheet Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the <strong>Make Blanket Order</strong> field to requisition line management, allowing users to indicate whether a requisition should create a blanket order. This supports more flexible procurement processes and helps manage long-term purchasing agreements. <em>[App: IPL Req. Worksheet Management - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved the <strong>Sales Order</strong> and <strong>Sales Order List</strong> pages by hiding the standard <strong>Attachments Factbox</strong>, making the interface more streamlined and easier to navigate for sales users. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Blanket Purchase Orders</strong> page to hide the standard <strong>Attachments Factbox</strong>, reducing visual clutter and helping users focus on key purchase information. <em>[App: IPL Profile - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.227.0 (PR #237) - 12/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the ability to update <strong>Lot Information</strong> directly from the <strong>Item Entry</strong> page. This allows warehouse and inventory users to quickly adjust lot details for items, improving traceability and making it easier to maintain accurate stock records. <em>[App: Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced new fields to support the <strong>Make Blanket Order</strong> functionality in the <strong>Purchase Requisition Worksheet</strong>. Users can now flag requisition lines for blanket orders, streamlining the process of creating and managing long-term purchase agreements directly from requisition planning. <em>[App: IPL Req. Worksheet Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enabled the <strong>Update Lot Info</strong> functionality for <strong>Item Entries</strong>, allowing users to efficiently modify lot-related data for inventory transactions. This enhancement helps ensure that lot tracking remains accurate throughout the item lifecycle. <em>[App: IPL Item By Event - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the assignment of <strong>Outstanding Quantity</strong> in the <strong>Sales Line</strong> procedure. This fix ensures that the remaining quantity to be shipped or invoiced is calculated accurately, preventing discrepancies in sales processing and reporting. <em>[App: IPL Sales Detail - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved the management of <strong>Sales Price Imports</strong> by updating the deletion logic to remove records based on the <strong>Price List Code</strong>. This change ensures that outdated or incorrect price data is properly cleared, maintaining accurate sales pricing information. <em>[App: IPL Sales Price - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the assignment of <strong>Outstanding Quantity</strong> in the <strong>Purchase Line</strong> procedure. This update ensures that the system accurately tracks quantities yet to be received or invoiced, reducing errors in purchase order processing. <em>[App: IPL Purchase Detail - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved the management of <strong>Purchase Price Imports</strong> by updating the deletion logic to remove records based on the <strong>Price List Code</strong>. This helps maintain clean and accurate purchase pricing data by ensuring obsolete entries are properly deleted. <em>[App: IPL Purchase Price - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added a <strong>Security Status</strong> field for <strong>Blanket Purchase Orders</strong>, enhancing control and visibility over the approval and processing status of these orders. This helps purchasing teams monitor and manage blanket agreements more effectively. <em>[App: IPL Purchase Detail - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Standardized the area and variable declarations in the <strong>Purchase Requisition Worksheet</strong>, improving consistency and reducing the risk of errors during requisition processing. <em>[App: IPL Req. Worksheet Management - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added an event subscriber to handle the deletion of all <strong>Warehouse Shipment Lines</strong> after posting, ensuring that shipment data is properly cleared and preventing leftover records from causing confusion or errors in warehouse operations. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored the use of <strong>Rec.Reset()</strong> in the <strong>Purchase Open Price Closing</strong> and <strong>Sales Open Price Closing</strong> pages to improve performance and reliability when closing open prices. This change helps users process price closings more efficiently. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>page ID</strong> and corrected the <strong>caption</strong> for the <strong>Update Lot Info on Item Entry</strong> page, and subsequently removed the page to prevent confusion or duplication. These adjustments ensure users interact only with the correct and intended pages for lot information updates. <em>[App: Base - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.223.0 (PR #231) - 09/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Enterprise No.</strong> field to the <strong>Sales Return Order Profile</strong> page. Sales users can now record and view enterprise numbers directly on sales return orders, improving traceability and compliance for business transactions. This addition helps ensure all relevant company information is captured during the sales return process. _[App: Profile BE - Author: mpisana]_</li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced new customizations for the <strong>CSR Purchase Profile</strong> page, allowing users to manage purchase-related data more efficiently. These enhancements streamline the purchase workflow and provide better visibility into purchase requests and approvals. _[App: CSR_PURCH - Author: mpisana]_</li>
+<li class='subcontent-p'>Added support for <strong>EU 3-Party Trade Purchase</strong> dependencies and improved visibility of related fields on the <strong>Purchase Invoice Profile</strong> page. Purchasers can now easily track and manage three-party trade transactions, ensuring compliance with EU regulations and simplifying invoice processing. _[App: Profile BE - Author: mpisana]_</li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Commented out modifications to the <strong>Bill-to Name</strong> field and related fields on the <strong>CSR Sales Return Order Profile</strong> page. This prevents unintended changes to customer billing information, ensuring data accuracy and stability in sales return processing. _[App: CSR_PURCH - Author: mpisana]_</li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Removed the <strong>Pay-to Vendor No.</strong> field from the <strong>Purchase Order Profile</strong> customization. This change eliminates unnecessary vendor information from purchase orders, reducing confusion and streamlining the purchase entry process. _[App: Profile - Author: mpisana]_</li>
+<li class='subcontent-p'>Reordered <strong>User Tasks Activities</strong> and added new actions for the <strong>Sales group</strong> in the <strong>Purchase Role Center</strong>. This update improves navigation and task management for users handling both sales and purchase activities, making daily operations more efficient. _[App: Profile - Author: mpisana]_</li>
+<li class='subcontent-p'>Added and updated <strong>EU 3-Party Trade Purchase</strong> customizations and profile extensions for the <strong>SK Purchase Invoice Profile</strong>. Users in Slovakia can now better manage three-party trade purchases, with improved visibility and compliance features. _[App: Profile SK - Author: mpisana]_</li>
+<li class='subcontent-p'>Added <strong>EU 3-Party Trade Purchase</strong> dependency and enhanced visibility in the <strong>HU Purchase Invoice Profile</strong> customization. Hungarian users benefit from clearer tracking and management of three-party trade purchases, supporting regulatory requirements. _[App: Profile HU - Author: mpisana]_</li>
+<li class='subcontent-p'>Removed <strong>EU 3-Party Trade Purchase</strong> dependency and related visibility settings from the <strong>Purchase Invoice Profile</strong> customization. This update resolves conflicts and ensures only relevant fields are shown, improving clarity for purchase invoice processing. _[App: Profile - Author: mpisana]_</li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced <strong>costing period management</strong> by adding processed quantity calculations and improved production cost handling. Finance users can now track quantities processed within each costing period and ensure accurate cost allocation for production, leading to more reliable financial reporting. _[App: IVC Extension - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved layout and visibility for <strong>Intercompany (IC)</strong> and <strong>Invoice details</strong> across multiple pages. Users will experience clearer presentation of IC and invoice information, making it easier to review and manage cross-company transactions. _[App: Profile BE - Author: mpisana]_</li>
+<li class='subcontent-p'>Added background color enhancements to various pages, improving visual distinction and user experience. This helps users quickly identify key sections and reduces errors when navigating complex documents. _[App: Profile BE - Author: mpisana]_</li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.221.0 (PR #228) - 08/05/2025</h2>
+</div>
+<div class='release-content'>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated internal release artifacts and build processes to ensure smoother deployment and improved reliability of future updates. These changes help maintain system stability and reduce the risk of technical issues during upgrades, but do not affect daily user operations or visible features. <em>[App: Base W1 - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 25.3.218.0 (PR #710) - 28/04/2026</h2>
+</div>
+<div class='release-content'>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated internal release artifacts and build processes to ensure smoother deployment and improved reliability for future updates. These changes help maintain system stability and reduce the risk of technical issues during upgrades, but do not affect daily user operations or visible features. <em>[App: Base W1 - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
 
         </div>
         <div class="footer">
-            Last updated: 28 aprile 2026 • 08:15 CET
+            Last updated: 28 aprile 2026 • 08:40 CET
         </div>
     </div>
 </body>
