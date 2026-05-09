@@ -253,6 +253,75 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.389.0 (PR #720) - 08/05/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added detailed <strong>logging for modifications and replacements</strong> in the utility module. This allows users and administrators to track changes made to records, including who made the change, when it was made, and what was modified. This improves auditability and transparency for system operations. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced a <strong>Created At</strong> field for entries in the <strong>User Task HUB</strong> and API responses. Users can now see when each task was created, making it easier to prioritize and manage tasks based on their age. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented <strong>DocuFlow integration</strong> for journal and entry pages, including new factboxes and extensions. Users can now access document flow information directly from journals and ledger entries, streamlining document management and improving visibility across financial processes. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a <strong>Show Comments on Documents</strong> dependency in the app configuration. This ensures that document comments are visible where required, improving communication and context for document-related workflows. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>CRM Order List</strong> page so that when creating a sales order, customer comments are automatically opened. This helps sales teams review important notes and context during order creation, reducing errors and improving customer communication. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added the ability to <strong>open comments for sales order lines</strong> (Items, Charges, Accounts). Users can now view and manage line-specific comments directly, making it easier to track discussions and instructions for each item or charge on an order. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Initialized the <strong>Item Charge</strong> field in warehouse receipt and shipment processes, starting from shipping agent services. This ensures that item charges are correctly tracked and applied during purchase operations, improving accuracy in cost allocation and logistics. <em>[App: IPL Purchase Service Order - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added customizations to the <strong>Vendor Card</strong> and <strong>Vendor List</strong> profiles. Users can now access enhanced views and fields tailored to their roles, making vendor management more efficient and personalized. <em>[App: Profile - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced filter logic for <strong>warehouse requests</strong> based on outbound shipment details. Warehouse staff can now filter and manage requests more precisely, ensuring that outbound shipments are handled efficiently and reducing processing errors. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added new fields <strong>Bill of Lading No.</strong> and <strong>Container No.</strong> to the <strong>Transfer Receipt Header</strong>. These fields allow users to record and track shipment details directly within transfer receipts, improving traceability and logistics documentation. <em>[App: IPL Base - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved the <strong>comment management system</strong> so that comments can be opened and viewed on various document types. This makes it easier for users to access relevant notes and discussions across different business documents, enhancing collaboration and reducing miscommunication. <em>[App: IPL Comments - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Standardized formatting in the <strong>Item Wizard permission set definition</strong>. This ensures consistent access rights and reduces confusion for users managing item data and warehouse operations. <em>[App: IPL Item Wizard - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Reverted version numbers for the <strong>Invoices Check IT</strong>, <strong>Item Wizard</strong>, and <strong>Sync</strong> modules to stable releases. This restores reliable functionality and prevents issues caused by unstable versions in purchase-related processes. <em>[App: IPL Purchase Service Order - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Resolved security alerts in <strong>npm dependencies</strong>. This improves overall system security and reliability, ensuring that users are protected from vulnerabilities in underlying libraries. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>IQNET logo</strong> to Spanish document reports. This ensures compliance with certification requirements and improves the professional appearance of financial documents sent to Spanish customers. <em>[App: DocumentReport ES - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated <strong>Spanish email templates</strong> to improve clarity and professionalism in communications with Spanish-speaking clients and vendors. <em>[App: DocumentReport ES - Author: mpisana]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.386.0 (PR #710) - 28/04/2026</h2>
 </div>
 <div class='release-content'>
@@ -4088,7 +4157,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 28 aprile 2026 • 09:50 CET
+            Last updated: 09 maggio 2026 • 05:26 CET
         </div>
     </div>
 </body>
