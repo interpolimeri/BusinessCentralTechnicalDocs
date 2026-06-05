@@ -253,6 +253,139 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.394.0 (PR #741) - 05/06/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced a new event subscriber to automate <strong>bank account assignment</strong> during invoice processing. This ensures that invoices are linked to the correct bank account, reducing manual errors and streamlining payment reconciliation. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>Warehouse Shipment</strong> customizations by updating field names and visibility. Users will now see clearer field labels and improved access to relevant shipment information, making warehouse operations more intuitive and reducing confusion during shipment handling. <em>[App: IPL Base - Author: mpisana]</em></li>
+<li class='subcontent-p'>Made the <strong>Table ID</strong> and <strong>Table Subtype</strong> fields visible on the <strong>DocuFlow Table Setup</strong> page. This allows users to easily identify and configure table setups for document flows, improving transparency and control over document management processes. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored the logic for <strong>XML file download and preview</strong> on the <strong>EDoc Logs</strong> page. Users can now download and preview XML files more reliably, with improved error handling and a smoother experience when reviewing electronic document logs. <em>[App: IPL E-Document Arxivar Connector - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a new function to set the <strong>posting year</strong> and updated settings for the <strong>shipment upload report</strong>. This gives users more flexibility when uploading shipment data and ensures accurate posting periods for logistics and accounting. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved error handling for the <strong>Combine Shipments</strong> report in invoicing management. Users will now receive clearer error messages if issues arise during shipment combination, helping them resolve problems faster and ensuring accurate invoice generation. <em>[App: IPL Finance - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>invoice check tables</strong> to include options for <strong>e-Arch sales and purchase</strong>. This allows users to monitor and validate electronic archive (e-Arch) invoices for both sales and purchases, improving compliance and visibility in the invoice checking process. <em>[App: AE Invoices Check IT - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Peppol Participant ID</strong> field to the <strong>Customer Card</strong>, <strong>PEPPOL Management</strong>, and XML exports. Users can now store and manage Peppol IDs for customers, supporting electronic invoicing and ensuring compliance with Peppol standards. <em>[App: IPL E-Document - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>DocuFlow</strong> integration to the <strong>Return Shipments</strong> page. Users can now manage document flows directly from return shipments, making it easier to track and process returned goods with associated documentation. <em>[App: DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a <strong>delivery date label</strong> to the <strong>Sales Document SK extension</strong> and enabled delivery date translation in the <strong>Document Report SK</strong>. This helps users clearly see and communicate delivery dates on sales documents, improving customer communication and planning. <em>[App: IPL Document Report SK - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed issues in the <strong>Read.me</strong> documentation, ensuring users have access to accurate and up-to-date information about system features and usage. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Increased the length of <strong>Item Nos.</strong> to support longer item numbers, allowing users to enter more detailed item codes and reducing the risk of truncation or errors in item identification. <em>[App: IPL Technical Product - Author: albertodone]</em></li>
+<li class='subcontent-p'>Removed the unused <strong>IPL Bulk</strong> field from the <strong>Warehouse Shipment</strong> extension, streamlining the page and eliminating unnecessary fields for a cleaner user interface. <em>[App: IPL Base - Author: mpisana]</em></li>
+<li class='subcontent-p'>Removed another unused field from warehouse shipment customizations, further simplifying the interface and reducing clutter for warehouse staff. <em>[App: IPL Base - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added guidelines for refreshing Business Central documentation, helping users and administrators follow a clear process when updating or reviewing system documentation. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated technical documentation for various apps, improving clarity and adding better links to help users find relevant information more easily. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>README</strong> file with a comprehensive overview of repository structure and documentation details, making it easier for users to understand how the system is organized and where to find key resources. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved the <strong>README</strong> to clarify repository structure and tooling, ensuring users can navigate and utilize system resources more effectively. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+<li class='subcontent-p'>Removed an unused template for API configuration, reducing confusion and keeping the system clean from obsolete setup files. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.391.0 (PR #729) - 30/05/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>SI report translations</strong> to improve clarity and usability for Slovenian users. All relevant reports now display labels and captions in Slovenian, making it easier for local teams to process documents and understand report content. <em>[App: IPL Base SI - Author: mpisana]</em></li>
+<li class='subcontent-p'>Enhanced <strong>item history update</strong> in costing management by retrieving setup information automatically. This ensures that item cost calculations are always based on the latest configuration, reducing manual errors and improving accuracy in inventory valuation. <em>[App: IPL Base SI - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced a <strong>confirmation option</strong> on the <strong>Status Transaction</strong> page. Users will now be prompted to confirm actions before changing transaction statuses, helping prevent accidental updates and improving control over workflow processes. <em>[App: IPL Base SI - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a new <strong>Azure Blob Storage backend</strong> for document management, including folder path patterns, PDF page selection, and an Explorer UI. Users can now securely upload, browse, and manage files in Azure Blob Storage, select specific PDF pages for upload, and preview documents before saving. Enhanced permissions and auto-folder creation streamline document workflows and improve security. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Extended <strong>configuration files</strong> and updated <strong>General Setup</strong> to allow exclusion of DMS (Document Management System) in purchase management for SI localization. This gives users more flexibility in controlling document posting and ensures compliance with local requirements. <em>[App: IPL Base SI - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved <strong>date functions</strong> to accept parameters and enhanced expression parsing. Users can now use more flexible date calculations in setup and reporting, making it easier to automate deadlines and filter data based on custom date logic. <em>[App: IPL Base SI - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Item Journal support</strong> with automatic entry migration, page specification validation for PDF uploads, a <strong>CreateCopy</strong> action for file replication with auto-numbering, and a <strong>CheckDocuments</strong> action to validate library coverage. Also introduced dynamic journal template selection for General and Item Journals, making document handling and migration more efficient and reducing manual steps. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>logging</strong> in API management to include request and response message handling. This provides better traceability for integration activities, helping users and administrators diagnose issues and monitor API interactions more effectively. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added a <strong>detailed logging option</strong> in <strong>Exxon API management</strong> and setup pages. Users can now enable advanced logging to capture more information about API calls, making troubleshooting and audit processes easier. <em>[App: IPL Exxon API - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced an option to <strong>disable order correction on credit memos</strong> in <strong>Purchase Setup</strong>. This allows finance teams to control whether corrections are applied automatically, supporting more precise handling of credit notes and reducing unwanted adjustments. <em>[App: IPL Finance - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated functional and technical documentation to reflect new features and workflows, ensuring users have access to the latest guidance and examples for all modules. <em>[App: IPL Base SI - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved <strong>API management</strong> by adding URL encoding for special characters. This ensures that all API requests handle special characters correctly, reducing errors and improving compatibility with external systems. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Created a new <strong>report for uploading sales shipments</strong> in the <strong>DocuFlow module</strong>. Users can now generate and upload shipment documents directly, streamlining sales logistics and reducing manual document handling. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added retrieval of <strong>payment terms</strong> for due date calculation in <strong>cash flow management</strong>. This ensures that payment schedules are accurately calculated based on vendor terms, improving cash flow forecasting and reducing manual corrections. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added permissions for <strong>entry status</strong> and <strong>upload shipments</strong> in <strong>DocuFlow Admin</strong>. Administrators can now control access to these actions, improving security and compliance in document workflows. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated <strong>valid date filter logic</strong> in <strong>Document Report Management</strong> to ensure that only documents within the correct date range are processed. This prevents errors in reporting and improves data accuracy for users reviewing document histories. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced <strong>DocuFlow entry synchronization</strong> by using temporary records for updates, avoiding locking issues. This change improves performance and reliability when updating document entries, especially during bulk operations. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Reverted the <strong>version number</strong> in the <strong>Utility app configuration</strong> to the previous stable release, ensuring compatibility and stability for users relying on this module. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>Slovenian translations</strong> for report labels in <strong>Document Report</strong>, ensuring that all captions and labels are accurate and clear for Slovenian users. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed retrieval of <strong>payment terms</strong> for due date calculation in <strong>cash flow management</strong>, ensuring that payment schedules are calculated correctly and reducing errors in cash flow projections. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a <strong>repository architecture baseline document</strong> to provide an overview of system structure and dependencies, helping users and administrators understand how modules interact. <em>[App: IPL Base SI - Author: admin-interpolimeri]</em></li>
+<li class='subcontent-p'>Added <strong>technical and functional documentation</strong> for the base module, including real test data and examples covering the full feature set. This ensures users have comprehensive guidance for all functionalities. <em>[App: IPL Base SI - Author: admin-interpolimeri, unknown]</em></li>
+<li class='subcontent-p'>Added and updated documentation for <strong>Company Info Extension</strong>, <strong>DocuFlow</strong>, <strong>SecurityVault</strong>, <strong>SellOffList</strong>, <strong>ServiceHost</strong>, <strong>Sync</strong>, <strong>UserManagement</strong>, <strong>EDSExtension</strong>, <strong>Sandbox</strong>, <strong>DocumentSummary</strong>, <strong>SalesPrice</strong>, <strong>EDocument</strong>, <strong>Communication</strong>, <strong>Comment</strong>, <strong>Finance</strong>, <strong>CreditManagement</strong>, and other modules. This provides detailed technical and functional information for each area, supporting user training and onboarding. <em>[App: IPL Base SI - Author: unknown]</em></li>
+<li class='subcontent-p'>Marked <strong>Phase 2</strong> and <strong>Phase 3a</strong> as completed in the roadmap, reflecting progress and helping users track upcoming features. <em>[App: IPL Base SI - Author: unknown]</em></li>
+<li class='subcontent-p'>Added documentation for <strong>Purchase Service Order</strong>, <strong>Packaging</strong>, <strong>Technical Product</strong>, <strong>ATP Management</strong>, <strong>Purchase Price</strong>, <strong>Inventory Turnover</strong>, <strong>Req Worksheet Management</strong>, <strong>Sales Detail</strong>, <strong>Purchase Detail</strong>, <strong>Transport Detail</strong>, <strong>Cash Flow</strong>, <strong>Claim</strong>, <strong>Expenses</strong>, <strong>Item Wizard</strong>, <strong>Item By Event</strong>, <strong>Order Preview</strong>, <strong>Resource Employee</strong>, <strong>Modify Salesperson Code</strong>, <strong>Commission</strong>, <strong>Payment Due Date</strong>, <strong>Physical Inventory</strong>, <strong>Certificate Of Analysis</strong>, <strong>IVC Extension</strong>, <strong>Credit Mixer</strong>, <strong>Categories Management</strong>, <strong>Document Report</strong>, <strong>Email Management</strong>, <strong>Board Interface</strong>, <strong>Exxon API</strong>, <strong>Transporeon API</strong>, <strong>PBI Interface</strong>, <strong>External API IT</strong>, <strong>EDoc Arxivar Connector</strong>, <strong>EDoc Connector IT</strong>, <strong>Dyn365</strong>, <strong>Role Center</strong>, <strong>Profile</strong>, and localization overview docs for IT, HU, ES, BE, DE, PT, SK, SI, HUB. This ensures all modules and localizations are documented for user reference. <em>[App: IPL Base SI - Author: unknown]</em></li>
+<li class='subcontent-p'>Added main landing page and EN/IT project index pages, standardizing style across technical docs and providing individual documentation for all localization apps (BE, DE, PT, SK, SI, HUB). This makes it easier for users to find relevant information and understand localized features. <em>[App: IPL Base SI - Author: unknown]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.389.0 (PR #720) - 08/05/2026</h2>
 </div>
 <div class='release-content'>
@@ -4157,7 +4290,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 10 maggio 2026 • 09:39 CET
+            Last updated: 06 giugno 2026 • 01:41 CET
         </div>
     </div>
 </body>
