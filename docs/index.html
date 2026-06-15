@@ -253,6 +253,81 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.397.0 (PR #750) - 12/06/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the ability to select synchronization groups and improved error handling in the <strong>API Sync</strong> process. This makes it easier for users to manage which data groups are synchronized and provides clearer feedback if issues occur during syncing. Also, new dependencies for <strong>Extended Combine Shipment</strong> and <strong>IPL Base</strong> were added to ensure smoother integration and compatibility. <em>[App: IPL Sync - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced new functions in the <strong>Expression Solver</strong> utility, allowing users to retrieve field values from various records more flexibly. This enhancement supports advanced calculations and data extraction, making custom reporting and automation easier for users. <em>[App: IPL.Utility - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated the <strong>Country of Origin</strong> field logic so that it now pulls information from the <strong>Itel Ledger Entry</strong> to the <strong>BSL Intrastat Journal</strong>. This ensures more accurate and consistent reporting for Intrastat declarations, reducing manual corrections and improving compliance. <em>[App: IPL Base SI - Author: albertodone]</em></li>
+<li class='subcontent-p'>Improved the <strong>PRS Report</strong> by updating its layout and adding application area information to report fields. This makes the report easier to use and ensures users can quickly identify relevant sections for their workflow. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>👥 HR</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the new <strong>IPL No.2</strong> field to the <strong>Fixed Asset List</strong> extension. Users can now track an additional identifier for fixed assets, supporting more detailed asset management and reporting. <em>[App: IPL Resource Employee - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced filtering options for <strong>purchase</strong> and <strong>sales orders</strong> within <strong>Cash Flow Management</strong>. Users can now filter more precisely, improving cash flow analysis and planning by focusing on relevant transactions. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added a composite key for <strong>Item Number</strong> and <strong>Document Details</strong> in the <strong>ATP Entry</strong> table. This change improves tracking and searching for available-to-promise entries, making inventory management more accurate and efficient. <em>[App: IPL ATP Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Introduced handling for <strong>Assembly Orders</strong> in <strong>ATP Management</strong> and updated the <strong>ATP Source Type</strong>. Users can now include assembly orders in their available-to-promise calculations, ensuring better planning and fulfillment accuracy. <em>[App: IPL ATP Management - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated the <strong>packaging weight calculation</strong> to use the <strong>Bags per Packaging rounding method</strong>. This ensures that packaging weights are calculated more precisely, reducing discrepancies in shipping and inventory records. <em>[App: IPL Packaging - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added logic to skip empty shipment lines during document processing. This prevents unnecessary entries and streamlines shipment documentation, making warehouse operations more efficient. <em>[App: IPL Packaging - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Enhanced the <strong>Sales Detail by Lot</strong> management process by updating vendor information. The <strong>Vendor Number</strong> and <strong>Vendor Name</strong> fields were added to both the <strong>Sales Detail by Lot</strong> table and page, allowing users to see vendor details directly when reviewing sales by lot. This improves traceability and reporting for sales transactions linked to specific vendors. <em>[App: IPL Sales Detail - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>Vendor Number</strong> and <strong>Vendor Name</strong> fields to the <strong>PBI Lot No. Info. API</strong> page, making it easier for users to access vendor details when working with lot information in sales processes. <em>[App: IPL PBI Interface - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed issues in <strong>DocuFlow management</strong> by adding <strong>Table Subtype filters</strong> across various modules. This ensures that document flows are processed correctly based on table types, reducing errors and improving reliability in document handling. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Removed an unused procedure from the <strong>Cash Flow Management</strong> codeunit, streamlining the code and reducing potential confusion for users. <em>[App: IPL Cash Flow - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated filters in <strong>purchase</strong> and <strong>sales reports</strong> to use <strong>Activity Code</strong> instead of <strong>No. Series</strong>. This change improves report accuracy and makes it easier for users to filter by relevant activities. <em>[App: IPL AE Invoices Check IT - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Changed the document type filter in <strong>purchase line</strong> processing from <strong>Return Order</strong> to <strong>Blanket Order</strong>. This ensures that purchase lines are filtered correctly, preventing misclassification and improving procurement accuracy. <em>[App: IPL AE Invoices Check IT - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved usability in the <strong>PRS Report</strong> by adding application area information to report fields. This helps users quickly identify and navigate relevant sections, making the report more user-friendly. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.394.0 (PR #741) - 05/06/2026</h2>
 </div>
 <div class='release-content'>
@@ -4290,7 +4365,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 13 giugno 2026 • 12:47 CET
+            Last updated: 15 giugno 2026 • 08:36 CET
         </div>
     </div>
 </body>
