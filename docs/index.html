@@ -253,6 +253,84 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 28.2.398.0 (PR #760) - 26/06/2026</h2>
+</div>
+<div class='release-content'>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Updated internal release artifacts and build processes to ensure smoother deployments and improved reliability for future updates. These changes do not affect daily user operations but help maintain system stability and timely delivery of new features and fixes. <em>[App: Base W1 - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.400.0 (PR #760) - 26/06/2026</h2>
+</div>
+<div class='release-content'>
+<h3>✨ Features</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced new <strong>notification text management</strong> and <strong>attachment handling</strong> features. Users can now manage notification texts and attach files directly within the <strong>Notification Attachments</strong> and <strong>Notification Placeholder</strong> pages, making communication and documentation more efficient. <em>[App: IPL EDS Extension - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added the <strong>DocuFlow Library Lookup</strong> page and improved descriptions in the <strong>DocuFlow Table Setup</strong>. This helps users quickly find and understand document library entries, streamlining document management and setup clarity. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced the <strong>DocuFlow Table Setup</strong> by adding a <strong>Description</strong> field, allowing users to provide clearer explanations for each setup entry, improving transparency and ease of use. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Expanded permissions for the <strong>EDS Extension</strong> to include more tables and pages, ensuring users have access to all necessary features for managing notifications and attachments. <em>[App: IPL EDS Extension - Author: albertodone]</em></li>
+<li class='subcontent-p'>Refactored the <strong>DataSet structure</strong> in the <strong>PRSReport layout</strong>, making report layouts clearer and easier to maintain. This improves readability and future updates for users working with custom reports. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added new <strong>email templates</strong> for production environments, enabling users to send standardized emails with improved formatting and content. <em>[App: IPL EDS Extension - Author: mpisana]</em></li>
+<li class='subcontent-p'>Created a new <strong>Document Report IE</strong> app, providing users with enhanced reporting capabilities for documents, supporting better tracking and compliance. <em>[App: IPL EDS Extension - Author: mpisana]</em></li>
+<li class='subcontent-p'>Added a <strong>purchase invoice document layout for Italy</strong>, allowing users to generate invoices that meet Italian regulatory requirements and formatting standards. <em>[App: IPL Document Report IT - Author: mpisana]</em></li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new fields for posting in <strong>Sales Lines</strong>, including <strong>Hand. Units to Post Count</strong>, <strong>Bags to Post Count</strong>, <strong>Gross Weight to Post (kg)</strong>, and <strong>Volume to Post (m3)</strong>. This enables more detailed tracking of sales shipments and inventory movements directly from sales documents. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+<li class='subcontent-p'>Enhanced item charge assignment procedures for <strong>Sales Lines</strong>, allowing users to allocate item charges more accurately and efficiently. The menu for item charge assignment has also been updated for easier access. <em>[App: IPL Base - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new fields for posting in <strong>Purchase Lines</strong>, including <strong>Hand. Units to Post Count</strong>, <strong>Bags to Post Count</strong>, <strong>Gross Weight to Post (kg)</strong>, and <strong>Volume to Post (m3)</strong>. This provides more granular control and visibility over purchase shipments and inventory. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+<li class='subcontent-p'>Implemented <strong>item charge assignment by quantity</strong> in <strong>Purchase Lines</strong>, allowing users to distribute item charges based on quantities, improving accuracy in cost allocation. Enhanced procedures and updated menus make this process more user-friendly. <em>[App: IPL Base - Author: albertodone]</em></li>
+<li class='subcontent-p'>Added <strong>VAT Registration Number</strong> to account update fields in <strong>integration management</strong>, ensuring compliance and easier VAT tracking during purchase integrations. <em>[App: IPL Dyn365 - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added new fields for posting in <strong>Transfer Lines</strong>, including <strong>Hand. Units to Post Count</strong>, <strong>Bags to Post Count</strong>, <strong>Gross Weight to Post (kg)</strong>, and <strong>Volume to Post (m3)</strong>. This allows for more precise tracking of inventory transfers and logistics operations. <em>[App: IPL Packaging - Author: albertodone]</em></li>
+</ul>
+</div>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added event subscribers for handling <strong>bank account assignments in payments</strong>, improving automation and accuracy when linking payments to the correct bank accounts. <em>[App: IPL Base ES - Author: albertodone]</em></li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved filtering logic for <strong>DocuFlow entries</strong> in the <strong>DocuFlow management</strong> pages, ensuring users see only relevant entries and reducing clutter. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Increased the text length for the <strong>notification value</strong> in the <strong>Notification Placeholder</strong> table, allowing users to enter longer and more detailed notification messages. <em>[App: IPL EDS Extension - Author: mpisana]</em></li>
+<li class='subcontent-p'>Updated visibility logic for <strong>Arxivar fields</strong> in the <strong>DocuFlow Fields</strong> page, ensuring users only see fields relevant to their workflow and reducing confusion. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Increased the <strong>Library Code</strong> field size in the <strong>DocuFlow DS Title</strong> table, allowing users to store longer codes without truncation. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+<li class='subcontent-p'>Updated <strong>DE mail texts</strong> to correct content and formatting, ensuring users in Germany receive accurate and professional email communications. <em>[App: IPL EDS Extension - Author: mpisana]</em></li>
+</ul>
+</div>
+<h3>🔧 Other Changes</h3>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Refined descriptions and improved clarity in <strong>Table Setup</strong> entries, making configuration easier for users and reducing setup errors. <em>[App: IPL DocuFlow - Author: albertodone]</em></li>
+</ul>
+</div>
+</div></div>
+<div class='release-box'>
+<div class='release-header' onclick='toggleRelease(this)'>
 <h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.397.0 (PR #750) - 12/06/2026</h2>
 </div>
 <div class='release-content'>
@@ -4365,7 +4443,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 15 giugno 2026 • 08:36 CET
+            Last updated: 27 giugno 2026 • 00:46 CET
         </div>
     </div>
 </body>
