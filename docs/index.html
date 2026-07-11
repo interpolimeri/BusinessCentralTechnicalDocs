@@ -253,14 +253,82 @@
         <div class="content">
 <div class='release-box'>
 <div class='release-header' onclick='toggleRelease(this)'>
-<h2 style='margin: 0; transition: color 0.3s ease;'>Release 28.2.398.0 (PR #760) - 26/06/2026</h2>
+<h2 style='margin: 0; transition: color 0.3s ease;'>Release 27.4.408.0 (PR #792) - 10/07/2026</h2>
 </div>
 <div class='release-content'>
+<h3>✨ Features</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced a complete <strong>default bank management</strong> system for <strong>Cash Flow</strong>. A new <strong>Default Banks</strong> page and setup let you define the correct <strong>Bank Account</strong> for each combination of <strong>Currency</strong>, <strong>Payment Method</strong> and <strong>General Business Posting Group</strong>. When you build or suggest <strong>Cash Flow Worksheet Lines</strong>, the matching bank and its <strong>default dimensions</strong> are now proposed automatically, and the <strong>Cash Flow Forecast</strong> update reflects the manual payment horizon, reducing manual selection errors. _[App: Cash Flow - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>🛒 Purchase</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added the <strong>Fiscal Code</strong> field to the <strong>Posted Purchase Receipt Header</strong> for the Italian localization. The value is now stored and available on posted receipts, giving purchasing and accounting staff the vendor fiscal identification directly on the document for easier verification, reporting and compliance checks without opening the vendor card. _[App: Base IT - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Added <strong>Packaging</strong> fields to the <strong>Warehouse Shipment Lines</strong> page and improved the <strong>Document Shipment Info Card</strong> so packaging actions are shown only when relevant. Warehouse users can now see and manage packaging details (handling units, bags) directly while preparing shipments, keeping packaging data consistent with the shipment and reducing the need to switch between pages during picking and loading. _[App: Packaging - Author: albertodone, mpisana]_</li>
+<li class='subcontent-p'>Added the <strong>Global Dimension 2 Code</strong> as a request filter on the <strong>Item by Event</strong> report. Users can now narrow the report by their second global dimension (for example cost center or area), producing more focused item movement analysis and making it easier to review stock activity per business unit. _[App: Item by Event - Author: mpisana]_</li>
+<li class='subcontent-p'>Enhanced <strong>Transfer Header</strong> validation for the <strong>shipping</strong> and <strong>receiving number series</strong>, ensuring transfers use the correct series before they are processed. This prevents inconsistent or missing document numbers on transfer shipments and receipts, improving traceability of stock movements between locations. _[App: Base - Author: mpisana]_</li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Significantly expanded <strong>DocuFlow</strong> document management. New <strong>upload validation rules</strong> enforce a mandatory <strong>Document Title</strong>, filter <strong>allowed file extensions</strong>, limit the <strong>maximum number of files per library</strong> and warn when a <strong>PDF exceeds a defined page limit</strong>. A new <strong>field mapping</strong> feature (<strong>GetLibraryFieldsMapping</strong>), configurable <strong>field options</strong>, and an entry <strong>Factbox</strong> action to open the selected document were also added, giving users tighter control and quality checks when archiving documents. _[App: DocuFlow - Author: albertodone, mpisana]_</li>
+<li class='subcontent-p'>Added new <strong>report layouts</strong> to the <strong>Document Report</strong> solution for the Irish localization, covering <strong>sales</strong>, <strong>purchase</strong>, <strong>shipment</strong>, <strong>SSO purchase</strong> and <strong>reminder</strong> documents, together with dedicated procedures that populate <strong>Purchase Invoice</strong> and <strong>Credit Memo</strong> headers. Irish users now get properly formatted, localized printouts for their key business documents. _[App: Document Report IE - Author: mpisana]_</li>
+<li class='subcontent-p'>Added an action to open the <strong>Arxivar profile</strong> directly from the <strong>E-Document</strong> pages and the ability to link a <strong>cancelled E-Document</strong> to an existing <strong>posted Invoice</strong> or <strong>Credit Memo</strong>. This lets accounting staff quickly reach the archived document and recover the correct link when an electronic document was cancelled, avoiding orphaned records and manual reconciliation. _[App: E-Document Arxivar Connector - Author: albertodone]_</li>
+<li class='subcontent-p'>Added the <strong>DS Status Code</strong> field to the <strong>Purchase Line</strong> and <strong>Sales Line</strong>, extending the electronic document status information down to line level. Users can now track the document status of individual lines, improving visibility over the progress of each item in the electronic document flow. _[App: Base - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>⚙️ System</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Introduced automatic <strong>year line generation for Number Series</strong>. A new management engine and the <strong>Generate Year Lines</strong> report detect year-based series and create the <strong>No. Series Lines</strong> for a new period from a template, accessible from the <strong>No. Series</strong> page. This removes the yearly manual setup of number series, preventing gaps or forgotten sequences at the start of each year. _[App: Utility - Author: albertodone]_</li>
+<li class='subcontent-p'>Enhanced the <strong>Modify Table Log</strong> with a full-record snapshot capability. The system now stores a complete <strong>JSON snapshot</strong> of changed records and can <strong>restore a deleted record</strong> from the log, including all key and non-key fields. Administrators gain a reliable audit trail and a safety net to recover accidentally removed data from monitored tables. _[App: Utility - Author: albertodone]_</li>
+</ul>
+</div>
+<h3>🪲 Bug Fixes</h3>
+<h4>💰 Finance</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Improved field validation on the <strong>Cash Flow Worksheet Line</strong>, ensuring dimensions and related values are checked correctly when lines are created or changed. This prevents inconsistent worksheet entries and keeps the resulting <strong>Cash Flow Forecast</strong> accurate for treasury planning. _[App: Cash Flow - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>🛍️ Sales</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Corrected the <strong>OnDelete</strong> behavior for <strong>Blanket Sales Orders</strong>, so related data is handled properly when a blanket order is removed and no longer leaves inconsistent linked records. Also made the <strong>Order Date</strong> field non-editable on the <strong>Sales Order</strong> and <strong>Blanket Sales Order</strong> pages, preventing accidental changes to a key date that drives pricing and delivery calculations. _[App: Base - Author: albertodone]_, _[App: Profile - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>📦 Logistic</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed the rounding of <strong>handling units</strong> and <strong>bags count</strong> in <strong>Packaging Management</strong>, and corrected packing calculations when a line has <strong>zero quantity</strong> on purchase, sales and transfer lines. Packaging quantities are now computed reliably, avoiding wrong material counts and errors when documents contain lines without quantity. _[App: Packaging - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>📊 Integration</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Fixed the <strong>entry type</strong> field in the <strong>Board Item Ledger Entry API</strong> so it now uses a conversion procedure that returns a consistent integer value. External reporting tools consuming this API receive correctly typed item ledger entry types, preventing misclassified data in downstream dashboards. _[App: Board Interface - Author: albertodone]_</li>
+</ul>
+</div>
+<h4>🌐 General</h4>
+<div class='subcontent'>
+<ul>
+<li class='subcontent-p'>Adjusted <strong>item ledger entry</strong> handling in <strong>Document Report Management</strong> so quantities and values reported on documents are calculated correctly, and made the <strong>allowed file extensions</strong> check in <strong>DocuFlow</strong> case-insensitive so valid files are no longer rejected because of upper or lower case differences. These fixes improve both document printouts and the document upload experience. _[App: Document Report - Author: mpisana]_, _[App: DocuFlow - Author: albertodone]_</li>
+</ul>
+</div>
 <h3>🔧 Other Changes</h3>
 <h4>⚙️ System</h4>
 <div class='subcontent'>
 <ul>
-<li class='subcontent-p'>Updated internal release artifacts and build processes to ensure smoother deployments and improved reliability for future updates. These changes do not affect daily user operations but help maintain system stability and timely delivery of new features and fixes. <em>[App: Base W1 - Author: albertodone]</em></li>
+<li class='subcontent-p'>Cleaned up and refactored the <strong>Document Report Management</strong> code, streamlining how document data is prepared for printing. There is no change to the printed result, but the reporting engine is now more maintainable and stable, reducing the risk of errors in future document layout updates. _[App: Document Report - Author: albertodone]_</li>
 </ul>
 </div>
 </div></div>
@@ -4443,7 +4511,7 @@
 
         </div>
         <div class="footer">
-            Last updated: 10 luglio 2026 • 02:22 CET
+            Last updated: 11 luglio 2026 • 11:36 CET
         </div>
     </div>
 </body>
