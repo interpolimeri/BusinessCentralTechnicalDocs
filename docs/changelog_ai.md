@@ -1,5 +1,5 @@
 # AI-Enhanced Changelog
-
+ 
 ## Release 26.0.313.0 (PR #457) - 28/09/2025
 ### ✨ Features
 #### 💰 Finance
