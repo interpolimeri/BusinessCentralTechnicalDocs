@@ -4,23 +4,21 @@
 
 ## 🚀 About
 
-This repository hosts the public changelog and technical documentation for Business Central extensions. 
+This repository hosts the public changelog for Business Central extensions.
 
-- **Automatically updated** from private development repository
 - **Public access** to release notes and version history
-- **Professional formatting** with emoji indicators and developer attribution
+- **Curated, user-facing release notes** — each entry is drafted and reviewed for every release, written for BC users rather than developers
 
 ## 📋 Changelog Features
 
-- ✨ **Features** - New functionality and enhancements
-- 🪲 **Bug Fixes** - Issue resolutions and improvements  
-- 🔧 **Other Changes** - Build updates and maintenance
-- 👥 **Developer Attribution** - Credits for each contribution
+- ✨ **New Features** - New functionality and enhancements
+- 🚀 **Improvements** - Changes to existing functionality
+- 🪲 **Corrections and Stability Improvements** - Bug fixes and reliability work
 
 ## 🔄 Updates
 
-The changelog is automatically synchronized from our private development environment and updated as new versions are released.
+The changelog is drafted and reviewed for each new release from our private development environment; see `CLAUDE.md` for the process.
 
 ---
 
-*Generated automatically from private BusinessCentral repository*
+*Release notes for Business Central, based on changes made in the private BusinessCentral repository*
